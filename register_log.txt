@@ -1,0 +1,11 @@
+Script started...
+Loaded include.inc
+ERROR: Class "Monolog\Logger" not found
+Script started...
+Loaded include.inc
+ERROR: Class "Monolog\Logger" not found
+Script started...
+Loaded include.inc
+Loaded Module.php
+DB connected
+Handler registered

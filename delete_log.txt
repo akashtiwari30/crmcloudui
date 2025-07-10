@@ -1,0 +1,203 @@
+TrackableObject Object
+(
+    [storage:TrackableObject:private] => Array
+        (
+            [label] => Jifin KJ
+            [potentialname] => Jifin KJ
+            [potential_no] => POT83
+            [amount] => 0.00000000
+            [related_to] => 0
+            [closingdate] => 2025-04-09
+            [opportunity_type] => 
+            [nextstep] => 
+            [leadsource] => 
+            [sales_stage] => Prospecting
+            [assigned_user_id] => 1
+            [probability] => 0.000
+            [campaignid] => 0
+            [createdtime] => 2025-04-09 10:24:49
+            [modifiedtime] => 2025-04-09 10:24:49
+            [modifiedby] => 1
+            [description] => 
+            [forecast_amount] => 0.00000000
+            [isconvertedfromlead] => 0
+            [contact_id] => 0
+            [source] => WORKFLOW
+            [starred] => 0
+            [tags] => 
+            [   ] => http://localhost/jifinkjpot83
+            [cf_857] => 82
+            [cf_861] => 08089851872
+            [cf_867] => jifinjosey@gmail.com
+            [cf_873] => Active
+            [cf_875] => Active
+            [cf_877] => 2025-04-09
+            [cf_879] => 2025-04-23
+            [cf_881] => First Trial Period
+            [record_id] => 168
+            [record_module] => Potentials
+        )
+
+    [trackingEnabled:TrackableObject:private] => 1
+    [tracking:TrackableObject:private] => 1
+    [changed] => Array
+        (
+        )
+
+)
+TrackableObject Object
+(
+    [storage:TrackableObject:private] => Array
+        (
+            [label] => Jifin KJ
+            [salutationtype] => 
+            [firstname] => Jifin
+            [lead_no] => LEA74
+            [phone] => 08089851872
+            [lastname] => KJ
+            [mobile] => 
+            [company] => Biztechnosys Infotech Pvt Ltd
+            [fax] => 
+            [designation] => 
+            [email] => jifinjosey@gmail.com
+            [leadsource] => 
+            [website] => 
+            [industry] => 
+            [leadstatus] => 
+            [annualrevenue] => 0.00000000
+            [rating] => 
+            [noofemployees] => 0
+            [assigned_user_id] => 1
+            [secondaryemail] => 
+            [createdtime] => 2025-04-09 10:24:49
+            [modifiedtime] => 2025-04-09 10:27:01
+            [modifiedby] => 1
+            [lane] => 
+            [code] => 
+            [city] => 
+            [country] => 
+            [state] => 
+            [pobox] => 
+            [description] => 
+            [campaignrelstatus] => 
+            [emailoptout] => 0
+            [source] => CRM
+            [starred] => 0
+            [tags] => 
+            [cf_863] => 82
+            [cf_865] => 
+            [record_id] => 167
+            [record_module] => Leads
+        )
+
+    [trackingEnabled:TrackableObject:private] => 1
+    [tracking:TrackableObject:private] => 1
+    [changed] => Array
+        (
+        )
+
+)
+TrackableObject Object
+(
+    [storage:TrackableObject:private] => Array
+        (
+            [label] => Jifin KJ
+            [salutationtype] => 
+            [firstname] => Jifin
+            [lead_no] => LEA75
+            [phone] => 08089851872
+            [lastname] => KJ
+            [mobile] => 
+            [company] => Biztechnosys Infotech Pvt Ltd
+            [fax] => 
+            [designation] => 
+            [email] => jifinjosey@gmail.com
+            [leadsource] => 
+            [website] => 
+            [industry] => 
+            [leadstatus] => 
+            [annualrevenue] => 0.00000000
+            [rating] => 
+            [noofemployees] => 0
+            [assigned_user_id] => 1
+            [secondaryemail] => 
+            [createdtime] => 2025-04-09 10:35:19
+            [modifiedtime] => 2025-04-09 10:37:24
+            [modifiedby] => 1
+            [lane] => 
+            [code] => 
+            [city] => 
+            [country] => 
+            [state] => 
+            [pobox] => 
+            [description] => 
+            [campaignrelstatus] => 
+            [emailoptout] => 0
+            [source] => CRM
+            [starred] => 0
+            [tags] => 
+            [cf_863] => 82
+            [cf_865] => 
+            [record_id] => 169
+            [record_module] => Leads
+        )
+
+    [trackingEnabled:TrackableObject:private] => 1
+    [tracking:TrackableObject:private] => 1
+    [changed] => Array
+        (
+        )
+
+)
+TrackableObject Object
+(
+    [storage:TrackableObject:private] => Array
+        (
+            [label] => Jifin KJ
+            [salutationtype] => 
+            [firstname] => Jifin
+            [lead_no] => LEA76
+            [phone] => 08089851872
+            [lastname] => KJ
+            [mobile] => 
+            [company] => Biztechnosys Infotech Pvt Ltd
+            [fax] => 
+            [designation] => 
+            [email] => jifinjosey@gmail.com
+            [leadsource] => 
+            [website] => 
+            [industry] => 
+            [leadstatus] => 
+            [annualrevenue] => 0.00000000
+            [rating] => 
+            [noofemployees] => 0
+            [assigned_user_id] => 1
+            [secondaryemail] => 
+            [createdtime] => 2025-04-09 10:39:47
+            [modifiedtime] => 2025-04-09 10:41:48
+            [modifiedby] => 1
+            [lane] => 
+            [code] => 
+            [city] => 
+            [country] => 
+            [state] => 
+            [pobox] => 
+            [description] => 
+            [campaignrelstatus] => 
+            [emailoptout] => 0
+            [source] => CRM
+            [starred] => 0
+            [tags] => 
+            [cf_863] => 82
+            [cf_865] => 
+            [record_id] => 171
+            [record_module] => Leads
+        )
+
+    [trackingEnabled:TrackableObject:private] => 1
+    [tracking:TrackableObject:private] => 1
+    [changed] => Array
+        (
+        )
+
+)
