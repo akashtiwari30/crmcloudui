@@ -44,7 +44,7 @@
 						 data-custom-fields-count="{$BLOCK_MODEL->getCustomFieldsCount()}">
 						<div class="col-sm-12">
 							<div class="layoutBlockHeader row">
-								<div class="blockLabel col-sm-3 padding10 marginLeftZero" style="word-break: break-all;">
+								<div class="blockLabel col-sm-3 padding10 marginLeftZero" style="word-break: break-all; display:flex; align-items:center;">
 									{if $IS_BLOCK_SORTABLE}
 										<img class="cursorPointerMove" src="{vimage_path('drag.png')}" />&nbsp;&nbsp;
 									{/if}

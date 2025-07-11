@@ -53,7 +53,7 @@
 								{if isset($WIDGETS_MODULE_LIST[$key])}
 									{foreach from=$value key=key1 item=value1}
 										{if $value1 == 1}
-											<li class="portal-shortcut-list" data-field="{$key1}">&nbsp;<div class="btn btn-large">{vtranslate({$key1},$QUALIFIED_MODULE)}&nbsp;&nbsp; {*{if $key neq 'HelpDesk'}<span class="deleteShortcut">X</span>{/if}*}</div></li>
+											<li class="portal-shortcut-list" data-field="{$key1}">&nbsp;<button class="btn btn-large">{vtranslate({$key1},$QUALIFIED_MODULE)}&nbsp;&nbsp; {*{if $key neq 'HelpDesk'}<span class="deleteShortcut">X</span>{/if}*}</button></li>
 										{/if}
 									{/foreach}
 								{/if}

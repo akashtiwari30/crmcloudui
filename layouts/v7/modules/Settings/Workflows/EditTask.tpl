@@ -50,7 +50,7 @@
                         <div class="row form-group">
                             <div class="col-sm-9 col-xs-9">
                                 <div class="row">
-                                    <div class="col-sm-2 col-xs-2"> {vtranslate('LBL_DELAY_ACTION', $QUALIFIED_MODULE)} </div>
+                                    <div class="col-sm-2 col-xs-2"> <label>{vtranslate('LBL_DELAY_ACTION', $QUALIFIED_MODULE)}</label> </div>
                                     <div class="col-sm-10 col-xs-10">
                                         <div class="row">
                                             <div class="col-sm-1 col-xs-1" style="margin-top: 7px;">

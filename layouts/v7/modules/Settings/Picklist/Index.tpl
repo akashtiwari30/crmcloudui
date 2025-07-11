@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-12" style="text-align: center;">
                     <div id="modulePickListContainer">
                         {include file="ModulePickListDetail.tpl"|@vtemplate_path:$QUALIFIED_MODULE}
                     </div>

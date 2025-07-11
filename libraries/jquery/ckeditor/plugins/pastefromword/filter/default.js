@@ -740,7 +740,7 @@
                         if ("transparent" == a) return !1;
                         if (CKEDITOR.env.gecko)
                           return a.replace(
-                            /-moz-use-text-color/g,
+                            /-moz-use-text-dark-color/g,
                             "transparent"
                           );
                       },

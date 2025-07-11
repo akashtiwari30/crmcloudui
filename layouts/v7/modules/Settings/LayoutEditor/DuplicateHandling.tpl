@@ -27,7 +27,7 @@
 				<div class="col-lg-12">
 					<div class="row">
 						<div class="col-lg-3">
-							<p class="marginTop5px">{vtranslate('LBL_DUPLICATE_CHECK', $QUALIFIED_MODULE)}</p>
+							<p class="marginTop5px text-dark-color">{vtranslate('LBL_DUPLICATE_CHECK', $QUALIFIED_MODULE)}</p>
 						</div>
 						<div class="col-lg-4">
 							<input type="hidden" class="rule" name="rule" value="">

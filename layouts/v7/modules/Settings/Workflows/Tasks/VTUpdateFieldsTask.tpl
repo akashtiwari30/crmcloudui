@@ -11,7 +11,7 @@
 -->*}
 {strip}
 	<div class="row">
-		<div class="col-sm-2 col-xs-2"><strong>{vtranslate('LBL_SET_FIELD_VALUES',$QUALIFIED_MODULE)}</strong></div>
+		<div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_SET_FIELD_VALUES',$QUALIFIED_MODULE)}</label></div>
 	</div><br>
 	<div>
 		<button type="button" class="btn btn-default" id="addFieldBtn">{vtranslate('LBL_ADD_FIELD',$QUALIFIED_MODULE)}</button>
