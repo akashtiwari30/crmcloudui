@@ -39,7 +39,7 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:focus {
   outline: none;
-  border-color: var(--light-color-4);
+  border-color: var(--border-light-color);
 }
 input[type="checkbox"]:checked:after {
   top: -3px;
@@ -86,25 +86,33 @@ input[type="radio"] {
 input[type="radio"]:checked:after {
   background: var(--secondary-color) !important;
 }
+.checkbox input[type="checkbox"]:checked,
+.checkbox-inline input[type="checkbox"]:checked,
+.radio input[type="radio"]:checked,
+.radio-inline input[type="radio"]:checked,
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: var(--white-color);
+}
 .select2-dropdown-open.select2-drop-above .select2-choice,
 .select2-dropdown-open.select2-drop-above .select2-choices {
-  border: 1px solid var(--light-color-4);
+  border: 1px solid var(--border-light-color);
 }
 .select2-drop.select2-drop-above.select2-drop-active {
-  border-top: 1px solid var(--light-color-4);
+  border-top: 1px solid var(--border-light-color);
 }
 .select2-drop-auto-width,
 .select2-drop.select2-drop-above.select2-drop-active {
-  border-top-color: var(--light-color-4);
+  border-top-color: var(--border-light-color);
 }
 .select2-drop-active {
-  border-color: var(--light-color-4);
+  border-color: var(--border-light-color);
 
-  border: 1px solid var(--light-color-4);
+  border: 1px solid var(--border-light-color);
 }
 .select2-container-active .select2-choice,
 .select2-container-multi.select2-container-active .select2-choices {
-  border-color: var(--light-color-4);
+  border-color: var(--border-light-color);
 }
 table {
   background-color: var(--white-color);
@@ -120,8 +128,9 @@ table {
   font-weight: 500;
   font-style: normal;
 }
-.tab-btn.active {
-  border-bottom: 3px solid var(--primary-color);
+.tab-btn.active,
+.tab-btn:hover {
+  border-bottom: 3px solid var(--black-color);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 a {
@@ -367,7 +376,7 @@ i.glyphicon.glyphicon-trash {
   cursor: pointer;
   font-size: 15px;
   background-color: transparent;
-  color: var(--menu-text-color);
+  color: var(--menu-text-dark-color);
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -385,10 +394,41 @@ i.glyphicon.glyphicon-trash {
   font-size: 15px;
   color: var(--sidebar-text-color);
 }
+.app-menu .fa-chevron-right {
+  font-size: 0.7em;
+  /* padding-top: 9px;
+  padding-right: 10px; */
+  color: var(--sidebar-text-color);
+}
+.related-tabs .dropdown-menu > .mCustomScrollBox > .mCSB_container > li > a {
+  display: block;
+  padding: 3px 5px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  /* color: var(--text-dark-color); */
+  white-space: nowrap;
+  border-radius: 5px;
+}
 
 ul .mCSB_container a span {
-  color: var(--light-color-2);
+  /* color: var(--text-dark-color); */
   text-shadow: none;
+}
+.dropdown-menu li > a {
+  color: var(--text-dark-color);
+}
+.dropdown-menu li > a:focus,
+.dropdown-menu li > a:hover,
+.dropdown-submenu:focus > a,
+.dropdown-submenu:hover > a {
+  background-color: var(--btn-primary-hover-bg);
+  background-image: linear-gradient(
+    to bottom,
+    var(--btn-primary-hover-bg) 0,
+    var(--btn-primary-hover-bg) 100%
+  );
+  color: var(--btn-primary-hover-text);
 }
 .comman-menu.active {
   background-color: var(--sidebar-hover-bg);
@@ -404,9 +444,9 @@ ul .mCSB_container a span {
 }
 
 .app-item .app-icon-list {
-    font-size: 19px;
-    color: var(--btn-secondary-bg);
-    color: var(--sidebar-text-color);
+  font-size: 19px;
+  color: var(--btn-secondary-bg);
+  color: var(--sidebar-text-color);
 }
 .active-app-item,
 .app-item:hover {
@@ -419,8 +459,8 @@ ul .mCSB_container a span {
 .app-item:hover .app-name,
 .app-item:hover .app-icon-list,
 .active-app-item .app-icon-list,
-.active-app-item .app-name{
-   color: var(--sidebar-hover-text);
+.active-app-item .app-name {
+  color: var(--sidebar-hover-text);
 }
 .dropdown-menu.app-modules-dropdown li.active {
   background-color: var(--color-subsidebar-bg-hover);
@@ -475,7 +515,7 @@ ul .mCSB_container a span {
 }
 .panel-collapse ul li a.settingsgroup-menu-color {
   background-color: var(--color-subsidebar-bg-hover);
-    /* color: var(--sidebar-hover-text); */
+  /* color: var(--sidebar-hover-text); */
 }
 .settingsgroup ul li a::before {
   content: "• ";
@@ -508,7 +548,7 @@ ul .mCSB_container a span {
 .bg-hover-blue {
   background-color: var(--btn-secondary-bg);
   color: var(--btn-secondary-text);
-border: 1px solid var(--btn-secondary-border);
+  border: 1px solid var(--btn-secondary-border);
   border-radius: 5px;
   &:hover {
     background-color: var(--btn-secondary-hover-bg);
@@ -524,7 +564,7 @@ border: 1px solid var(--btn-secondary-border);
   }
 }
 .plus-btn {
-  border: 1px solid var(--light-color-4);
+  border: 1px solid var(--border-light-color);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -532,21 +572,21 @@ border: 1px solid var(--btn-secondary-border);
 .btn {
   border-radius: 5px !important;
   cursor: pointer;
-  /* background: var(--btn-primary-bg);
-  color: var(--btn-primary-text); */
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
   font-size: 15px;
   font-weight: 500;
   text-shadow: none;
   opacity: 1;
-  /* border: 1px solid var(--btn-primary-border); */
+  border: 1px solid var(--btn-primary-border);
 }
 
 .btn.focus,
 .btn:focus,
 .btn:hover {
-  /* background: var(--btn-primary-hover-bg);
+  background: var(--btn-primary-hover-bg);
   color: var(--btn-primary-hover-text);
-  border: 1px solid var(--btn-primary-hover-border);; */
+  border: 1px solid var(--btn-primary-hover-border);
 }
 .btn-default {
   background: var(--btn-primary-bg);
@@ -578,7 +618,7 @@ border: 1px solid var(--btn-secondary-border);
   background-image: -webkit-linear-gradient(
     top,
     var(--btn-primary-hover-bg) 0,
-  var(--btn-primary-hover-bg) 100%
+    var(--btn-primary-hover-bg) 100%
   ) !important;
   border: 1px solid var(--btn-primary-hover-border);
   /* color: var(--primary-color); */
@@ -614,6 +654,13 @@ border: 1px solid var(--btn-secondary-border);
 
 .btn-danger {
   border: 1px solid var(--red-color);
+  background: var(--alert-bg-color);
+  color: var(--red-color);
+  text-shadow: none;
+}
+.btn-danger:hover{
+  background: var(--error-color-2);
+   border: 1px solid var(--red-color);
 }
 
 .module-buttons.btn {
@@ -646,27 +693,26 @@ border: 1px solid var(--btn-secondary-border);
 .btn-default.active:hover,
 .btn-default:active.focus,
 .btn-default:active:focus,
-.btn-default:active:hover
-.btn-default.active,
+.btn-default:active:hover .btn-default.active,
 .btn-default.focus,
 .btn-default:active,
 .btn-default:focus,
 .btn-default:hover {
-   background: var(--btn-primary-hover-bg);
-   background-color: var(--btn-primary-hover-bg);
+  background: var(--btn-primary-hover-bg);
+  background-color: var(--btn-primary-hover-bg);
   color: var(--btn-primary-hover-text);
   border: 1px solid var(--btn-primary-hover-border);
-    text-shadow: none;
+  text-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
 }
-.btn-default.active{
-     background: var(--btn-primary-hover-bg);
-   background-color: var(--btn-primary-hover-bg);
+.btn-default.active {
+  background: var(--btn-primary-hover-bg);
+  background-color: var(--btn-primary-hover-bg);
   color: var(--btn-primary-hover-text);
   border: 1px solid var(--btn-primary-hover-border);
-    text-shadow: none;
+  text-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
@@ -687,8 +733,8 @@ border: 1px solid var(--btn-secondary-border);
 .relatedTabModulesList .addButton:hover,
 .relatedTabModulesList .addButton:focus,
 .relatedTabModulesList .addButton:active {
-   background: var(--btn-primary-hover-bg);
-   background-color: var(--btn-primary-hover-bg);
+  background: var(--btn-primary-hover-bg);
+  background-color: var(--btn-primary-hover-bg);
   color: var(--btn-primary-hover-text);
   border: 1px solid var(--btn-primary-hover-border);
 }
@@ -768,7 +814,6 @@ border: 1px solid var(--btn-secondary-border);
   border-color: var(--btn-primary-hover-border);
 }
 
-
 .btn-flat-info.focus:not(:active):not(.active):not(.btn-default),
 .btn-flat-info:focus:not(:active):not(.active):not(.btn-default),
 .btn-info.focus:not(:active):not(.active):not(.btn-default),
@@ -806,14 +851,14 @@ border: 1px solid var(--btn-secondary-border);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.btn-toolbar .btn-default.addButton{
+.btn-toolbar .btn-default.addButton {
   background-color: var(--btn-secondary-bg);
   color: var(--btn-secondary-text);
   border: 1px solid var(--btn-secondary-border);
-  &:hover{
-     background-color: var(--btn-secondary-hover-bg);
-  color: var(--btn-secondary-hover-text);
-  border: 1px solid var(--btn-secondary-hover-border);
+  &:hover {
+    background-color: var(--btn-secondary-hover-bg);
+    color: var(--btn-secondary-hover-text);
+    border: 1px solid var(--btn-secondary-hover-border);
   }
 }
 .btn-toolbar .btn-default.sendEmail {
@@ -853,7 +898,7 @@ border: 1px solid var(--btn-secondary-border);
 
 /* ------------------------- */
 #taskManagementContainer .btn-group button {
-  background-color:var(--black-color);
+  background-color: var(--black-color);
   color: var(--white-color);
 }
 #taskManagementContainer button.active {
@@ -920,13 +965,13 @@ border: 1px solid var(--btn-secondary-border);
   padding-left: 10px;
   color: var(--white-color);
   background-color: var(--error-color);
-      padding: 6px 12px;
-    border-radius: 5px;
-    margin-left: 10px;
-    display: inline-block;
-    &:hover{
-       color: var(--white-color);
-    }
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-block;
+  &:hover {
+    color: var(--white-color);
+  }
 }
 
 .collapseblock-btn

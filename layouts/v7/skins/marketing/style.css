@@ -724,11 +724,11 @@ a.menu-item:hover {
   transition: all 0.25s ease-in;
 } */
 
-.app-menu .fa-chevron-right {
+/* .app-menu .fa-chevron-right {
   font-size: 0.7em;
-  /* padding-top: 9px;
-  padding-right: 10px; */
-}
+  padding-top: 9px;
+  padding-right: 10px;
+} */
 
 .app-menu .app-modules-dropdown {
   left: 0px !important;
@@ -1072,11 +1072,11 @@ a.menu-item:hover {
   overflow-x: auto !important;
 }
 
-.fieldValue .value {
+/* .fieldValue .value {
   max-width: 85%;
   display: inline-block;
   word-break: break-word;
-}
+} */
 
 /* .fieldValue .value a {
   color: var(--black-color-2) !important;
@@ -3053,9 +3053,9 @@ th {
   height: 30px;
 }
 
-#composeEmailContainer .row {
+/* #composeEmailContainer .row {
   padding: 5px;
-}
+} */
 
 .navigationButton[disabled] {
   opacity: 0.2;
@@ -5887,9 +5887,9 @@ li.dashboardWidget {
   color: black;
 }
 
-.muted {
+/* .muted {
   color: #6f6f6f;
-}
+} */
 
 .dashBoardContainer .entryIcon {
   font-size: 120%;
@@ -6150,7 +6150,7 @@ hr {
   padding: 4px 6px;
 }
 
-.related-tabs .dropdown-menu>.mCustomScrollBox>.mCSB_container>li>a {
+/* .related-tabs .dropdown-menu>.mCustomScrollBox>.mCSB_container>li>a {
   display: block;
   padding: 3px 5px;
   clear: both;
@@ -6158,7 +6158,7 @@ hr {
   line-height: 1.42857143;
   color: #333;
   white-space: nowrap;
-}
+} */
 
 .related-tabs .dropdown-menu>.mCustomScrollBox>.mCSB_container span i {
   font-size: 15px;

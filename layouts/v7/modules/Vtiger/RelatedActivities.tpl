@@ -57,7 +57,7 @@
 								<div><span title="{Vtiger_Util_Helper::formatDateTimeIntoDayString("$START_DATE $START_TIME")}">{Vtiger_Util_Helper::formatDateIntoStrings($START_DATE, $START_TIME)}</span></div>
 							</div>
 
-							<div class='col-lg-6 col-md-6 col-sm-6 activityStatus' style='line-height: 0px;padding-right:30px;'>
+							<div class='col-lg-4 col-md-4 col-sm-4 activityStatus' style='line-height: 0px;padding-right:30px;'>
 								<div class="">
 									{if $RECORD->get('activitytype') eq 'Task'}
 										{assign var=MODULE_NAME value=$RECORD->getModuleName()}

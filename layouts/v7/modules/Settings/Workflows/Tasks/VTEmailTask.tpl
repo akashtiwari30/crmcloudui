@@ -14,7 +14,7 @@
 				<div class="row form-group" >
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<div class="col-sm-3 col-xs-3">{vtranslate('LBL_FROM', $QUALIFIED_MODULE)}</div>
+							<div class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_FROM', $QUALIFIED_MODULE)}<label></div>
 							<div class="col-sm-9 col-xs-9">
 								<input name="fromEmail" class=" fields inputElement" type="text" value="{$TASK_OBJECT->fromEmail}" />
 							</div>
@@ -31,7 +31,7 @@
 				<div class="row form-group">
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<div class="col-sm-3 col-xs-3">{vtranslate('Reply To',$QUALIFIED_MODULE)}</div>
+							<div class="col-sm-3 col-xs-3"><label>{vtranslate('Reply To',$QUALIFIED_MODULE)}</label></div>
 							<div class="col-sm-9 col-xs-9">
 								<input name="replyTo" class="fields inputElement" type="text" value="{$TASK_OBJECT->replyTo}"/>
 							</div>
@@ -47,7 +47,7 @@
 				<div class="row form-group">
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<span class="col-sm-3 col-xs-3">{vtranslate('LBL_TO',$QUALIFIED_MODULE)}<span class="redColor">*</span></span>
+							<span class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_TO',$QUALIFIED_MODULE)}</label><span class="redColor">*</span></span>
 							<div class="col-sm-9 col-xs-9">
 								<input data-rule-required="true" name="recepient" class="fields inputElement" type="text" value="{$TASK_OBJECT->recepient}" />
 							</div>
@@ -63,7 +63,7 @@
 				<div class="row form-group {if empty($TASK_OBJECT->emailcc)}hide {/if}" id="ccContainer">
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<div class="col-sm-3 col-xs-3">{vtranslate('LBL_CC',$QUALIFIED_MODULE)}</div>
+							<div class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_CC',$QUALIFIED_MODULE)}</label></div>
 							<div class="col-sm-9 col-xs-9">
 								<input class="fields inputElement" type="text" name="emailcc" value="{$TASK_OBJECT->emailcc}" />
 							</div>
@@ -79,7 +79,7 @@
 				<div class="row form-group {if empty($TASK_OBJECT->emailbcc)}hide {/if}" id="bccContainer">
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<div class="col-sm-3 col-xs-3">{vtranslate('LBL_BCC',$QUALIFIED_MODULE)}</div>
+							<div class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_BCC',$QUALIFIED_MODULE)}</label></div>
 							<div class="col-sm-9 col-xs-9">
 								<input class="fields inputElement" type="text" name="emailbcc" value="{$TASK_OBJECT->emailbcc}" />
 							</div>
@@ -106,7 +106,7 @@
 				<div class="row form-group">
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<div class="col-sm-3 col-xs-3">{vtranslate('LBL_SUBJECT',$QUALIFIED_MODULE)}<span class="redColor">*</span></div>
+							<div class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_SUBJECT',$QUALIFIED_MODULE)}</label><span class="redColor">*</span></div>
 							<div class="col-sm-9 col-xs-9">
 								<input data-rule-required="true" name="subject" class="fields inputElement" type="text" name="subject" value="{$TASK_OBJECT->subject}" id="subject" spellcheck="true"/>
 							</div>
@@ -122,7 +122,7 @@
 				<div class="row form-group">
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<div style="margin-top: 7px" class="col-sm-3 col-xs-3">{vtranslate('LBL_ADD_FIELD',$QUALIFIED_MODULE)}</div>&nbsp;&nbsp;
+							<div style="margin-top: 7px" class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_ADD_FIELD',$QUALIFIED_MODULE)}</label></div>&nbsp;&nbsp;
 							<div class="col-sm-8 col-xs-8">
 								<select style="min-width: 250px" id="task-fieldnames" class="select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 									<option></option>
@@ -133,7 +133,7 @@
 					</div>
 					<div class="col-sm-5 col-xs-5">
 						<div class="row">
-							<div style="margin-top: 7px" class="col-sm-3 col-xs-3">{vtranslate('LBL_GENERAL_FIELDS',$QUALIFIED_MODULE)}</div>&nbsp;&nbsp;
+							<div style="margin-top: 7px" class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_GENERAL_FIELDS',$QUALIFIED_MODULE)}</label></div>&nbsp;&nbsp;
 							<div class="col-sm-8 col-xs-8">
 								<select style="width: 205px" id="task_timefields" class="select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 									<option></option>
@@ -149,7 +149,7 @@
 					{if isset($EMAIL_TEMPLATES) && $EMAIL_TEMPLATES}
 						<div class="col-sm-6 col-xs-6">
 							<div class="row">
-								<div class="col-sm-3 col-xs-3">{vtranslate('LBL_EMAIL_TEMPLATES','EmailTemplates')}</div>
+								<div class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_EMAIL_TEMPLATES','EmailTemplates')}</label></div>
 								<div class="col-sm-9 col-xs-9">
 									<select style="min-width: 250px" id="task-emailtemplates" class="select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 										<option></option>

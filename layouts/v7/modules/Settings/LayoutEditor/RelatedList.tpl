@@ -118,12 +118,12 @@
 										<div>
 											<div class="pull-right" style="margin-bottom:20px;">
 												<span class="col-sm-6" style="width:100%">
-													<img src="{vimage_path('Square.png')}" />&nbsp;&nbsp;&nbsp;
-													{vtranslate($SELECTED_MODULE_NAME,$SELECTED_MODULE_NAME)}
+													<img src="{vimage_path('Square.png')}" />
+													<span class="marginLeft10px color-indicator">{vtranslate($SELECTED_MODULE_NAME,$SELECTED_MODULE_NAME)}</span>
 												</span>
 												<span class="col-sm-6" style="width:100%">
-													<img src="{vimage_path('Circle.png')}" />&nbsp;&nbsp;&nbsp;
-													{vtranslate('LBL_RELATED_MODULE',$QUALIFIED_MODULE)}
+													<img src="{vimage_path('Circle.png')}" />
+													<span class="marginLeft10px color-indicator">{vtranslate('LBL_RELATED_MODULE',$QUALIFIED_MODULE)}</span>
 												</span>
 											</div>
 										</div>

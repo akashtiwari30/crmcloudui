@@ -1009,7 +1009,7 @@ th {
 .glyphicon-text-size:before {
   content: "\e241";
 }
-.glyphicon-text-color:before {
+.glyphicon-text-dark-color:before {
   content: "\e242";
 }
 .glyphicon-text-background:before {

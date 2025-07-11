@@ -1,38 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 :root {
   /* Base */
   --body-bg-color: #edeff1;
   --white-color: #ffffff;
   --white-color-2: #e7e7e7;
   --white-color-3: #e1e1e1;
-   --dark-blue-color: #012233;
-   --green-color: #33ed88;
-   --black-color: #111111;
+  --dark-blue-color: #012233;
+  --green-color: #33ed88;
+  --black-color: #111111;
   --black-color-2: #000;
   --black-color-3: #212529;
-  --light-color: #595959;
+  /* --light-color: #595959; */
+  --light-color: #e7f706;
   --light-color-2: #edeff1;
   --light-color-3: #414141;
+  --light-color-6: #848891;
+  
   --light-color-4: #cccccc;
-   --light-color-5: #f8f7fa;
-   --light-color-6: #6b7280;
-  --text-color: #425040;
+  --light-color-5: #f8f7fa;
+
+  --text-dark-color: #425040;
+  --text-light-color: #848891;
+
+  /* --text-dark-color: #00ffea;
+  --text-light-color: #eed707a2; */
+
+  --border-light-color:#cccccc;
+  --border-light-color-2:#edeff1;
+
   --muted-color: #6b7280;
-  --pink-color: #E83874;
+  --pink-color: #e83874;
   /* Primary  */
   --primary-color: #7367f0;
-  --primary-color-2: #625abf;
   /* secondary  */
-  --secondary-color: #ffff;
-  --secondary-color-2: #d3f9d8;
-  --secondary-color-3: #e1fded;
+  --secondary-color: #4c97ff;
 
-   /* Primary Button */
-  --btn-primary-bg: #7367f0;
+  /* Primary Button */
+  /* --btn-primary-bg: #487fff; */
+  /* --btn-primary-bg: #7367f0; */
+  --btn-primary-bg: #006bff;
   --btn-primary-text: #fff;
-  --btn-primary-border :#7367f0;
+  --btn-primary-border: #7367f0;
   --btn-primary-hover-bg: #625abf;
   --btn-primary-hover-text: #fff;
   --btn-primary-hover-border: #625abf;
@@ -63,22 +72,22 @@
   --bg-success-hover: #12cf90ee;
   --text-success: #000000;
   --warning-color: #f59e0b;
-  
+
+    --alert-bg-color: #d11a1a29;
+  --alert-text-color: #ff0000cc;
   --red-color: #ff0000;
   --bg-error: #e61414cb;
   --error-color: #e61414cb;
   --error-color-2: #ef4444;
 
-
-    /* Chart Colors  */
-  --chart-color-1:#7367f0;
-  --chart-color-2:#79a8ce;
-  --chart-color-3:#00E396;
-  --chart-color-4:#E83874;
-  --chart-color-5:#f79533c2;
-  --chart-color-6:#ef6e4d;
-  --chart-color-7:#ffa9a5;
-
+  /* Chart Colors  */
+  --chart-color-1: #7367f0;
+  --chart-color-2: #79a8ce;
+  --chart-color-3: #00e396;
+  --chart-color-4: #e83874;
+  --chart-color-5: #f79533c2;
+  --chart-color-6: #ef6e4d;
+  --chart-color-7: #ffa9a5;
 }
 
 .dark-mode {
@@ -86,28 +95,29 @@
   --white-color: #ffffff;
   --white-color-2: #e7e7e7;
   --white-color-3: #e1e1e1;
-   --black-color: #111111;
+  --black-color: #111111;
   --black-color-2: #000;
   --black-color-3: #212529;
   --light-color: #595959;
   --light-color-2: #edeff1;
   --light-color-3: #414141;
   --light-color-4: #cccccc;
-   --light-color-5: #f8f7fa;
-  --text-color: #425040;
+  --light-color-5: #f8f7fa;
+
+  --text-dark-color: #425040;
   --muted-color: #6b7280;
   /* Primary  */
-  --primary-color: #F79533;
+  --primary-color: #f79533;
   --primary-color-2: #033650ea;
   /* secondary  */
   --secondary-color: #ffff;
   --secondary-color-2: #d3f9d8;
   --secondary-color-3: #e1fded;
 
-   /* Primary Button */
-  --btn-primary-bg: #F79533;
+  /* Primary Button */
+  --btn-primary-bg: #f79533;
   --btn-primary-text: #fff;
-  --btn-primary-border: #F79533;
+  --btn-primary-border: #f79533;
   --btn-primary-hover-bg: #e57406;
   --btn-primary-hover-text: #fff;
   --btn-primary-hover-border: #e57406;
@@ -116,8 +126,8 @@
 
   /* Secondary Button */
   --btn-secondary-bg: #f795334d;
-  --btn-secondary-text: #F79533;
-  --btn-secondary-border: #F79533;
+  --btn-secondary-text: #f79533;
+  --btn-secondary-border: #f79533;
   --btn-secondary-hover-bg: #e57406;
   --btn-secondary-hover-text: #fff;
   --btn-secondary-hover-border: #e57406;
@@ -127,7 +137,7 @@
   /* Sidebar */
   --sidebar-bg-color: #fff;
   --sidebar-text-color: #444050;
-  --sidebar-hover-bg: #F79533;
+  --sidebar-hover-bg: #f79533;
   --sidebar-hover-text: #fff;
   /* --color-sidebar-active: #2563eb; */
   --color-subsidebar-bg-hover: #f5ab607a;
@@ -138,12 +148,13 @@
   --bg-success-hover: #12cf90ee;
   --text-success: #000000;
   --warning-color: #f59e0b;
-  
+
+  --alert-bg-color: #ff0101ab;
+  --alert-text-color: #ff0000;
   --red-color: #ff0000;
   --bg-error: #e61414cb;
   --error-color: #e61414cb;
   --error-color-2: #ef4444;
-
 
   /* Chart Colors  */
   /* --chart-color-1:#7367f0;
@@ -154,8 +165,12 @@
   --chart-color-6:#ef6e4d;
   --chart-color-7:#ffa9a5; */
 }
-
-
+.text-dark-color{
+  color: var(--text-dark-color);
+}
+.text-light-color{
+  color: var(--text-light-color);
+}
 .secondary-color {
   color: var(--secondary-color);
 }
@@ -245,10 +260,12 @@
 body {
   background-color: var(--body-bg-color) !important;
   font-family: "Inter", sans-serif;
+  color: var(--text-dark-color);
 }
 
-a:hover {
-  color: var(--primary-color);
+a:hover,
+a:focus {
+  color: var(--text-dark-color);
 }
 
 h1,
@@ -301,6 +318,8 @@ label {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 14px;
+  color: var(--text-dark-color);
 }
 .checkbox label,
 .radio label {
@@ -308,6 +327,7 @@ label {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: var(--text-dark-color);
 }
 a,
 button {

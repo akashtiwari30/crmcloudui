@@ -574,11 +574,11 @@ a.menu-item:hover {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease-in;
 } */
-.app-menu .fa-chevron-right {
+/* .app-menu .fa-chevron-right {
   font-size: 0.7em;
   padding-top: 9px;
   padding-right: 10px;
-}
+} */
 .app-menu .app-modules-dropdown {
   left: 229px;
   top: -1px;
@@ -835,11 +835,11 @@ a.menu-item:hover {
 .contents-bottomscroll {
   overflow-x: auto !important;
 }
-.fieldValue .value {
+/* .fieldValue .value {
   max-width: 85%;
   display: inline-block;
   word-break: break-word;
-}
+} */
 /* .fieldValue .value a {
   color: var(--black-color-2) !important;
 } */
@@ -2460,9 +2460,9 @@ th {
   width: 100%;
   height: 30px;
 }
-#composeEmailContainer .row {
+/* #composeEmailContainer .row {
   padding: 5px;
-}
+} */
 .navigationButton[disabled] {
   opacity: 0.2;
   pointer-events: none;
@@ -4770,9 +4770,9 @@ li.dashboardWidget {
 .dashBoardContainer .dashBoardWidgetFooter a:hover {
   color: black;
 }
-.muted {
+/* .muted {
   color: #6f6f6f;
-}
+} */
 .dashBoardContainer .entryIcon {
   font-size: 120%;
 }
