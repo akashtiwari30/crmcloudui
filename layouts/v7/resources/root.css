@@ -11,8 +11,8 @@
   --black-color: #111111;
   --black-color-2: #000;
   --black-color-3: #212529;
-  /* --light-color: #595959; */
-  --light-color: #e7f706;
+  --light-color: #595959;
+  /* --light-color: #e7f706; */
   --light-color-2: #edeff1;
   --light-color-3: #414141;
   --light-color-6: #848891;
@@ -342,7 +342,9 @@ button {
   cursor: pointer;
   text-decoration: none;
 }
-
+strong, b {
+   font-family: "Inter", sans-serif;
+}
 /* .bg-blue-btn {
   background-color: var(--primary-color);
   color: var(--secondary-color);
