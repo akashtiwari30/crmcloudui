@@ -11,8 +11,8 @@
   --black-color: #111111;
   --black-color-2: #000;
   --black-color-3: #212529;
-  /* --light-color: #595959; */
-  --light-color: #e7f706;
+  --light-color: #595959;
+  /* --light-color: #e7f706; */
   --light-color-2: #edeff1;
   --light-color-3: #414141;
   --light-color-6: #848891;
@@ -73,8 +73,8 @@
   --text-success: #000000;
   --warning-color: #f59e0b;
 
-    --alert-bg-color: #d11a1a29;
-  --alert-text-color: #ff0000cc;
+    --alert-bg-color: #7f76e259;
+  --alert-text-color: #006bffc4;
   --red-color: #ff0000;
   --bg-error: #e61414cb;
   --error-color: #e61414cb;
@@ -164,6 +164,10 @@
   --chart-color-5:#f79533c2;
   --chart-color-6:#ef6e4d;
   --chart-color-7:#ffa9a5; */
+}
+
+.primary-text-color{
+  color: var(--primary-color);
 }
 .text-dark-color{
   color: var(--text-dark-color);
@@ -328,6 +332,7 @@ label {
   font-weight: 500;
   font-style: normal;
   color: var(--text-dark-color);
+  white-space: nowrap;
 }
 a,
 button {
@@ -337,7 +342,9 @@ button {
   cursor: pointer;
   text-decoration: none;
 }
-
+strong, b {
+   font-family: "Inter", sans-serif;
+}
 /* .bg-blue-btn {
   background-color: var(--primary-color);
   color: var(--secondary-color);

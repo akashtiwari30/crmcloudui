@@ -15,7 +15,7 @@
         <div class="detailViewTitle" id="userPageHeader">
             <div class = "row">
                 <div class="col-md-5">
-                    <div class="col-md-5 recordImage" style="height: 50px;width: 70px;">
+                    <div class="col-md-5 recordImage" style="height: 50px;width: 70px;overflow:hidden;background-color: transparent !important;">
                         {assign var=NOIMAGE value=0}
                         {foreach key=ITER item=IMAGE_INFO from=$RECORD->getImageDetails()}
                             {if !empty($IMAGE_INFO.url)}

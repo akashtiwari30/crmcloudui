@@ -12,101 +12,101 @@
 		{include file="dashboards/DashBoardHeader.tpl"|vtemplate_path:$MODULE_NAME DASHBOARDHEADER_TITLE=vtranslate($MODULE, $MODULE)}
 		<br><div class="dashboardBanner"></div>
 		
-	{*	highlight-card start here *}
+{*	highlight-card start here *}
 
 <div class="highlight-card-container">
-
+  <div class="row">
     <!-- Bookings -->
-    <div class="highlight-card">
-      <div class="highlight-card-header">
-		<div class="icon-box primary-color">
-			<img src="layouts/v7/skins/images/ticket.svg" alt="ticket" />
-		</div>
-		<div class="highlight-card-content">
-			<div>
-				<p class="highlight-title">Bookings</p>
-			</div>
-			<div>
-				<h3 class="highlight-value">281</h3>
-			</div>
-			
-		</div>
-      </div>
-	  <hr>
-	  <div class="card-footer">
-        <div class="status"><span>+55%</span> than last week</div>
-      </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="highlight-card">
+          <div class="highlight-card-header">
+              <div class="icon-box primary-color">
+                <img src="layouts/v7/skins/images/ticket.svg" alt="ticket" />
+              </div>
+              <div class="highlight-card-content">
+                <div>
+                    <p class="highlight-title">Bookings</p>
+                </div>
+                <div>
+                    <h3 class="highlight-value">281</h3>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="card-footer">
+              <div class="status"><span>+55%</span> than last week</div>
+          </div>
+        </div>
     </div>
-
     <!-- Today's Users -->
-   <div class="highlight-card">
-      <div class="highlight-card-header">
-		<div class="icon-box dark-blue-color">
-			<img src="layouts/v7/skins/images/benefits.svg" alt="ticket" />
-		</div>
-		<div class="highlight-card-content">
-			<div>
-				<p class="highlight-title">Today's Users</p>
-			</div>
-			<div>
-				<h3 class="highlight-value">2,300</h3>
-			</div>
-			
-		</div>
-      </div>
-	  <hr>
-	  <div class="card-footer">
-        <div class="status"><span>+3%</span> than last month</div>
-      </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="highlight-card">
+          <div class="highlight-card-header">
+              <div class="icon-box dark-blue-color">
+                <img src="layouts/v7/skins/images/benefits.svg" alt="ticket" />
+              </div>
+              <div class="highlight-card-content">
+                <div>
+                    <p class="highlight-title">Today's Users</p>
+                </div>
+                <div>
+                    <h3 class="highlight-value">2,300</h3>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="card-footer">
+              <div class="status"><span>+3%</span> than last month</div>
+          </div>
+        </div>
     </div>
-
     <!-- Revenue -->
-    <div class="highlight-card">
-      <div class="highlight-card-header">
-		<div class="icon-box green-color">
-			<img src="layouts/v7/skins/images/revenue.svg" alt="ticket" />
-		</div>
-		<div class="highlight-card-content">
-			<div>
-				<p class="highlight-title">Revenue</p>
-			</div>
-			<div>
-				<h3 class="highlight-value">34k</h3>
-			</div>
-			
-		</div>
-      </div>
-	  <hr>
-	  <div class="card-footer">
-        <div class="status"><span>+1%</span> than yesterday</div>
-      </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="highlight-card">
+          <div class="highlight-card-header">
+              <div class="icon-box green-color">
+                <img src="layouts/v7/skins/images/revenue.svg" alt="ticket" />
+              </div>
+              <div class="highlight-card-content">
+                <div>
+                    <p class="highlight-title">Revenue</p>
+                </div>
+                <div>
+                    <h3 class="highlight-value">34k</h3>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="card-footer">
+              <div class="status"><span>+1%</span> than yesterday</div>
+          </div>
+        </div>
     </div>
-
     <!-- Followers -->
-    <div class="highlight-card">
-      <div class="highlight-card-header">
-		<div class="icon-box pink-color">
-			<img src="layouts/v7/skins/images/add-user.svg" alt="ticket" />
-		</div>
-		<div class="highlight-card-content">
-			<div>
-				<p class="highlight-title">Followers</p>
-			</div>
-			<div>
-				<h3 class="highlight-value">+91</h3>
-			</div>
-			
-		</div>
-      </div>
-	  <hr>
-	  <div class="card-footer">
-        <div class="status">Just updated</div>
-      </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="highlight-card">
+          <div class="highlight-card-header">
+              <div class="icon-box pink-color">
+                <img src="layouts/v7/skins/images/add-user.svg" alt="ticket" />
+              </div>
+              <div class="highlight-card-content">
+                <div>
+                    <p class="highlight-title">Followers</p>
+                </div>
+                <div>
+                    <h3 class="highlight-value">+91</h3>
+                </div>
+              </div>
+          </div>
+          <hr>
+          <div class="card-footer">
+              <div class="status">Just updated</div>
+          </div>
+        </div>
     </div>
-
   </div>
-
-	{*	highlight-card end here *}
+</div>
+{*	highlight-card end here *}
 
 
 		<div class="dashBoardTabContents clearfix">

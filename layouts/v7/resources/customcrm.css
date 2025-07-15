@@ -75,12 +75,18 @@ input[type="checkbox"]:checked {
 
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"],
+input[type="checkbox"],
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
-input[type="checkbox"],
 input[type="radio"] {
   border: 1px solid var(--primary-color) !important;
 }
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"],
+input[type="checkbox"] {
+  border-radius: 3px;
+}
+
 .radio input[type="radio"]:checked:after,
 .radio-inline input[type="radio"]:checked:after,
 input[type="radio"]:checked:after {
@@ -130,7 +136,7 @@ table {
 }
 .tab-btn.active,
 .tab-btn:hover {
-  border-bottom: 3px solid var(--black-color);
+  border-bottom: 3px solid var(--primary-color);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 a {
@@ -151,7 +157,7 @@ a {
 }
 .well {
   background-color: var(--light-color-2);
-  border: 1px solid var(--light-color-2);
+  border: 1px solid var(--border-light-color);
   border-radius: 5px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -167,12 +173,12 @@ a {
 
 .my-preferences {
   font-size: 16px;
-  color: var(--light-color);
+  color: var(--text-light-color);
 }
 .sign-out-btn {
   font-size: 14px;
   background-color: var(--light-color-2);
-  color: var(--light-color);
+  color: var(--text-light-color);
   padding: 6px;
   border-radius: 5px;
   padding-left: 16px;
@@ -184,9 +190,12 @@ a {
 #quickCreateModules {
   margin-top: 20px;
 }
+.quick-creat-list {
+  margin-bottom: 12px;
+}
 .quickCreateModule {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 #quickCreateModules [class^="vicon-"],
 #quickCreateModules [class*=" vicon-"] {
@@ -247,6 +256,10 @@ a {
   background-color: var(--primary-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+.search-header-container .modal-body {
+  height: 380px;
+  overflow-y: scroll;
 }
 .modal-header {
   padding: 5px 15px;
@@ -331,7 +344,13 @@ i.glyphicon.glyphicon-trash {
 }
 .fa-close {
   font-size: 15px;
+  -webkit-text-stroke: 1px var(--primary-color);
+  text-shadow: none;
 }
+/* #taskManagementContainer .fa-close {
+  -webkit-text-stroke: 1px var(--white-color);
+  text-shadow: none;
+} */
 /* dashboard header ends here  */
 
 /* dashboard  add widget nav tabs ends here  */
@@ -429,6 +448,7 @@ ul .mCSB_container a span {
     var(--btn-primary-hover-bg) 100%
   );
   color: var(--btn-primary-hover-text);
+  border-radius: 5px;
 }
 .comman-menu.active {
   background-color: var(--sidebar-hover-bg);
@@ -461,6 +481,10 @@ ul .mCSB_container a span {
 .active-app-item .app-icon-list,
 .active-app-item .app-name {
   color: var(--sidebar-hover-text);
+}
+.app-menu .active-app-item .fa-chevron-right,
+.app-menu .app-item:hover .fa-chevron-right {
+  color: var(--white-color);
 }
 .dropdown-menu.app-modules-dropdown li.active {
   background-color: var(--color-subsidebar-bg-hover);
@@ -642,6 +666,7 @@ ul .mCSB_container a span {
     var(--btn-primary-hover-bg) 100%
   ) !important;
   text-shadow: none;
+  box-shadow: none;
 }
 .btn-flat-success.focus:not(:active):not(.active):not(.btn-default),
 .btn-flat-success:focus:not(:active):not(.active):not(.btn-default),
@@ -654,22 +679,37 @@ ul .mCSB_container a span {
 
 .btn-danger {
   border: 1px solid var(--red-color);
-  background: var(--alert-bg-color);
-  color: var(--red-color);
+  background: var(--bg-error);
+  color: var(--white-color);
+}
+.btn-danger .fa-close {
+  -webkit-text-stroke: 1px var(--bg-error);
   text-shadow: none;
 }
-.btn-danger:hover{
-  background: var(--error-color-2);
-   border: 1px solid var(--red-color);
+.btn-submit .fa-check {
+  font-size: 15px;
+  -webkit-text-stroke: 1px var(--btn-primary-bg);
+  text-shadow: none;
 }
-
+.btn-danger:hover {
+  background: var(--error-color-2);
+  border: 1px solid var(--red-color);
+}
+.btn-danger.focus:not(:active):not(.active):not(.btn-default),
+.btn-danger:focus:not(:active):not(.active):not(.btn-default),
+.btn-flat-danger.focus:not(:active):not(.active):not(.btn-default),
+.btn-flat-danger:focus:not(:active):not(.active):not(.btn-default) {
+  background: var(--error-color-2);
+  border: 1px solid var(--red-color);
+  box-shadow: none;
+}
 .module-buttons.btn {
   padding: 8px 12px;
   margin: 4px 6px;
   border-radius: 2px;
-  background: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
-  border-color: var(--btn-primary-border);
+  background: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  border-color: var(--btn-secondary-border);
   border-width: thin;
 }
 
@@ -813,7 +853,29 @@ ul .mCSB_container a span {
   border: 1px solid var(--btn-primary-hover-border);
   border-color: var(--btn-primary-hover-border);
 }
+.btn-flat-info.active,
+.btn-flat-info:active,
+.btn-info.active,
+.btn-info:active,
+.open > .dropdown-toggle.btn-flat-info,
+.open > .dropdown-toggle.btn-info {
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid var(--btn-primary-hover-border);
+  background-image: linear-gradient(
+    to bottom,
+    var(--btn-primary-hover-bg) 0,
+    var(--btn-primary-hover-bg) 100%
+  );
+  color: var(--btn-primary-hover-text);
+  background-color: var(--btn-primary-hover-bg);
 
+}
+.btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info:active.focus, .btn-info:active:focus, .btn-info:active:hover, .open>.dropdown-toggle.btn-info.focus, .open>.dropdown-toggle.btn-info:focus, .open>.dropdown-toggle.btn-info:hover{
+   color: var(--btn-primary-hover-text);
+  background-color: var(--btn-primary-hover-bg);
+  border-color: var(--btn-primary-hover-border);
+}
 .btn-flat-info.focus:not(:active):not(.active):not(.btn-default),
 .btn-flat-info:focus:not(:active):not(.active):not(.btn-default),
 .btn-info.focus:not(:active):not(.active):not(.btn-default),
@@ -850,6 +912,7 @@ ul .mCSB_container a span {
   background-image: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  z-index: 1;
 }
 .btn-toolbar .btn-default.addButton {
   background-color: var(--btn-secondary-bg);
@@ -867,7 +930,35 @@ ul .mCSB_container a span {
   color: var(--btn-primary-text);
   border-color: var(--btn-primary-border);
 }
-
+.btn-default.disabled.focus,
+.btn-default.disabled:active,
+.btn-default.disabled:focus,
+.btn-default.disabled:hover,
+.btn-default[disabled].focus,
+.btn-default[disabled]:active,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover,
+.btn-flat-default.disabled.focus,
+.btn-flat-default.disabled:active,
+.btn-flat-default.disabled:focus,
+.btn-flat-default.disabled:hover,
+.btn-flat-default[disabled].focus,
+.btn-flat-default[disabled]:active,
+.btn-flat-default[disabled]:focus,
+.btn-flat-default[disabled]:hover,
+fieldset[disabled] .btn-default.focus,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:hover,
+fieldset[disabled] .btn-flat-default.focus,
+fieldset[disabled] .btn-flat-default:active,
+fieldset[disabled] .btn-flat-default:focus,
+fieldset[disabled] .btn-flat-default:hover {
+  background-color: var(--btn-primary-bg);
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: 1px solid var(--btn-primary-border);
+}
 .modal-footer .btn.confirm-box-ok.btn-primary,
 .modal-footer .btn.confirm-box-ok.btn-primary:active,
 .modal-footer .btn.confirm-box-ok.btn-primary:focus,
@@ -898,29 +989,32 @@ ul .mCSB_container a span {
 
 /* ------------------------- */
 #taskManagementContainer .btn-group button {
-  background-color: var(--black-color);
-  color: var(--white-color);
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  border: 1px solid var(--btn-secondary-border);
 }
 #taskManagementContainer button.active {
-  background: var(--btn-primary-hover-bg);
-  color: var(--btn-primary-hover-text);
+  background: var(--btn-secondary-hover-bg);
+  color: var(--btn-secondary-hover-text);
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--btn-primary-hover-border);
+  border: 1px solid var(--btn-secondary-hover-border);
 }
 .confirm-box-ok {
-  background-color: #007bff;
-  border-color: #007bff;
-  color: #fff;
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-border);
+  color: var(--btn-primary-text);
 }
 
 .confirm-box-ok:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: var(--btn-primary-hover-bg);
+  border-color: var(--btn-primary-hover-border);
+  color: var(--btn-primary-hover-text);
 }
 
 .confirm-box-btn-pad {
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding: 8px 20px;
   background-color: var(--btn-primary-bg);
   color: var(--btn-primary-text);
   border: none;
@@ -978,18 +1072,6 @@ ul .mCSB_container a span {
   .bootstrap-switch
   .bootstrap-switch-handle-off.bootstrap-switch-primary,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
-  background-color: var(--btn-secondary-bg) !important;
-  background-image: linear-gradient(
-    to bottom,
-    var(--btn-secondary-bg),
-    var(--btn-secondary-bg)
-  ) !important;
-  color: var(--btn-secondary-text) !important;
-  text-shadow: none !important;
-}
-
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
   background-color: var(--btn-primary-bg) !important;
   background-image: linear-gradient(
     to bottom,
@@ -997,6 +1079,18 @@ ul .mCSB_container a span {
     var(--btn-primary-bg)
   ) !important;
   color: var(--btn-primary-text) !important;
+  text-shadow: none !important;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
+  background-color: var(--btn-secondary-bg) !important;
+  background-image: linear-gradient(
+    to bottom,
+    var(--btn-secondary-bg),
+    var(--btn-secondary-bg)
+  ) !important;
+  color: var(--btn-secondary-text) !important;
   text-shadow: none !important;
 }
 /* ================================= Buttons ends here ==================================== */

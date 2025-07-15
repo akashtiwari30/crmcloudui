@@ -61,7 +61,7 @@
 					</div>
 					<div class="col-sm-9 col-xs-9">
 						<div class="pull-right">
-							<div class="pull-right cancelLinkContainer" style="margin-top:5px;">
+							<div class="pull-right cancelLinkContainer">
 								<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 							</div>
 							<button class="btn btn-submit saveButton" type="submit" name="saveButton" style="padding: 5px 12px;"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
@@ -102,7 +102,7 @@
 		<div class="modal-footer">
 			<div class="row-fluid">
 				<div class="pull-right">
-					<div class="pull-right cancelLinkContainer" style="margin-top:5px;">
+					<div class="pull-right cancelLinkContainer">
 						<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 					</div>
 					<button class="btn btn-submit updateBtn">{vtranslate('Update', $MODULE)}</button>
@@ -180,7 +180,7 @@
 					</span>
 					<span class="col-sm-6">
 						<div class="pull-right">
-							<div class="pull-right cancelLinkContainer" style="margin-top:5px;">
+							<div class="pull-right cancelLinkContainer">
 								<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 							</div>
 							<button class="btn btn-submit" name="saveButton"><strong>{vtranslate('LBL_REGISTER', $QUALIFIED_MODULE)}</strong></button>
@@ -239,13 +239,13 @@
 				<div class="row-fluid">
 					<span class="col-sm-8">
 						{if !$REGISTRATION_STATUS}
-							<a class="pull-left" href="#" name="signUp">{vtranslate('LBL_CREATE_AN_ACCOUNT', $QUALIFIED_MODULE)}</a>
+							<a class="pull-left create-new-acc" href="#" name="signUp">{vtranslate('LBL_CREATE_AN_ACCOUNT', $QUALIFIED_MODULE)}</a>
 						{else}&nbsp;
 						{/if}
 					</span>
 					<span class="col-sm-4">
 						<div class="pull-right">
-							<div class="pull-right cancelLinkContainer" style="margin-top:5px;">
+							<div class="pull-right cancelLinkContainer">
 								<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 							</div>
 							<button class="btn btn-submit" name="saveButton" type="submit"><strong>{vtranslate('LBL_LOGIN', $QUALIFIED_MODULE)}</strong></button>
@@ -281,7 +281,7 @@
 			<div class="modal-footer">
 				<div class="row-fluid">
 					<div class="pull-right">
-						<div class="pull-right cancelLinkContainer" style="margin-top:5px;">
+						<div class="pull-right cancelLinkContainer">
 							<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 						</div>
 						<button class="btn btn-submit okBtn" type="submit" style="padding: 5px 12px;">{vtranslate('LBL_OK', $QUALIFIED_MODULE)}</button>
@@ -309,7 +309,7 @@
 		<div class="modal-footer">
 			<div class="row-fluid">
 				<div class="pull-right">
-					<div class="pull-right cancelLinkContainer" style="margin-top:5px;">
+					<div class="pull-right cancelLinkContainer">
 						<button class="btn btn-submit" data-dismiss="modal">{vtranslate('LBL_OK', $QUALIFIED_MODULE)}</button>
 					</div>
 				</div>

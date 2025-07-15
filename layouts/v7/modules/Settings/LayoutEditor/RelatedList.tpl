@@ -29,7 +29,7 @@
 							<div style="list-style: none;">
 								{if php7_count($RELATION_FIELDS) eq 0}
 									<div class="well" style="height:72px;opacity:0.6;text-align:center;padding-top: 30px;"> 
-										<div>{vtranslate('LBL_NO_RELATION_TYPE',$QUALIFIED_MODULE)}.</div>
+										<div><span>{vtranslate('LBL_NO_RELATION_TYPE',$QUALIFIED_MODULE)}.</span></div>
 									</div>
 								{/if}
 

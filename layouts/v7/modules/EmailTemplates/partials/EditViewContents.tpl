@@ -19,13 +19,13 @@
             <table class="table table-borderless">
                 <tbody>
                     <tr>
-                        <td class="fieldLabel {$WIDTHTYPE} alignMiddle">{vtranslate('LBL_TEMPLATE_NAME', $MODULE)}&nbsp;<span class="redColor">*</span></td>
+                        <td class="fieldLabel {$WIDTHTYPE} alignMiddle"><label>{vtranslate('LBL_TEMPLATE_NAME', $MODULE)}&nbsp;<span class="redColor">*</span></label></td>
                         <td class="fieldValue {$WIDTHTYPE}">
                             <input id="{$MODULE}_editView_fieldName_templatename" type="text" class="inputElement" data-rule-required="true" name="templatename" value="{$RECORD->get('templatename')}">
                         </td>
                     </tr>
                     <tr>
-                        <td class="fieldLabel {$WIDTHTYPE} alignMiddle">{vtranslate('LBL_DESCRIPTION', $MODULE)}</td>
+                        <td class="fieldLabel {$WIDTHTYPE} alignMiddle"><label>{vtranslate('LBL_DESCRIPTION', $MODULE)}</label></td>
                         <td class="fieldValue {$WIDTHTYPE}">
                             <textarea class="inputElement col-lg-12" id="description" name="description">{$RECORD->get('description')}</textarea>
                         </td>
@@ -41,7 +41,7 @@
             <table class="table table-borderless">
                 <tbody>
                     <tr>
-                        <td class="fieldLabel {$WIDTHTYPE}">{vtranslate('LBL_SELECT_FIELD_TYPE', $MODULE)}&nbsp;<span class="redColor">*</span></td>
+                        <td class="fieldLabel {$WIDTHTYPE}"><label>{vtranslate('LBL_SELECT_FIELD_TYPE', $MODULE)}&nbsp;<span class="redColor">*</span></<label>label></td>
                         <td class="fieldValue {$WIDTHTYPE}">
                             <span class="filterContainer" >
                                 <input type=hidden name="moduleFields" data-value='{Vtiger_Functions::jsonEncode($ALL_FIELDS)}' />
@@ -62,7 +62,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="fieldLabel {$WIDTHTYPE}">{vtranslate('LBL_GENERAL_FIELDS', $MODULE)}</td>
+                        <td class="fieldLabel {$WIDTHTYPE}"><label>{vtranslate('LBL_GENERAL_FIELDS', $MODULE)}</label></td>
                         <td class="fieldValue {$WIDTHTYPE}">
                             <span class="col-sm-6 col-xs-6">
                                 <select class="inputElement select2 col-sm5 col-xs-5" id="generalFields" name="generalFields">
@@ -82,7 +82,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="fieldLabel {$WIDTHTYPE}">{vtranslate('LBL_SUBJECT', $MODULE)}&nbsp;<span class="redColor">*</span></td>
+                        <td class="fieldLabel {$WIDTHTYPE}"><label>{vtranslate('LBL_SUBJECT', $MODULE)}&nbsp;<span class="redColor">*</span></label></td>
                         <td class="fieldValue {$WIDTHTYPE}">
                             <div class="col-sm-6 col-xs-6">
                                 <input id="{$MODULE}_editView_fieldName_subject" type="text" {if $IS_SYSTEM_TEMPLATE_EDIT} disabled="disabled" {/if} class="inputElement col-lg-12" data-rule-required="true" name="subject" value="{$RECORD->get('subject')}"  spellcheck="true" />

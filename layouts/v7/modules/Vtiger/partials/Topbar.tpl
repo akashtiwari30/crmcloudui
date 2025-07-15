@@ -22,7 +22,7 @@
 					{*<input type="checkbox" id="toggle-action" name="toggle" checked />*}
 				</div>
 			</div>
-			<button id="theme-toggle" class="btn btn-default" title="Toggle Dark Mode">🌓</button>
+			{* <button id="theme-toggle" class="btn btn-default" title="Toggle Dark Mode">🌓</button> *}
 
 
 				<div class="navbar-header paddingTop5">
@@ -50,7 +50,7 @@
 								<div class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 									<a href="#" id="menubar_quickCreate" class="qc-button fa fa-solid fa-plus" title="{vtranslate('LBL_QUICK_CREATE',$MODULE)}" aria-hidden="true"></a>
 								</div>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="width:500px;">
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="width:750px;">
 									<li class="title" style="padding: 5px 0 0 15px;">
 										<h5>{vtranslate('LBL_QUICK_CREATE',$MODULE)}</h5>
 									</li>
@@ -65,7 +65,7 @@
 													{assign var=hideDiv value={!$moduleModel->isPermitted('CreateView') && $moduleModel->isPermitted('EditView')}}
 													{if $quickCreateModule == '1'}
 														{if $count % 3 == 0}
-															<div class="row">
+															<div class="row quick-creat-list">
 															{/if}
 															{* Adding two links,Event and Task if module is Calendar *}
 															{if $singularLabel == 'SINGLE_Calendar'}
@@ -76,8 +76,8 @@
 																</div>
 																{if $count % 3 == 2}
 																	</div>
-																	<br>
-																	<div class="row">
+																	
+																	<div class="row quick-creat-list">
 																{/if}
 																<div class="{if $hideDiv}create_restricted_{$moduleModel->getName()} hide{else}col-lg-4 col-xs-4{/if}">
 																	<a id="menubar_quickCreate_{$moduleModel->getName()}" class="quickCreateModule" data-name="{$moduleModel->getName()}"
@@ -121,7 +121,7 @@
 															{/if}
 															{if $count % 3 == 2}
 																</div>
-																<br>
+														
 															{/if}
 														{if !$hideDiv}
 															{assign var='count' value=$count+1}

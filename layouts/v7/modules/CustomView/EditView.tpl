@@ -12,7 +12,7 @@
 	{assign var=MODULE_FIELDS value=$MODULE_MODEL->getFields()}
 	<div id="filterContainer" class="create-new-list" style="height:100%">
 		<form id="CustomView" style="height:100%">
-			<div class="modal-content add-activity" style="height:100%">
+			<div class="modal-content add-activity">
 				<div class="overlayHeader">
 					{if $RECORD_ID}
 						{assign var="TITLE" value={vtranslate('LBL_EDIT_CUSTOM',$MODULE)}}
