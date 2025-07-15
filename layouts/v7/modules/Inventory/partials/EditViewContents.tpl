@@ -119,7 +119,7 @@
                                  {assign var=COUNTER value=$COUNTER+1}
                              {/if}
                              <td class="fieldLabel alignMiddle">
-                             {if $FIELD_MODEL->isMandatory() eq true} <span class="redColor">*</span> {/if}
+                             <label>{if $FIELD_MODEL->isMandatory() eq true} <span class="redColor">*</span> {/if}
                              {if $isReferenceField eq "reference"}
                                  {if $refrenceListCount > 1}
                                      {assign var="REFERENCED_MODULE_ID" value=$FIELD_MODEL->get('fieldvalue')}
@@ -138,7 +138,8 @@
                              {else}
                                  {vtranslate($FIELD_MODEL->get('label'), $MODULE)}
                              {/if}
-                             &nbsp;&nbsp;
+                            
+                             </label>
                          </td>
                          <td {if in_array($FIELD_MODEL->get('uitype'),array('19','69')) || $FIELD_NAME eq 'description'} class="fieldValue fieldValueWidth80" colspan="3" {assign var=COUNTER value=$COUNTER+1} {else} class="fieldValue" {/if}>
                              {if $FIELD_MODEL->getFieldDataType() eq 'image' || $FIELD_MODEL->getFieldDataType() eq 'file'}

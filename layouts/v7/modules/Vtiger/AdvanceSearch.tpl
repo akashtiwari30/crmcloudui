@@ -80,7 +80,7 @@
          <button class="btn marginLeft10px" {if $SOURCE_MODULE eq 'Home' } disabled="" {/if}
             id="advanceIntiateSave"><strong>{vtranslate('LBL_SAVE_AS_FILTER', $MODULE)}</strong></button>
          <input class="hide col-lg-3 marginLeft10px" type="text" value="" name="viewname" />
-         <button class="btn btn-submit hide col-lg-2 marginLeft10px" {if $SOURCE_MODULE eq 'Home' } disabled="" {/if}
+         <button class="btn btn-submit hide marginLeft10px" {if $SOURCE_MODULE eq 'Home' } disabled="" {/if}
             id="advanceSave"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
          {/if}
       </div>

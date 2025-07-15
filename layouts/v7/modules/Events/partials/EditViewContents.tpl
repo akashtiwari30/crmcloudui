@@ -17,7 +17,7 @@
 			<hr>
 			<table class="table table-borderless">
 				<tr>
-					<td class="fieldLabel alignMiddle">{vtranslate('LBL_INVITE_USERS', $MODULE)}</td>
+					<td class="fieldLabel alignMiddle"><label>{vtranslate('LBL_INVITE_USERS', $MODULE)}</label></td>
 					<td class="fieldValue">
 						<select id="selectedUsers" class="select2 inputElement" multiple name="selectedusers[]">
 							{foreach key=USER_ID item=USER_NAME from=$ACCESSIBLE_USERS}
@@ -41,7 +41,7 @@
 				{include file="ModalHeader.tpl"|vtemplate_path:$MODULE TITLE=$HEADER_TITLE}
 				<div class="modal-body">
 					<div class="container-fluid">
-						<div class="row" style="padding: 1%;padding-left: 3%;">{vtranslate('LBL_EDIT_RECURRING_EVENTS_INFO', $MODULE)}</div>
+						<div class="row" style="padding: 1%;padding-left: 3%;"><label>{vtranslate('LBL_EDIT_RECURRING_EVENTS_INFO', $MODULE)}</label></div>
 						<div class="row" style="padding: 1%;">
 							<span class="col-sm-12">
 								<span class="col-sm-4">

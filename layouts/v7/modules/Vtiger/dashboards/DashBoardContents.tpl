@@ -30,7 +30,7 @@
                         </a>
                     </li>
                 {/foreach}
-                <div class=" pull-right">
+                <div class="pull-right">
                     <div class="dropdown dashBoardDropDown">
                         <button class="btnn btn-defaultt bg-blue-btn reArrangeTabs dropdown-toggle" type="button" data-toggle="dropdown">{vtranslate('LBL_MORE',$MODULE)}
                             &nbsp;&nbsp;<span class="caret"></span></button>

@@ -114,9 +114,9 @@ body > .mCSB_inside > .mCSB_container {
 .main-container .row {
   min-height: inherit;
 } */
-.logo-container {
+/* .logo-container {
   margin: 10px 10px 10px 2px;
-}
+} */
 @media (min-width: 992px) {
   .global-nav .logo-container {
     display: inline-block;
@@ -2137,14 +2137,14 @@ th {
   position: fixed;
   z-index: 1099;
 }
-.overlayHeader .modal-header {
+/* .overlayHeader .modal-header {
   background: inherit;
   color: inherit;
   border-bottom-color: transparent;
 }
 .overlayHeader .modal-header .close {
   color: var(--black-color-2);
-}
+} */
 /* .overlayFooter {
   position: fixed;
   bottom: 0;
@@ -3838,7 +3838,7 @@ th {
 /******************************************* 
 ********** Calendar view styles ************
 ********************************************/
-.calendar-sidebar {
+/* .calendar-sidebar {
   width: 100% !important;
 }
 .calendar-navigator {
@@ -3995,7 +3995,7 @@ th {
   width: 5%;
   display: inline-block;
   text-align: center;
-}
+} */
 /******************************************* 
 ********** Calendar view styles end ********
 
@@ -4711,7 +4711,7 @@ form[name="notification_settings"] .select2-choice {
 /******************************************* 
 ********** Picklist Css ********
 ********************************************/
-.pickListValue {
+/* .pickListValue {
   background-color: #FFFFFF;
 }
 .pickListValue .picklistActions {
@@ -4719,7 +4719,7 @@ form[name="notification_settings"] .select2-choice {
 }
 .pickListValue:hover .picklistActions {
   opacity: 1;
-}
+} */
 /* .picklist-color {
   display: inline-block;
   padding: 2px 1px !important;
@@ -4808,7 +4808,7 @@ li.dashboardWidget {
   overflow-y: auto;
   max-height: 530px;
 } */
-.dashboardWidgetHeader .userList .select2 {
+/* .dashboardWidgetHeader .userList .select2 {
   width: 100% !important;
 }
 .dashBoardContainer .tabContainer li a .deleteTab {
@@ -4820,12 +4820,12 @@ li.dashboardWidget {
   margin-left: 10px;
   display: inline-block;
   opacity: 0.5;
-}
+} */
 /* .dashBoardContainer .tabContainer .sortable button {
   margin-bottom: 20px;
   margin-left: 10px;
 } */
-.dashBoardContainer .tabContainer li a:hover .deleteTab {
+/* .dashBoardContainer .tabContainer li a:hover .deleteTab {
   display: inline-block;
   opacity: 1;
 }
@@ -4839,11 +4839,11 @@ li.dashboardWidget {
 .dashBoardContainer .dashBoardWidgetFooter a:active,
 .dashBoardContainer .dashBoardWidgetFooter a:hover {
   color: black;
-}
+} */
 /* .muted {
   color: #6f6f6f;
 } */
-.dashBoardContainer .entryIcon {
+/* .dashBoardContainer .entryIcon {
   font-size: 120%;
 }
 .dashBoardContainer .addDashboardTab {
@@ -4871,7 +4871,7 @@ li.dashboardWidget {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 /******************************************* 
 ********** Picklist DependencyGraph ********
 ********************************************/
@@ -5121,7 +5121,7 @@ hr {
 /* .row ul li:first-child {
   margin-left: 0;
 } */
-.related-tabs .nav-tabs > li.active,
+/* .related-tabs .nav-tabs > li.active,
 .dashBoardContainer .nav-tabs > li.active,
 .contents.tabbable .nav-tabs > li.active,
 .related-tabs .nav-tabs > li:hover,
@@ -5132,10 +5132,9 @@ hr {
 .contents.tabbable .nav-tabs > li.active:focus {
   border: none;
   border-bottom: 3px solid #555;
-  /* margin: 0 10px 0 0; */
   border-radius: 6px;
   box-shadow: 0 0 10px 0 #ccc;
-}
+} */
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus,
@@ -5530,9 +5529,9 @@ hr {
 .date-picker-wrapper {
   z-index: 2000;
 }
-.date-picker-wrapper .footer {
+/* .date-picker-wrapper .footer {
   position: relative;
-}
+} */
 .productBundles {
   padding-left: 20px;
 }
@@ -6067,22 +6066,22 @@ div.tooltip-inner {
   border: 1px solid #eee;
   border-width: thin;
 } */
-.detailview-content .details.row .relatedContents {
+/* .detailview-content .details.row .relatedContents {
   background: white;
   padding: 0;
   margin-top: 0;
   border: 1px solid #eee;
   border-width: thin;
-}
+} */
 /* .related-tabs.row {
   background: #FFFFFF;
   margin-top: 10px;
 } */
-.detailViewContainer .commentContainer .commentTitle.row,
+/* .detailViewContainer .commentContainer .commentTitle.row,
 .detailViewContainer .commentContainer .showcomments {
   background: #FFFFFF;
   border-color: #eee;
-}
+} */
 .detailViewTwitterImage {
   position: absolute;
   top: -60px;
@@ -6317,7 +6316,7 @@ table#lineItemTab tbody tr > :nth-child(4) {
   left: 10px;
   float: right;
 }
-.overlayDetail .modal-content {
+/* .overlayDetail .modal-content {
   position: absolute;
   height: 100%;
   padding: 10px;
@@ -6332,7 +6331,7 @@ table#lineItemTab tbody tr > :nth-child(4) {
   background: #f9f9f9;
   padding-left: 0px;
   padding-right: 1px;
-}
+} */
 .overlayDetail .modal-body .left-block,
 .overlayDetail .modal-body .middle-block {
   padding-left: 0px;
@@ -6458,13 +6457,13 @@ table#lineItemTab tbody tr > :nth-child(4) {
   height: 100%;
   width: 100%;
 }
-.overlayEdit form .modal-body {
+/* .overlayEdit form .modal-body {
   padding-left: 10px;
   padding-right: 0px;
   background: #f9f9f9;
   height: 574px;
   overflow: auto;
-}
+} */
 .select2-container.select2-container-multi.select2,
 .editViewPageDiv .select2-container.select2-container-multi.select2 {
   height: auto!important;

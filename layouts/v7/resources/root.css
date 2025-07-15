@@ -73,8 +73,8 @@
   --text-success: #000000;
   --warning-color: #f59e0b;
 
-    --alert-bg-color: #d11a1a29;
-  --alert-text-color: #ff0000cc;
+    --alert-bg-color: #7f76e259;
+  --alert-text-color: #006bffc4;
   --red-color: #ff0000;
   --bg-error: #e61414cb;
   --error-color: #e61414cb;
@@ -164,6 +164,10 @@
   --chart-color-5:#f79533c2;
   --chart-color-6:#ef6e4d;
   --chart-color-7:#ffa9a5; */
+}
+
+.primary-text-color{
+  color: var(--primary-color);
 }
 .text-dark-color{
   color: var(--text-dark-color);
@@ -328,6 +332,7 @@ label {
   font-weight: 500;
   font-style: normal;
   color: var(--text-dark-color);
+  white-space: nowrap;
 }
 a,
 button {

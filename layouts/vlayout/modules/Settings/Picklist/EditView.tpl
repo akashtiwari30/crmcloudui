@@ -25,7 +25,7 @@
 		<input type="hidden" name="pickListValues" value='{Vtiger_Util_Helper::toSafeHTML(ZEND_JSON::encode($SELECTED_PICKLISTFIELD_EDITABLE_VALUES))}' />
 		<div class="modal-body tabbable">
 			<div class="control-group">
-				<div class="control-label">{vtranslate('LBL_ITEM_TO_RENAME',$QUALIFIED_MODULE)}</div>
+				<div class="control-label"><label>{vtranslate('LBL_ITEM_TO_RENAME',$QUALIFIED_MODULE)}</label></div>
 				<div class="controls">
 					{assign var=PICKLIST_VALUES value=$SELECTED_PICKLISTFIELD_EDITABLE_VALUES}
 					<select class="chzn-select" name="oldValue">
@@ -36,11 +36,11 @@
 						</optgroup>
 					</select>	
 				</div><br>
-				<div class="control-label"><span class="redColor">*</span>{vtranslate('LBL_ENTER_NEW_NAME',$QUALIFIED_MODULE)}</div>
+				<div class="control-label"><label><span class="redColor">*</span>{vtranslate('LBL_ENTER_NEW_NAME',$QUALIFIED_MODULE)}</label></div>
 				<div class="controls"><input type="text" data-validation-engine="validate[required, funcCall[Vtiger_Base_Validator_Js.invokeValidation]]" data-validator={Zend_Json::encode([['name'=>'FieldLabel']])} name="newValue"></div>
 				{if $SELECTED_PICKLISTFIELD_NON_EDITABLE_VALUES}
 					<br>
-					<div class="control-label">{vtranslate('LBL_NON_EDITABLE_PICKLIST_VALUES',$QUALIFIED_MODULE)}</div>
+					<div class="control-label"><label>{vtranslate('LBL_NON_EDITABLE_PICKLIST_VALUES',$QUALIFIED_MODULE)}</label></div>
 					<div class="controls nonEditableValuesDiv">
 						<ul class="nonEditablePicklistValues" style="list-style-type: none;">
 						{foreach from=$SELECTED_PICKLISTFIELD_NON_EDITABLE_VALUES key=NON_EDITABLE_VALUE_KEY item=NON_EDITABLE_VALUE}

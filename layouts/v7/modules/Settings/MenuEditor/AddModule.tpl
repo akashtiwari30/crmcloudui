@@ -39,11 +39,11 @@
 									</span>
 								{/foreach}
 							{else}
-								<h5>
+								<h6>
 									<center>
 										{vtranslate('LBL_NO', $QUALIFIED_MODULE)} {vtranslate('LBL_MODULES', $QUALIFIED_MODULE)} {vtranslate('LBL_FOUND', $QUALIFIED_MODULE)}.</h4>
 									</center>
-								</h5>
+								</h6>
 							{/if}
 						</div>
 					</div>
