@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-03 10:15:29
+/* Smarty version 4.5.4, created on 2025-07-16 06:41:30
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\ModuleManager\ListContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68665841a32d12_48318261',
+  'unifunc' => 'content_6877499a978146_43361793',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0059c1835b9712b4fdbf9ec9cc2ec0e42d1804b7' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\ModuleManager\\ListContents.tpl',
-      1 => 1751537728,
+      1 => 1752648071,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68665841a32d12_48318261 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6877499a978146_43361793 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="listViewPageDiv detailViewContainer" id="moduleManagerContents"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "><div id="listview-actions" class="listview-actions-container"><div class="clearfix"><h4 class="pull-left"><?php echo vtranslate('LBL_MODULE_MANAGER',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </h4><div class="pull-right"><div class="btn-group"><button class="btn btn-default" type="button" onclick='window.location.href="<?php echo $_smarty_tpl->tpl_vars['IMPORT_USER_MODULE_FROM_FILE_URL']->value;?>
@@ -44,8 +44,8 @@ if ($_smarty_tpl->tpl_vars['COUNTER']->value == 2) {?></tr><tr><?php $_smarty_tp
 "/><?php } else { ?><img class="alignMiddle" src="<?php echo vimage_path('DefaultModule.png');?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['MODULE_LABEL']->value;?>
 " title="<?php echo $_smarty_tpl->tpl_vars['MODULE_LABEL']->value;?>
-"/><?php }?></span><span class="col-lg-7 moduleName <?php if (!$_smarty_tpl->tpl_vars['MODULE_ACTIVE']->value) {?> dull <?php }?>"><h6 style="line-height: 0.5;"><?php echo $_smarty_tpl->tpl_vars['MODULE_LABEL']->value;?>
-</h6></span><?php $_smarty_tpl->_assignInScope('SETTINGS_LINKS', $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getSettingLinks());
+"/><?php }?></span><span class="col-lg-7 moduleName management-module-name <?php if (!$_smarty_tpl->tpl_vars['MODULE_ACTIVE']->value) {?> dull <?php }?>"><?php echo $_smarty_tpl->tpl_vars['MODULE_LABEL']->value;?>
+</span><?php $_smarty_tpl->_assignInScope('SETTINGS_LINKS', $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getSettingLinks());
 if (!in_array($_smarty_tpl->tpl_vars['MODULE_NAME']->value,$_smarty_tpl->tpl_vars['RESTRICTED_MODULES_LIST']->value) && (php7_count($_smarty_tpl->tpl_vars['SETTINGS_LINKS']->value) > 0)) {?><span class="col-lg-3 moduleblock"><span class="btn-group pull-right actions <?php if (!$_smarty_tpl->tpl_vars['MODULE_ACTIVE']->value) {?>hide<?php }?>"><button class="btn btn-default btn-sm dropdown-toggle unpin hiden " data-toggle="dropdown"><?php echo vtranslate('LBL_SETTINGS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 &nbsp;<i class="caret"></i></button><ul class="dropdown-menu pull-right dropdownfields"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SETTINGS_LINKS']->value, 'SETTINGS_LINK');

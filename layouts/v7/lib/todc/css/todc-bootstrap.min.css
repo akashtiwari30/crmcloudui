@@ -31,7 +31,6 @@
   border-left: 4px solid transparent;
 }
 body {
-  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
   line-height: 1.4;
   color: #333;
@@ -41,7 +40,6 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
@@ -5803,7 +5801,6 @@ li.list-group-header {
   word-spacing: normal;
   word-wrap: normal;
   white-space: normal;
-  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.4;
   font-size: 11px;
   font-weight: 700;
@@ -5889,7 +5886,6 @@ li.list-group-header {
   word-spacing: normal;
   word-wrap: normal;
   white-space: normal;
-  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.4;
   font-size: 13px;
   background-color: #fff;

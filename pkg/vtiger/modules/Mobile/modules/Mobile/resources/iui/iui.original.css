@@ -1,7 +1,6 @@
 /* iui.css (c) 2007-9 by iUI Project Members, see LICENSE.txt for license */
 body {
     margin: 0;
-    /* font-family: Helvetica; */
     background: #FFFFFF;
     color: var(--black-color-2);
     overflow-x: hidden;
@@ -85,7 +84,6 @@ body[orient="landscape"] > .toolbar > h1 {
     width: auto;
     height: 30px;
     line-height: 30px;
-    font-family: inherit;
     font-size: 12px;
     font-weight: bold;
     color: #FFFFFF;

@@ -24,7 +24,6 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
   color: var(--black-color-2);
   float: none;
   font-size: 11px;
-  font-family: "Microsoft Sans Serif", Tahoma, Arial, Verdana, Sans-Serif;
 }
 .cke_skin_v2 .cke_rtl *,
 .cke_skin_v2 .cke_rtl a:hover,
@@ -110,7 +109,6 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
   outline: auto 5px -webkit-focus-ring-color;
 }
 .cke_skin_v2 textarea.cke_source {
-  font-family: "Courier New", Monospace;
   font-size: small;
   background-color: #fff;
   white-space: pre;
@@ -235,7 +233,6 @@ li.cke_panel_listItem {
 }
 .cke_panel_grouptitle {
   font-size: 11px;
-  font-family: "Microsoft Sans Serif", Tahoma, Arial, Verdana, Sans-Serif;
   font-weight: bold;
   white-space: nowrap;
   background-color: #dcdcdc;
@@ -262,7 +259,6 @@ li.cke_panel_listItem {
 .cke_colorblock {
   padding: 3px;
   font-size: 11px;
-  font-family: "Microsoft Sans Serif", Tahoma, Arial, Verdana, Sans-Serif;
 }
 .cke_colorblock,
 .cke_colorblock a {
@@ -340,7 +336,6 @@ a:active.cke_colormore {
 .cke_skin_v2 .cke_hc a.cke_toolbox_collapser span {
   font-size: 10px;
   font-weight: bold;
-  font-family: Arial;
   display: inline;
 }
 .cke_skin_v2 .cke_rtl a.cke_toolbox_collapser,

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-14 09:05:23
+/* Smarty version 4.5.4, created on 2025-07-16 05:26:37
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\AddDashBoardTabForm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6874c8531e5522_12756728',
+  'unifunc' => 'content_6877380dc19619_23178588',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b6be3b1876c90573148e893b4e635ab80d0f7554' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\AddDashBoardTabForm.tpl',
-      1 => 1752483912,
+      1 => 1752483978,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6874c8531e5522_12756728 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6877380dc19619_23178588 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal-dialog modelContainer"><div class="modal-content"><?php ob_start();
 echo vtranslate('LBL_ADD_DASHBOARD');
 $_prefixVariable1=ob_get_clean();

@@ -1,19 +1,4 @@
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff') format('woff'),
-    /* Pretty Modern Browsers */
-    url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.svg#Oswald') format('svg');
-  /* Legacy iOS */
-  font-weight: normal;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-}
+
 
 *:focus,
 *:active,
@@ -22,62 +7,6 @@ a:active {
   outline: none;
 }
 
-@font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans/Regular/OpenSans-Regular.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/OpenSans/Regular/OpenSans-Regular.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/OpenSans/Regular/OpenSans-Regular.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/OpenSans/Regular/OpenSans-Regular.woff') format('woff'),
-    /* Pretty Modern Browsers */
-    url('../fonts/OpenSans/Regular/OpenSans-Regular.svg#svgFontName') format('svg');
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'OpenSans-Semibold';
-  src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff') format('woff'),
-    /* Pretty Modern Browsers */
-    url('../fonts/OpenSans/Semibold/OpenSans-Semibold.svg#svgFontName') format('svg');
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'ProximaNova-Regular';
-  src: url('../fonts/ProximanovaWebfont/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximanovaWebfont/ProximaNova-Regular.woff') format('woff'),
-    /* Pretty Modern Browsers */
-    url('../fonts/ProximanovaWebfont/ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
-  /* IE6-IE8 */
-  /* Safari, Android, iOS */
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
-@font-face {
-  font-family: 'ProximaNova-Semibold';
-  src: url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.ttf') format('truetype'),
-    /* Safari, Android, iOS */
-    url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.woff') format('woff'),
-    /* Pretty Modern Browsers */
-    url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype');
-  /* IE6-IE8 */
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
 
 /**********************************/
 /************ Layout **************/
@@ -92,7 +21,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* font-family: 'OpenSans-Regular', sans-serif; */
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -111,7 +39,6 @@ body>.mCSB_inside>.mCSB_container {
 }
 
 /* .select2-container .select2-choice {
-  font-family: 'OpenSans-Regular', sans-serif;
 } */
 
 /* .app-fixed-navbar {
@@ -442,11 +369,9 @@ body>.mCSB_inside>.mCSB_container {
 /** App Nav Styles */
 /* .active-app-title {
   white-space: nowrap;
-  font-family: Oswald, "OpenSans-Semibold", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .module-action-bar .module-title {
-  font-family: Oswald, "OpenSans-Semibold", "Helvetica Neue", Helvetica, sans-serif;
   color: #596875;
   margin: 12px 0;
   white-space: nowrap;
@@ -1160,10 +1085,10 @@ input[type="password"].inputElement {
   white-space: nowrap;
 } */
 
-#convertLeadContainer .inputElement,
+/* #convertLeadContainer .inputElement,
 #editCurrency .inputElement {
   width: 70%;
-}
+} */
 
 /* .confirm-box-ok {
   margin-right: 5px;
@@ -1697,7 +1622,6 @@ ul.unstyled {
   background: #fff;
   color: var(--black-color-2);
   box-shadow: 0 0 10px 0px #ccc;
-    font-family: "Inter", sans-serif;
   font-weight: 500;
   font-style: normal;
 } */
@@ -2196,7 +2120,6 @@ input[type=checkbox]:checked {
 strong,
 b,
 th {
-  /* font-family: 'OpenSans-Semibold', 'ProximaNova-Semibold', sans-serif; */
   font-weight: normal;
   font-size: 1.1em;
 }
@@ -3511,7 +3434,6 @@ th {
   margin: 0;
   padding: 0 20px 0 0;
   display: inline-block;
-  font-family: sans-serif;
   position: relative;
   width: 100%;
 }
@@ -4594,7 +4516,6 @@ th {
 }
 
 /* .updates_timeline>li .update_info h5 {
-  font-family: 'OpenSans-Semibold', sans-serif;
 }
 
 .updates_timeline>li .update_info h5 .field-name {
@@ -4620,7 +4541,6 @@ th {
 }
 
 .updates_timeline>li .update_info>.updateInfoContainer .update-name {
-  font-family: 'OpenSans-Semibold', sans-serif;
   margin-bottom: 2px;
 }
 
@@ -5567,7 +5487,7 @@ form[name="notification_settings"] .select2-choice {
   opacity: 1;
 } */
 
-.multiLevelTagList .tag {
+/* .multiLevelTagList .tag {
   margin-bottom: 5px;
 }
 
@@ -5599,7 +5519,7 @@ form[name="notification_settings"] .select2-choice {
 
 .detailShowAllModal .selectTagContainerborder {
   border-left: 3px solid #DDDDDD;
-}
+} */
 
 /* .detailShowAllModal .currentTag {
   height: 100px;
@@ -5607,7 +5527,7 @@ form[name="notification_settings"] .select2-choice {
   overflow: hidden;
 } */
 
-.editTagContainer .editTagContents {
+/* .editTagContainer .editTagContents {
   padding: 8px;
 }
 
@@ -5633,7 +5553,7 @@ form[name="notification_settings"] .select2-choice {
   margin: 3px;
   max-width: 80px;
   vertical-align: bottom;
-}
+} */
 
 /******************************************* 
 ********** Groups view styles ********
@@ -5751,7 +5671,7 @@ form[name="notification_settings"] .select2-choice {
 /******************************************* 
 ************* Dashboard Styles *************
 ********************************************/
-li.dashboardWidget {
+/* li.dashboardWidget {
   overflow: hidden;
 }
 
@@ -5768,9 +5688,9 @@ li.dashboardWidget {
   margin-top: 10px;
 }
 
-/* .tab-content {
+.tab-content {
   margin-top: 15px;
-} */
+}
 .dashBoardContainer .tabContainer ul {
   margin: 0 inherit;
 }
@@ -5780,12 +5700,12 @@ li.dashboardWidget {
   background-color: transparent;
 }
 
-/* .dashBoardContainer .tabContainer .tab-content {
+.dashBoardContainer .tabContainer .tab-content {
   margin-top: 10px;
-} */
+}
 .dashBoardContainer .dashBoardTabContents ul {
   margin-bottom: 0px;
-}
+} */
 
 /* .dashBoardContainer .dashBoardTabContents ul li {
   box-shadow: 0 0 10px 0px #ccc;
@@ -5802,7 +5722,7 @@ li.dashboardWidget {
   margin-bottom: 0;
 } */
 
-.dashboardWidgetContent .entryIcon {
+/* .dashboardWidgetContent .entryIcon {
   position: relative;
   top: 5px;
   padding-right: 10px;
@@ -5838,7 +5758,7 @@ li.dashboardWidget {
 .dashBoardWidgetFooter .filterContainer .radio-group input {
   vertical-align: middle;
   margin-top: -1px;
-}
+} */
 
 /* .importview-content,
 .customview-content {
@@ -5930,7 +5850,7 @@ li.dashboardWidget {
 /******************************************* 
 ********** Picklist DependencyGraph ********
 ********************************************/
-#dependencyGraph .tableHeading {
+/* #dependencyGraph .tableHeading {
   text-align: center;
   padding-top: 30px;
   font-size: 1.2em;
@@ -5960,7 +5880,7 @@ li.dashboardWidget {
 
 #dependencyGraph .dependencyMapping .pickListDependencyTable .selectedCell {
   background: #a9cbf5;
-}
+} */
 
 /******************************************* 
 ********** Rewriting select2 for consistency********
@@ -6023,7 +5943,7 @@ hr {
   margin: 10px 0;
 }
 
-.alert-mini {
+/* .alert-mini {
   padding: 3px 5px;
   font-size: 10px;
   display: inline-block;
@@ -6036,7 +5956,7 @@ hr {
 
 .blockHeader .btn-group {
   margin-top: 4px;
-}
+} */
 
 /* .input-info-addon {
   display: inline-block;
@@ -9128,7 +9048,7 @@ input:focus:-ms-input-placeholder {
   }
 }
 
-.duplicateHandlingContainer .tooltip-inner {
+/* .duplicateHandlingContainer .tooltip-inner {
   text-align: left !important;
 }
 
@@ -9147,9 +9067,9 @@ input:focus:-ms-input-placeholder {
 
 .duplicationMessageContainer .duplicationMessageHeader {
   margin-bottom: 8px;
-}
+} */
 
-.listViewRecordActions .quickView,
+/* .listViewRecordActions .quickView,
 .listViewRecordActions .markStar,
 .listViewRecordActions .markAsHeld,
 .listViewRecordActions .holdFollowupOn {
@@ -9165,7 +9085,6 @@ input:focus:-ms-input-placeholder {
 }
 
 .menu-item .custom-module {
-  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 12px;
   border-radius: 4px;
   padding: 2px;
@@ -9192,7 +9111,7 @@ input:focus:-ms-input-placeholder {
   padding: 3px 5px;
   color: #FFFFFF;
   background-color: #777;
-}
+} */
 
 /* .menuEditorItem .custom-module {
   border-radius: 4px;
@@ -9201,7 +9120,7 @@ input:focus:-ms-input-placeholder {
   background-color: #FFFFFF;
 } */
 
-.task-details .custom-module {
+/* .task-details .custom-module {
   border-radius: 4px;
   padding: 1px 4px;
   color: #FFFFFF;
@@ -9223,7 +9142,7 @@ input:focus:-ms-input-placeholder {
 
 .moduleIcon .custom-module {
   font-weight: bold;
-}
+} */
 
 /* .navbar-fixed-top {
   z-index: 1095 !important;

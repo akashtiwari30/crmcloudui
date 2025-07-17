@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 11:53:30
+/* Smarty version 4.5.4, created on 2025-07-16 10:00:51
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\Workflows\Tasks\VTCreateEntityTask.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686fa9ba5bfdc0_92698650',
+  'unifunc' => 'content_687778537a89b8_26650110',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3148f7a2fb79d006c44f304aee710ce8ef5f496e' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\Workflows\\Tasks\\VTCreateEntityTask.tpl',
-      1 => 1752148303,
+      1 => 1752659849,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686fa9ba5bfdc0_92698650 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="row"><div class="col-lg-9"><div class="row"><div class="col-lg-2" style="position:relative;top:4px;padding-right: 0px;"><label><?php echo vtranslate('LBL_MODULES_TO_CREATE_RECORD',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label> <span class="redColor">*</span></div><div class="col-lg-10"><?php $_smarty_tpl->_assignInScope('RELATED_MODULES_INFO', $_smarty_tpl->tpl_vars['WORKFLOW_MODEL']->value->getDependentModules());
+function content_687778537a89b8_26650110 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="row"><div class="col-lg-9"><div class="row"><div class="col-lg-3" style="padding-right: 0px;"><label><?php echo vtranslate('LBL_MODULES_TO_CREATE_RECORD',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+ <span class="redColor">*</span></label></div><div class="col-lg-5 site-select" style="padding-left:0px;"><?php $_smarty_tpl->_assignInScope('RELATED_MODULES_INFO', $_smarty_tpl->tpl_vars['WORKFLOW_MODEL']->value->getDependentModules());
 $_smarty_tpl->_assignInScope('RELATED_MODULES', call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'array_keys' ][ 0 ], array( $_smarty_tpl->tpl_vars['RELATED_MODULES_INFO']->value )));
 $_smarty_tpl->_assignInScope('RELATED_MODULE_MODEL_NAME', $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->entity_type);?><select class="select2" id="createEntityModule" name="entity_type" data-rule-required="true" style="min-width: 150px;"><option value=""><?php echo vtranslate('LBL_NONE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </option><?php

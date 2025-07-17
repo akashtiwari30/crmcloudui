@@ -21,10 +21,6 @@
 		<input type="hidden" id="fieldValueMapping" name="field_value_mapping" value='{Vtiger_Util_Helper::toSafeHTML($TASK_OBJECT->field_value_mapping)}' />
 		{foreach from=$FIELD_VALUE_MAPPING item=FIELD_MAP}
             <div class="row conditionRow" style="margin-bottom: 15px;">
-                <div class="cursorPointer col-sm-1 col-xs-1">
-                    <center> <i class="alignMiddle deleteCondition fa fa-trash" style="position: relative; top: 4px;"></i> </center>
-				</div>
-                
 				<div class="col-sm-3 col-xs-3">
 					<select name="fieldname" class="select2" style="min-width: 250px" data-placeholder="{vtranslate('LBL_SELECT_FIELD',$QUALIFIED_MODULE)}">
 						<option></option>
@@ -49,18 +45,19 @@
 					</select>
 				</div>
                     
-				<div class="fieldUiHolder col-sm-4 col-xs-4">
+				<div class="fieldUiHolder col-sm-3 col-xs-3">
 					<input type="text" class="getPopupUi inputElement" readonly="" name="fieldValue" value="{$FIELD_MAP['value']}" />
 					<input type="hidden" name="valuetype" value="{$FIELD_MAP['valuetype']}" />
+				</div>
+				<div class="cursorPointer col-sm-1 col-xs-1 paddingLeftZero">
+                    <div> <i class="alignMiddle deleteCondition fa fa-trash" style="position: relative; top: 4px;"></i> </div>
 				</div>
 			</div>
 		{/foreach}
 		{include file="FieldExpressions.tpl"|@vtemplate_path:$QUALIFIED_MODULE}
 		</div><br>
         <div class="row basicAddFieldContainer hide" style="margin-bottom: 15px;">
-            <div class="cursorPointer col-sm-1 col-xs-1">
-                <center> <i class="alignMiddle deleteCondition fa fa-trash" style="position: relative; top: 4px;"></i> </center>
-			</div>
+          
 			<div class="col-sm-3 col-xs-3">
 				<select name="fieldname" data-placeholder="{vtranslate('LBL_SELECT_FIELD',$QUALIFIED_MODULE)}" style="min-width: 250px">
 					<option></option>
@@ -84,9 +81,12 @@
                     {/foreach}
 				</select>
 			</div>
-			<div class="fieldUiHolder col-sm-4 col-xs-4">
+			<div class="fieldUiHolder col-sm-3 col-xs-3">
 				<input type="text" class="inputElement" readonly="" name="fieldValue" value="" />
 				<input type="hidden" name="valuetype" value="rawtext" />
+			</div>
+			<div class="cursorPointer col-sm-1 col-xs-1 paddingLeftZero">
+                <div> <i class="alignMiddle deleteCondition fa fa-trash" style="position: relative; top: 4px;"></i> </div>
 			</div>
 		</div>
 		{/strip}

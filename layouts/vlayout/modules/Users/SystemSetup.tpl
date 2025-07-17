@@ -22,14 +22,14 @@
             <style type="text/css">
                 {literal}
                     body{
-                        font-family: "Lucida Grande", Tahoma, Verdana;
+                       
                         background: #F4FAFC;
                         color : #555;
                         font-size: 13px;
                         min-height: 98%;
                     }
 					p{
-						font-family: "Lucida Grande", Tahoma,Verdana;
+						
 						font-size: 14px;
 					}
 					.offset2{

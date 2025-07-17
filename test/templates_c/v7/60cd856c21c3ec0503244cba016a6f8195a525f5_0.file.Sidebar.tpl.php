@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 06:56:22
+/* Smarty version 4.5.4, created on 2025-07-16 13:18:31
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\Vtiger\Sidebar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6875fb961aeeb7_75118521',
+  'unifunc' => 'content_6877a6a74488e8_90433011',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '60cd856c21c3ec0503244cba016a6f8195a525f5' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\Vtiger\\Sidebar.tpl',
-      1 => 1752562543,
+      1 => 1752671909,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/Users/UsersSidebar.tpl' => 1,
   ),
 ),false)) {
-function content_6875fb961aeeb7_75118521 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6877a6a74488e8_90433011 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['USER_MODEL']->value->isAdminUser()) {
 $_smarty_tpl->_assignInScope('SETTINGS_MODULE_MODEL', Settings_Vtiger_Module_Model::getInstance());
 $_smarty_tpl->_assignInScope('SETTINGS_MENUS', $_smarty_tpl->tpl_vars['SETTINGS_MODULE_MODEL']->value->getMenus());?><div class="settingsgroup"><div><input type="text" placeholder="<?php echo vtranslate('LBL_SEARCH_FOR_SETTINGS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
@@ -59,8 +59,8 @@ $_smarty_tpl->_assignInScope('MENU_URL', $_smarty_tpl->tpl_vars['USER_MODEL']->v
 $_smarty_tpl->_assignInScope('MENU_URL', $_smarty_tpl->tpl_vars['USER_MODEL']->value->getCalendarSettingsDetailViewUrl());
 }?><li><a data-name="<?php echo $_smarty_tpl->tpl_vars['MENU']->value;?>
 " href="<?php echo $_smarty_tpl->tpl_vars['MENU_URL']->value;?>
-" class="menuItemLabel <?php if ((isset($_smarty_tpl->tpl_vars['ACTIVE_BLOCK']->value['menu'])) && $_smarty_tpl->tpl_vars['ACTIVE_BLOCK']->value['menu'] == $_smarty_tpl->tpl_vars['MENU']->value) {?> settingsgroup-menu-color <?php }?>"><div><?php echo vtranslate($_smarty_tpl->tpl_vars['MENU_LABEL']->value,$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</div><img id="<?php echo $_smarty_tpl->tpl_vars['MENUITEM']->value->getId();?>
+" class="menuItemLabel <?php if ((isset($_smarty_tpl->tpl_vars['ACTIVE_BLOCK']->value['menu'])) && $_smarty_tpl->tpl_vars['ACTIVE_BLOCK']->value['menu'] == $_smarty_tpl->tpl_vars['MENU']->value) {?> settingsgroup-menu-color <?php }?>"><div><span><?php echo vtranslate($_smarty_tpl->tpl_vars['MENU_LABEL']->value,$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+</span></div><img id="<?php echo $_smarty_tpl->tpl_vars['MENUITEM']->value->getId();?>
 _menuItem" data-id="<?php echo $_smarty_tpl->tpl_vars['MENUITEM']->value->getId();?>
 " class="pinUnpinShortCut cursorPointer pull-right"data-actionurl="<?php echo $_smarty_tpl->tpl_vars['MENUITEM']->value->getPinUnpinActionUrl();?>
 "data-pintitle="<?php echo vtranslate('LBL_PIN',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>

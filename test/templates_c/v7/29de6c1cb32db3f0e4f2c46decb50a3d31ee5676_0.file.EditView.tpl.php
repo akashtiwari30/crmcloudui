@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-15 05:49:21
+/* Smarty version 4.5.4, created on 2025-07-16 05:26:55
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\CustomView\EditView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6875ebe1f00483_43102350',
+  'unifunc' => 'content_6877381f0c7307_89970820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '29de6c1cb32db3f0e4f2c46decb50a3d31ee5676' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\CustomView\\EditView.tpl',
-      1 => 1752558492,
+      1 => 1752560449,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6875ebe1f00483_43102350 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6877381f0c7307_89970820 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('SELECTED_FIELDS', $_smarty_tpl->tpl_vars['CUSTOMVIEW_MODEL']->value->getSelectedFields());
 $_smarty_tpl->_assignInScope('MODULE_FIELDS', $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getFields());?><div id="filterContainer" class="create-new-list" style="height:100%"><form id="CustomView" style="height:100%"><div class="modal-content add-activity"><div class="overlayHeader"><?php if ($_smarty_tpl->tpl_vars['RECORD_ID']->value) {
 ob_start();

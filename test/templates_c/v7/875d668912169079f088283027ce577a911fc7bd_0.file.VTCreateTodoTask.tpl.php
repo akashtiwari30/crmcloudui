@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 11:44:11
+/* Smarty version 4.5.4, created on 2025-07-16 10:02:51
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\Workflows\Tasks\VTCreateTodoTask.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686fa78bbac9d1_40430353',
+  'unifunc' => 'content_687778cbb00629_70150908',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '875d668912169079f088283027ce577a911fc7bd' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\Workflows\\Tasks\\VTCreateTodoTask.tpl',
-      1 => 1752147840,
+      1 => 1752659715,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686fa78bbac9d1_40430353 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687778cbb00629_70150908 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', array());?><div class="row" style="margin-bottom: 70px;"><div class="col-sm-9 col-xs-9"><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_TITLE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label><span class="redColor">*</span></div><div class="col-sm-8 col-xs-8"><input data-rule-required="true" class="inputElement" name="todo" type="text" value="<?php echo $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->todo;?>
+</label><span class="redColor">*</span></div><div class="col-sm-6 col-xs-6"><input data-rule-required="true" class="inputElement" name="todo" type="text" value="<?php echo $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->todo;?>
 " /><?php $_tmp_array = isset($_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']) ? $_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']->value : array();
 if (!(is_array($_tmp_array) || $_tmp_array instanceof ArrayAccess)) {
 settype($_tmp_array, 'array');
 }
 $_tmp_array['subject'] = 'subject';
 $_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', $_tmp_array);?></div></div><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_DESCRIPTION',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label></div><div class="col-sm-8 col-xs-8"><textarea class="inputElement" name="description" style="height: inherit;"><?php echo $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->description;?>
+</label></div><div class="col-sm-6 col-xs-6"><textarea class="inputElement" name="description" style="height: inherit;"><?php echo $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->description;?>
 </textarea><?php $_tmp_array = isset($_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']) ? $_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']->value : array();
 if (!(is_array($_tmp_array) || $_tmp_array instanceof ArrayAccess)) {
 settype($_tmp_array, 'array');
 }
 $_tmp_array['description'] = 'description';
 $_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', $_tmp_array);?></div></div><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_STATUS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label></div><div class="col-sm-5 col-xs-5"><?php $_smarty_tpl->_assignInScope('STATUS_PICKLIST_VALUES', $_smarty_tpl->tpl_vars['TASK_TYPE_MODEL']->value->getTaskBaseModule()->getField('taskstatus')->getPickListValues());?><select name="status" class="select2"><?php
+</label></div><div class="col-sm-6 col-xs-6 site-select"><?php $_smarty_tpl->_assignInScope('STATUS_PICKLIST_VALUES', $_smarty_tpl->tpl_vars['TASK_TYPE_MODEL']->value->getTaskBaseModule()->getField('taskstatus')->getPickListValues());?><select name="status" class="select2"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['STATUS_PICKLIST_VALUES']->value, 'STATUS_PICKLIST_VALUE', false, 'STATUS_PICKLIST_KEY');
 $_smarty_tpl->tpl_vars['STATUS_PICKLIST_VALUE']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['STATUS_PICKLIST_KEY']->value => $_smarty_tpl->tpl_vars['STATUS_PICKLIST_VALUE']->value) {
@@ -51,7 +51,7 @@ settype($_tmp_array, 'array');
 }
 $_tmp_array['taskstatus'] = 'taskstatus';
 $_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', $_tmp_array);?></div><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_PRIORITY',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label></div><div class="col-sm-5 col-xs-5"><?php $_smarty_tpl->_assignInScope('PRIORITY_PICKLIST_VALUES', $_smarty_tpl->tpl_vars['TASK_TYPE_MODEL']->value->getTaskBaseModule()->getField('taskpriority')->getPickListValues());?><select name="priority" class="select2"><?php
+</label></div><div class="col-sm-6 col-xs-6 site-select"><?php $_smarty_tpl->_assignInScope('PRIORITY_PICKLIST_VALUES', $_smarty_tpl->tpl_vars['TASK_TYPE_MODEL']->value->getTaskBaseModule()->getField('taskpriority')->getPickListValues());?><select name="priority" class="select2"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRIORITY_PICKLIST_VALUES']->value, 'PRIORITY_PICKLIST_VALUE', false, 'PRIORITY_PICKLIST_KEY');
 $_smarty_tpl->tpl_vars['PRIORITY_PICKLIST_VALUE']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['PRIORITY_PICKLIST_KEY']->value => $_smarty_tpl->tpl_vars['PRIORITY_PICKLIST_VALUE']->value) {
@@ -66,7 +66,7 @@ settype($_tmp_array, 'array');
 }
 $_tmp_array['taskpriority'] = 'taskpriority';
 $_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', $_tmp_array);?></div><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_ASSIGNED_TO',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label></div><div class="col-sm-5 col-xs-5"><select name="assigned_user_id" class="select2"><option value=""><?php echo vtranslate('LBL_SELECT_OPTION','Vtiger');?>
+</label></div><div class="col-sm-6 col-xs-6 site-select"><select name="assigned_user_id" class="select2"><option value=""><?php echo vtranslate('LBL_SELECT_OPTION','Vtiger');?>
 </option><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['ASSIGNED_TO']->value, 'ASSIGNED_USERS_LIST', false, 'LABEL');
 $_smarty_tpl->tpl_vars['ASSIGNED_USERS_LIST']->do_else = true;
@@ -92,7 +92,7 @@ settype($_tmp_array, 'array');
 }
 $_tmp_array['assigned_user_id'] = 'assigned_user_id';
 $_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', $_tmp_array);?></div><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_TIME',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label></div><div class="col-sm-3 col-xs-3" ><div class="input-group time"><?php if ($_smarty_tpl->tpl_vars['TASK_OBJECT']->value->time != '') {
+</label></div><div class="col-sm-6 col-xs-6" ><div class="input-group time"><?php if ($_smarty_tpl->tpl_vars['TASK_OBJECT']->value->time != '') {
 $_smarty_tpl->_assignInScope('TIME', $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->time);
 }?><input type="text" class="timepicker-default inputElement" value="<?php echo (isset($_smarty_tpl->tpl_vars['TIME']->value)) ? $_smarty_tpl->tpl_vars['TIME']->value : '';?>
 " name="time" /><span class="input-group-addon"><i class="fa fa-clock-o"></i></span></div></div></div><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_DUE_DATE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
@@ -109,8 +109,8 @@ $_smarty_tpl->tpl_vars['DATETIME_FIELD']->do_else = false;
 "><?php echo vtranslate($_smarty_tpl->tpl_vars['DATETIME_FIELD']->value->get('label'),$_smarty_tpl->tpl_vars['DATETIME_FIELD']->value->getModuleName());?>
 </option><?php
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select>&nbsp;</div><div class="col-sm-6 col-xs-6" style="vertical-align: super; word-wrap: break-word; padding: 0px;">(<?php echo vtranslate('LBL_THE_SAME_VALUE_IS_USED_FOR_START_DATE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-)</div></div></span><?php $_tmp_array = isset($_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']) ? $_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']->value : array();
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select>&nbsp;</div><div class="col-sm-6 col-xs-6" style="vertical-align: super; word-wrap: break-word; padding: 0px;"><label>(<?php echo vtranslate('LBL_THE_SAME_VALUE_IS_USED_FOR_START_DATE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+)</label></div></div></span><?php $_tmp_array = isset($_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']) ? $_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']->value : array();
 if (!(is_array($_tmp_array) || $_tmp_array instanceof ArrayAccess)) {
 settype($_tmp_array, 'array');
 }
@@ -121,7 +121,7 @@ if (!(is_array($_tmp_array) || $_tmp_array instanceof ArrayAccess)) {
 settype($_tmp_array, 'array');
 }
 $_tmp_array['due_date'] = 'due_date';
-$_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', $_tmp_array);?></div><div class="row form-group"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_SEND_NOTIFICATION',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+$_smarty_tpl->_assignInScope('SHOWN_FIELDS_LIST', $_tmp_array);?></div><div class="row form-group"><div class="col-sm-3 col-xs-3"><label><?php echo vtranslate('LBL_SEND_NOTIFICATION',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </label></div><div class="col-sm-6 col-xs-6"><input type="checkbox" name="sendNotification" value="true" <?php if ($_smarty_tpl->tpl_vars['TASK_OBJECT']->value->sendNotification) {?>checked<?php }?> /></div><?php $_tmp_array = isset($_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']) ? $_smarty_tpl->tpl_vars['SHOWN_FIELDS_LIST']->value : array();
 if (!(is_array($_tmp_array) || $_tmp_array instanceof ArrayAccess)) {
 settype($_tmp_array, 'array');

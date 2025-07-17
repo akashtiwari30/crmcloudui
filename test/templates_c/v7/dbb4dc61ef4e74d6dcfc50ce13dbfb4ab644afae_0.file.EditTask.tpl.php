@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 11:55:06
+/* Smarty version 4.5.4, created on 2025-07-16 10:12:16
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\Workflows\EditTask.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686faa1a73b6c0_26541384',
+  'unifunc' => 'content_68777b00945360_71114946',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dbb4dc61ef4e74d6dcfc50ce13dbfb4ab644afae' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\Workflows\\EditTask.tpl',
-      1 => 1752148465,
+      1 => 1752660724,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686faa1a73b6c0_26541384 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68777b00945360_71114946 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="fc-overlay-modal modal-content"><div class="modal-content"><?php ob_start();
 echo vtranslate('LBL_ADD_TASKS_FOR_WORKFLOW',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);
 $_prefixVariable1 = ob_get_clean();
@@ -34,8 +34,8 @@ $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_p
 " /><input type="hidden" name="task_id" value="<?php echo $_smarty_tpl->tpl_vars['TASK_ID']->value;?>
 " /><input type="hidden" name="taskType" id="taskType" value="<?php echo $_smarty_tpl->tpl_vars['TASK_TYPE_MODEL']->value->get('tasktypename');?>
 " /><input type="hidden" name="tmpTaskId" value="<?php echo $_smarty_tpl->tpl_vars['TASK_MODEL']->value->get('tmpTaskId');?>
-" /><?php if ($_smarty_tpl->tpl_vars['TASK_MODEL']->value->get('active') == 'false') {?> <input type="hidden" name="active" value="false" /> <?php }?><div id="scrollContainer"><div class="tabbable"><div class="row form-group"><div class="col-sm-6 col-xs-6"><div class="row"><div class="col-sm-3 col-xs-3"><span><?php echo vtranslate('LBL_TASK_TITLE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</span><span class="redColor">*</span></div><div class="col-sm-9 col-xs-9"><input name="summary" class="inputElement" data-rule-required="true" type="text" value="<?php echo $_smarty_tpl->tpl_vars['TASK_MODEL']->value->get('summary');?>
+" /><?php if ($_smarty_tpl->tpl_vars['TASK_MODEL']->value->get('active') == 'false') {?> <input type="hidden" name="active" value="false" /> <?php }?><div id="scrollContainer"><div class="tabbable"><div class="row form-group"><div class="col-sm-9 col-xs-9"><div class="row"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_TASK_TITLE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+</label><span class="redColor">*</span></div><div class="col-sm-6 col-xs-6"><input name="summary" class="inputElement" data-rule-required="true" type="text" value="<?php echo $_smarty_tpl->tpl_vars['TASK_MODEL']->value->get('summary');?>
 " /></div></div></div></div><?php if ($_smarty_tpl->tpl_vars['TASK_TYPE_MODEL']->value->get('tasktypename') == "VTEmailTask" && $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->trigger != null) {
 if (($_smarty_tpl->tpl_vars['TASK_OBJECT']->value->trigger != null)) {
 $_smarty_tpl->_assignInScope('trigger', $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->trigger);
@@ -61,8 +61,8 @@ $_smarty_tpl->tpl_vars['DATETIME_FIELD']->do_else = false;
 </option><?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select></div></div></div></div></div></div></div></div><?php }?><br><div class="taskTypeUi"><?php $_smarty_tpl->_subTemplateRender(((string)$_smarty_tpl->tpl_vars['TASK_TEMPLATE_PATH']->value), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
-?></div></div></div><div class="modal-overlay-footer clearfix" style="border-left-width: 0px;"><div class="row clearfix"><div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '><button type="submit" class="btn btn-submit" ><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+?></div></div></div></form></div><div class="modal-overlay-footer clearfix" style="border-left-width: 0px;"><div class="row clearfix"><div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '><button type="submit" class="btn btn-submit" ><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </button>&nbsp;&nbsp;<a href="#" class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a></div></div></div></form></div></div></div>
+</a></div></div></div></div></div>
 <?php }
 }

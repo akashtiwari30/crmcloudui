@@ -606,7 +606,6 @@ table.fc-border-separate {
 	overflow: hidden !important;
 	line-height: 8px !important;
 	font-size: 11px  !important;
-	font-family: monospace;
 	text-align: center;
 	cursor: s-resize;
 	}

@@ -24,14 +24,12 @@ function content_67d3e16e07d393_72355826 (Smarty_Internal_Template $_smarty_tpl)
 ?>
 <html lang="en"><head><title>Vtiger CRM Setup</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link REL="SHORTCUT ICON" HREF="layouts/v7/skins/images/favicon.ico"><link rel="stylesheet" href="libraries/bootstrap-legacy/css/bootstrap.min.css" type="text/css" media="screen" /><link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" /><style type="text/css">
 					body{
-						font-family: "Lucida Grande", Tahoma, Verdana;
 						background: #F4FAFC;
 						color : #555;
 						font-size: 13px;
 						min-height: 98%;
 					}
 					p{
-						font-family: "Lucida Grande", Tahoma,Verdana;
 						font-size: 14px;
 					}
 					.offset2{

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 12:56:05
+/* Smarty version 4.5.4, created on 2025-07-16 11:21:51
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\Currency\EditAjax.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686fb865705131_75774308',
+  'unifunc' => 'content_68778b4f834336_50031842',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd4f29b872eaeec33a7f7a4452b63e2d5016adc51' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\Currency\\EditAjax.tpl',
-      1 => 1744629584,
+      1 => 1752664841,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686fb865705131_75774308 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68778b4f834336_50031842 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('CURRENCY_MODEL_EXISTS', true);
 $_smarty_tpl->_assignInScope('CURRENCY_ID', $_smarty_tpl->tpl_vars['RECORD_MODEL']->value->getId());
 if (empty($_smarty_tpl->tpl_vars['CURRENCY_ID']->value)) {
@@ -35,9 +35,8 @@ ob_start();
 echo vtranslate('LBL_ADD_NEW_CURRENCY',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);
 $_prefixVariable2 = ob_get_clean();
 $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable2);
-}
-$_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "ModalHeader.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('TITLE'=>$_smarty_tpl->tpl_vars['HEADER_TITLE']->value), 0, true);
-?><div class="modal-content"><form id="editCurrency" class="form-horizontal" method="POST"><input type="hidden" name="record" value="<?php echo $_smarty_tpl->tpl_vars['CURRENCY_ID']->value;?>
+}?><div class="modal-content"><?php $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "ModalHeader.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('TITLE'=>$_smarty_tpl->tpl_vars['HEADER_TITLE']->value), 0, true);
+?><form id="editCurrency" class="form-horizontal" method="POST"><input type="hidden" name="record" value="<?php echo $_smarty_tpl->tpl_vars['CURRENCY_ID']->value;?>
 " /><div class="modal-body"><div class="row-fluid"><div class="form-group"><label class="control-label fieldLabel col-sm-5"><?php echo vtranslate('LBL_CURRENCY_NAME',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 &nbsp;<span class="redColor">*</span></label><div class="controls fieldValue col-xs-6"><select class="select2 inputElement" name="currency_name"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['ALL_CURRENCIES']->value, 'CURRENCY_MODEL', false, 'CURRENCY_ID', 'currencyIterator', array (

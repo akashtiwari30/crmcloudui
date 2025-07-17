@@ -1,85 +1,12 @@
 @import "variables.less";
 
-@font-face {
-    font-family: 'Oswald';
-    src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.svg#Oswald') format('svg');
-    /* Legacy iOS */
-    font-weight: normal;
-    font-style: normal;
-    text-rendering: optimizeLegibility;
-}
+
 
 *:focus,
 *:active,
 a:focus,
 a:active {
     outline: none;
-}
-
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src: url('../fonts/OpenSans/Regular/OpenSans-Regular.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/OpenSans/Regular/OpenSans-Regular.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/OpenSans/Regular/OpenSans-Regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/OpenSans/Regular/OpenSans-Regular.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/OpenSans/Regular/OpenSans-Regular.svg#svgFontName') format('svg');
-    /* Legacy iOS */
-}
-
-@font-face {
-    font-family: 'OpenSans-Semibold';
-    src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/OpenSans/Semibold/OpenSans-Semibold.svg#svgFontName') format('svg');
-    /* Legacy iOS */
-}
-
-@font-face {
-    font-family: 'ProximaNova-Regular';
-    src: url('../fonts/ProximanovaWebfont/ProximaNova-Regular.ttf') format('truetype'),
-        url('../fonts/ProximanovaWebfont/ProximaNova-Regular.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/ProximanovaWebfont/ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
-    /* IE6-IE8 */
-    /* Safari, Android, iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-
-@font-face {
-    font-family: 'ProximaNova-Semibold';
-    src: url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype');
-    /* IE6-IE8 */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
 }
 
 /**********************************/
@@ -95,7 +22,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    // font-family: 'OpenSans-Regular', sans-serif;
     font-size: 12px;
     font-weight: normal;
     font-style: normal;
@@ -429,11 +355,9 @@ body>.mCSB_inside>.mCSB_container {
 
 // .active-app-title {
 //     white-space: nowrap;
-//     font-family: Oswald, "OpenSans-Semibold", "Helvetica Neue", Helvetica, sans-serif;
 // }
 
 // .module-action-bar .module-title {
-//     font-family: Oswald, "OpenSans-Semibold", "Helvetica Neue", Helvetica, sans-serif;
 //     color: @blockHeaderFontColor;
 //     margin: 12px 0;
 //     white-space: nowrap;
@@ -1121,10 +1045,10 @@ a {
 
 //removed reference wrapper
 
-#convertLeadContainer .inputElement,
-#editCurrency .inputElement {
-    width: 70%;
-}
+// #convertLeadContainer .inputElement,
+// #editCurrency .inputElement {
+//     width: 70%;
+// }
 
 // .confirm-box-ok {
 //     margin-right: 5px;
@@ -2192,7 +2116,6 @@ input[type=checkbox]:checked {
 strong,
 b,
 th {
-    // font-family: 'OpenSans-Semibold', 'ProximaNova-Semibold', sans-serif;
     font-weight: normal;
     font-size: 1.1em;
 }
@@ -3515,7 +3438,6 @@ th {
     margin: 0;
     padding: 0 20px 0 0;
     display: inline-block;
-    font-family: sans-serif;
     position: relative;
     width: 100%;
 }
@@ -4608,7 +4530,6 @@ th {
 }
 
 .updates_timeline>li .update_info h5 {
-    font-family: 'OpenSans-Semibold', sans-serif;
 
     .field-name {
         color: #2b879e;
@@ -4633,7 +4554,6 @@ th {
     }
 
     .update-name {
-        font-family: 'OpenSans-Semibold', sans-serif;
         margin-bottom: 2px;
     }
 
@@ -6056,21 +5976,21 @@ hr {
     margin: 10px 0;
 }
 
-.alert-mini {
-    padding: 3px 5px;
-    font-size: 10px;
-    display: inline-block;
-    margin-bottom: 0;
+// .alert-mini {
+//     padding: 3px 5px;
+//     font-size: 10px;
+//     display: inline-block;
+//     margin-bottom: 0;
 
-}
+// }
 
-.blockHeader h4 {
-    margin: 10px 0;
-}
+// .blockHeader h4 {
+//     margin: 10px 0;
+// }
 
-.blockHeader .btn-group {
-    margin-top: 4px;
-}
+// .blockHeader .btn-group {
+//     margin-top: 4px;
+// }
 
 // .input-info-addon {
 //     display: inline-block;
@@ -9317,7 +9237,6 @@ input:focus:-ms-input-placeholder {
 }
 
 .menu-item .custom-module {
-    font-family: 'OpenSans-Regular', sans-serif;
     font-size: 12px;
     border-radius: 4px;
     padding: 2px;

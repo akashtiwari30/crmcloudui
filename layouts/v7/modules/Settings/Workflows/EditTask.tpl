@@ -28,10 +28,10 @@
                <div id="scrollContainer">
                   <div class="tabbable">
                      <div class="row form-group">
-                        <div class="col-sm-6 col-xs-6">
+                        <div class="col-sm-9 col-xs-9">
                             <div class="row">
-                                <div class="col-sm-3 col-xs-3"><span>{vtranslate('LBL_TASK_TITLE',$QUALIFIED_MODULE)}</span><span class="redColor">*</span></div>
-                                <div class="col-sm-9 col-xs-9"><input name="summary" class="inputElement" data-rule-required="true" type="text" value="{$TASK_MODEL->get('summary')}" /></div>
+                                <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_TASK_TITLE',$QUALIFIED_MODULE)}</label><span class="redColor">*</span></div>
+                                <div class="col-sm-6 col-xs-6"><input name="summary" class="inputElement" data-rule-required="true" type="text" value="{$TASK_MODEL->get('summary')}" /></div>
                             </div>
                         </div>
                      </div>
@@ -93,16 +93,18 @@
                      </div>
                   </div>
                </div>
-				<div class="modal-overlay-footer clearfix" style="border-left-width: 0px;">
-					<div class="row clearfix">
-						<div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
-							<button type="submit" class="btn btn-submit" >{vtranslate('LBL_SAVE', $MODULE)}</button>&nbsp;&nbsp;
-							<a href="#" class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-						</div>
-					</div>
-				</div>
+				
             </form>
          </div>
+         <div class="modal-overlay-footer clearfix" style="border-left-width: 0px;">
+            <div class="row clearfix">
+               <div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
+                  <button type="submit" class="btn btn-submit" >{vtranslate('LBL_SAVE', $MODULE)}</button>&nbsp;&nbsp;
+                  <a href="#" class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+               </div>
+            </div>
+         </div>
+
      </div>
    </div>
 {/strip}

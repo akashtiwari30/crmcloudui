@@ -55,7 +55,64 @@
 .dashBoardContainer .dashBoardTabContents ul li:last-child {
   margin-bottom: 0;
 }
+li.dashboardWidget {
+  overflow: hidden;
+}
+.dashboardWidgetHeader .title {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.dashboardWidgetHeader:hover {
+  cursor: move;
+}
+.dashBoardContainer .tabContainer {
+  margin-top: 10px;
+}
+.dashBoardContainer .tabContainer ul {
+  margin: 0 inherit;
+}
+.dashBoardContainer .tabContainer .nav {
+  font-size: 15px;
+  background-color: transparent;
+}
 
+.dashBoardContainer .dashBoardTabContents ul {
+  margin-bottom: 0px;
+}
+
+.dashboardWidgetContent .entryIcon {
+  position: relative;
+  top: 5px;
+  padding-right: 10px;
+}
+.dashBoardWidgetFooter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: var(--white-color);
+  font-size: 14px;
+}
+.dashBoardWidgetFooter .footerIcons {
+  padding: 8px 15px 0px 0px;
+  color: var(--text-light-color);
+}
+.dashBoardWidgetFooter .filterContainer {
+  position: absolute;
+  padding: 10px 7px;
+  display: none;
+  height: auto;
+  width: 100%;
+  background:var(--white-color);
+  border: 1px solid var(--border-light-color);
+  bottom: 30px;
+  font-size: 11px;
+}
+.dashBoardWidgetFooter .filterContainer .radio-group input {
+  vertical-align: middle;
+  margin-top: -1px;
+}
 .search-container {
   min-height: 300px;
   position: absolute;
@@ -122,11 +179,11 @@
   /* color: #ddd; */
   /* margin-top: 5px; */
   padding: 4px 12px;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
   /* vertical-align: top; */
   border: 1px solid #ddd;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -145,6 +202,9 @@
   width: 300px;
   margin: 1px 0 1px 5px;
   /* vertical-align: middle; */
+}
+.search-links-container .search-link {
+  border-radius: 10px;
 }
 .searchWorkflows {
   border: 0;
@@ -196,9 +256,48 @@
 #quickCreateModules a.quickCreateModule {
   padding: 7px;
 }
+.listViewRecordActions .quickView,
+.listViewRecordActions .markStar,
+.listViewRecordActions .markAsHeld,
+.listViewRecordActions .holdFollowupOn {
+  margin-top: 4px;
+}
+.app-menu .module-icon .custom-module {
+  font-size: 14px;
+  border-radius: 4px;
+  color: var(--black-color-2);
+  background-color: var(--white-color);
+  padding: 4px 10px 4px 5px;
+}
+.menu-item .custom-module {
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 2px;
+  color: var(--black-color-2);
+  background-color: var(--white-color);
+}
+.modules-menu .custom-module {
+  color: var(--text-dark-color);
+  margin-left: 0px;
+  display: block;
+  border: 1px solid var(--border-light-color);
+  border-radius: 4px;
+  padding: 3px 4px 3px 2px;
+  font-size: 12px;
+  width: 26px;
+  height: 24px;
+}
+#quickCreateModules .custom-module,
+.workflowListContainer .custom-module,
+.dashBoardTabContents .custom-module {
+  border-radius: 4px;
+  padding: 3px 5px;
+  color: var(--text-dark-color);
+  background-color: var(--light-color-2);
+}
+
 #quickCreateModules a.quickCreateModule:hover {
   background-color: var(--light-color-2);
-
   border-radius: 5px;
 }
 
@@ -229,7 +328,7 @@
 .filterConditionContainer .header {
   padding-bottom: 10px;
   font-size: 15px;
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .filterConditionContainer .conditionRow {
@@ -278,13 +377,13 @@
 }
 
 .inputElement {
-  height: 35px;
+  height: 36px;
   width: 100%;
   border-radius: 5px;
   box-shadow: none;
   border: 1px solid var(--border-light-color);
   border-width: thin;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -385,13 +484,13 @@ input[type="password"].inputElement {
 }
 
 .select2-container-multi .select2-choices {
-  /* min-height: 28px; */
+  min-height: 35px !important;
   border-radius: 5px;
   border-color: var(--border-light-color);
   position: initial;
   /* z-index: 3; */
   padding: 5px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 400;
   font-style: normal;
 }
@@ -401,7 +500,7 @@ input[type="password"].inputElement {
   padding: 1px 10px;
   font-size: 14px;
   color: var(--text-light-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -422,7 +521,7 @@ input[type="password"].inputElement {
   text-align: center;
   color: var(--white-color);
   font-size: 16px;
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 700;
 }
 
@@ -439,14 +538,14 @@ input[type="password"].inputElement {
 
 #taskManagementContainer .input-group input {
   padding: 17px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 
 #taskManagementContainer .input-group .quickTask {
   border-radius: 5px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -478,7 +577,7 @@ input[type="password"].inputElement {
 
 #taskManagementContainer .entries .task {
   padding: 6px 10px 5px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 13px;
@@ -620,7 +719,7 @@ input[type="password"].inputElement {
   font-size: 15px;
   background-color: transparent;
   color: var(--primary-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   display: block;
@@ -699,7 +798,7 @@ input[type="password"].inputElement {
 .app-menu .app-modules-dropdown li a .module-name {
   padding-left: 8px;
   word-wrap: break-word;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -848,7 +947,7 @@ ul .mCSB_container a span {
 .bootbox-body {
   word-wrap: break-word;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -1127,7 +1226,7 @@ ul .mCSB_container a span {
   padding: 16px 12px;
   border-radius: 6px;
   /* box-shadow: 0 0 10px 0px var(--light-color-4); */
-  /* margin-top: 30px; */
+  margin-top: 24px;
 }
 
 .main-container {
@@ -1150,7 +1249,7 @@ ul .mCSB_container a span {
 
 .search-list {
   border: 0;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -1599,7 +1698,7 @@ ul .mCSB_container a span {
 }
 
 .configColumnsContainer .selectedFieldsContainer {
-  border-right: 2px solid #dddddd;
+  border-right: 2px solid var(--border-light-color);
   min-height: 300px;
 }
 
@@ -1929,12 +2028,12 @@ input[type="checkbox"]:checked {
 }
 
 .listSearchContributor {
-  min-height: 28px;
+  min-height: 40px;
   width: 100%;
   min-width: 100px;
   font-size: 14px;
   color: var(--text-light-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -2208,6 +2307,26 @@ input[type="checkbox"]:checked {
   display: flex;
   flex-wrap: wrap;
 }
+.task-details .custom-module {
+  border-radius: 4px;
+  padding: 1px 4px;
+  color: var(--text-dark-color);
+  background-color: var(--light-color-2);
+}
+.related-tabs .custom-module,
+#relatedmenuList .custom-module {
+  border-radius: 4px;
+  color: var(--text-dark-color);
+  background-color: var(--light-color-2);
+  padding: 5px 7px;
+  font-weight: bold;
+}
+.record-header .custom-module {
+  font-size: 30px;
+}
+.moduleIcon .custom-module {
+  font-weight: bold;
+}
 
 .nav-tabs > li {
   /* float: none; */
@@ -2289,7 +2408,7 @@ input[type="checkbox"]:checked {
 }
 
 .related-tabs .tab-label strong {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -2300,7 +2419,7 @@ input[type="checkbox"]:checked {
 .detailview-table .fieldLabel {
   width: 20%;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   color: var(--text-dark-color);
@@ -2310,7 +2429,7 @@ input[type="checkbox"]:checked {
   width: 30%;
   font-size: 14px;
   color: var(--text-dark-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -2365,7 +2484,7 @@ input[type="checkbox"]:checked {
   text-align: right;
   color: var(--text-dark-color);
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: italic;
 }
@@ -2448,14 +2567,14 @@ input[type="checkbox"]:checked {
   margin-left: 15px;
   margin-bottom: 5px;
   padding-bottom: 5px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-style: normal;
   margin-bottom: 7px;
   font-size: 15px;
 }
 
 .updates_timeline > li .update_info > .updateInfoContainer .update-name {
-  /* font-family: "Inter", sans-serif;
+  /* font-family: var(--font-secondary);
   font-style: normal;
   font-size: 15px; */
   margin-bottom: 2px;
@@ -2496,7 +2615,7 @@ input[type="checkbox"]:checked {
 
 .select2-results li {
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   border-radius: 5px;
@@ -2594,7 +2713,7 @@ td.listViewEntryValue.value.textOverflowEllipsis {
 .control-label {
   font-size: 15px;
   color: var(--text-dark-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 600;
   font-style: normal;
 }
@@ -2648,7 +2767,7 @@ td.listViewEntryValue.value.textOverflowEllipsis {
   margin: 0px 2px;
   border-radius: 20px;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -2669,8 +2788,17 @@ td.listViewEntryValue.value.textOverflowEllipsis {
 }
 
 .tag[data-type="public"] {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  background-color: var(--btn-secondary-bg);
+  border-color: var(--btn-primary-hover-border);
+  color: var(--btn-secondary-text);
+}
+.tag[data-type="public"] .fa-pencil,
+.tag[data-type="public"] i.activeToggleIcon{
+    color: var(--btn-secondary-text);
+}
+.tag[data-type="public"].active .fa-pencil,
+.tag[data-type="public"].active i.activeToggleIcon{
+    color: var(--btn-secondary-hover-text);
 }
 
 .tag .tagLabel {
@@ -2705,7 +2833,7 @@ td.listViewEntryValue.value.textOverflowEllipsis {
 .currentTagSelector,
 .form-control {
   padding: 19px 6px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .form-control:focus {
@@ -2722,14 +2850,14 @@ td.listViewEntryValue.value.textOverflowEllipsis {
   border: 1px solid var(--border-light-color);
   border-left-width: 5px;
   border-radius: 3px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 
 .vt-default-callout p {
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   color: var(--text-dark-color);
@@ -2825,10 +2953,10 @@ td.listViewEntryValue.value.textOverflowEllipsis {
 }
 .editViewContents .fieldLabel {
   min-width: 100px;
-  width: 27%;
+  width: 28%;
   word-break: break-all;
   font-size: 15px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -2910,7 +3038,7 @@ background-color: var(--white-color);
   padding-left: 15px;
 }
 .module-nav {
-  background: var(--light-color-2);
+  background: transparent;
   z-index: 1004;
 }
 #settingsMenuSearch {
@@ -2930,17 +3058,7 @@ background-color: var(--white-color);
   font-size: 13px;
   padding: 5px 0;
 }
-.settingsgroup {
-  background: var(--sidebar-bg-color);
-  color: var(--black-color-2);
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 6px;
-  height: 100%;
-  position: relative;
-  top: 10px;
-  min-height: 100vh;
-  padding-bottom: 20px;
-}
+
 .userDefaultIcon {
   font-size: 30px;
 }
@@ -2961,7 +3079,7 @@ background-color: var(--white-color);
 .settingsgroup-accordion {
   font-size: 14px;
   cursor: pointer;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -2995,7 +3113,7 @@ background-color: var(--white-color);
   color: var(--primary-color);
 } */
 .layoutTabs li a strong {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -3009,7 +3127,7 @@ background-color: var(--white-color);
 .massEditTabs.nav > li {
   padding: 0 10px;
   margin: 0 4px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   background-color: var(--white-color);
@@ -3055,7 +3173,7 @@ background-color: var(--white-color);
   background-color: var(--white-color);
 }
 .translatedBlockLabel {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 600;
   font-style: normal;
   font-size: 19px;
@@ -3063,7 +3181,7 @@ background-color: var(--white-color);
 }
 .collapseblock-btn {
   margin-right: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   color: var(--text-dark-color);
@@ -3127,7 +3245,7 @@ background-color: var(--white-color);
   /* padding-top: 15px; */
   margin-right: 6px;
   /* text-align: center; */
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -3154,7 +3272,7 @@ background-color: var(--white-color);
   margin-bottom: 12px;
   font-size: 14px;
   color: var(--text-dark-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -3171,12 +3289,12 @@ background-color: var(--white-color);
 }
 .fieldLabel {
   color: var(--text-dark-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 .fieldLabel b {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -3193,13 +3311,13 @@ background-color: var(--white-color);
 }
 .fieldValue {
   color: var(--text-dark-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 .fieldValue b {
   color: var(--text-light-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -3214,7 +3332,7 @@ background-color: var(--white-color);
 }
 .layoutContent li.dummyRow .dragUiText {
   font-size: 18px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   margin-bottom: 12px;
@@ -3324,6 +3442,22 @@ background-color: var(--white-color);
 }
 .duplicateHandlingContainer .fieldsBlock {
   color: var(--text-dark-color);
+}
+.duplicateHandlingContainer .tooltip-inner {
+  text-align: left;
+}
+.duplicateHandlingContainer .syncMessage {
+  margin-top: 5px;
+}
+.duplicateHandlingContainer .actionsList {
+  width: 443px;
+}
+.duplicationMessageContainer {
+  background-color: var(--white-color);
+  color: var(--red-color);
+}
+.duplicationMessageContainer .duplicationMessageHeader {
+  margin-bottom: 8px;
 }
 .rule-block {
   margin-top: 12px;
@@ -3562,7 +3696,7 @@ background-color: var(--white-color);
   display: flex;
 }
 .stepText {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -3581,7 +3715,7 @@ background-color: var(--white-color);
   width: 22px;
   height: 22px;
   border-radius: 50px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -3613,7 +3747,7 @@ background-color: var(--white-color);
 .selected-merge-fields option {
   margin-bottom: 10px;
   font-size: 13px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   padding: 5px 14px;
@@ -3638,7 +3772,7 @@ background-color: var(--white-color);
 .custom-select-list li {
   margin-bottom: 10px;
   font-size: 13px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   padding: 5px 14px;
@@ -3871,6 +4005,7 @@ background-color: var(--white-color);
   border: 1px solid var(--secondary-color);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   color: var(--text-dark-color);
+  border-radius: 10px;
 }
 #settingsShortCutsContainer .contentsBackground span {
   color: var(--text-light-color);
@@ -3979,7 +4114,7 @@ background-color: var(--white-color);
   color: var(--white-color);
 }
 .profilesEditView tbody tr td {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -4003,7 +4138,7 @@ background-color: var(--white-color);
   width: 40%;
 }
 tbody tr td {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -4079,7 +4214,7 @@ tbody tr td {
   background-color: var(--light-color-2);
 }
 .table-striped > tbody > tr td {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -4089,7 +4224,7 @@ tbody tr td {
 .blockHeader th {
   border-radius: 10px;
   border-right: 2px solid var(--light-color-2);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   vertical-align: middle;
@@ -4159,7 +4294,7 @@ tbody tr td {
   margin: 0px;
   color: var(--primary-color);
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -4257,7 +4392,7 @@ tbody tr td {
 .portalModuleRow a,
 .portalModuleRow span {
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   text-align: left;
@@ -4342,13 +4477,12 @@ a.cp-modules:hover {
 }
 .portal-dashboard {
   /* border: 1px solid #3498DB !important;  */
-  border-left: 0px !important;
-  padding-left: 13px;
+  border: 0px;
   margin-left: 30px;
   border-radius: 10px;
   /* min-height: 600px; */
   background: var(--light-color-2);
-  border-bottom: 0px !important;
+  padding: 15px;
 }
 .portal-dashboard > .hrHeader {
   margin-left: 18px;
@@ -4356,21 +4490,34 @@ a.cp-modules:hover {
 }
 
 .portal-fields-container-wrapper {
-  border-right: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--border-light-color);
   /* min-height: 600px; */
 }
-.portal-annoucement-widget-container {
-  border: 1px solid var(--border-light-color);
-  border-radius: 10px;
+.portal-annoucement-widget-container,
+.portal-shortcuts-container,
+.portal-record-widget-container,
+.portal-helpdesk-widget-container {
+    border: 1px solid var(--border-light-color);
+    border-radius: 10px;
 }
-.portal-annoucement-widget {
-  background: var(--light-color-4);
-  color: var(--text-dark-color);
-  min-height: 20px;
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 10px 10px 0px 0px;
+.portal-annoucement-widget,
+.portal-shortcuts-header,
+.portal-record-widget-content,
+.portal-helpdesk-widget-header {
+    background: var(--light-color-4);
+    color: var(--text-dark-color);
+    min-height: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
 }
+.portal-helpdesk-widget-header h6,
+.portal-record-widget-content h6,
+.portal-annoucement-widget h6,
+.portal-shortcuts-header h6{
+font-size:16px
+}
+
 .portal-chart-widget-container {
   border: 1px solid var(--border-light-color);
 }
@@ -4389,36 +4536,13 @@ a.cp-modules:hover {
   padding: 10px;
 }
 .portal-record-widget-container {
-  border: 1px solid var(--border-light-color);
-  border-radius: 10px;
   margin-bottom: 10px;
-}
-.portal-record-widget-content {
-  background: var(--light-color-4);
-  color: var(--text-dark-color);
-  min-height: 20px;
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 10px 10px 0px 0px;
 }
 .portal-record-control-container {
   padding: 4px;
 }
-.portal-shortcuts-container {
-  border: 1px solid var(--border-light-color);
-  border-radius: 10px;
-  /* width: 285px !important; */
-}
 #portal-shortcutsContainer > ul {
   border-bottom: 0px !important;
-}
-.portal-shortcuts-header {
-  background: var(--light-color-4);
-  color: var(--text-dark-color);
-  min-height: 20px;
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 10px 10px 0px 0px;
 }
 .portal-shortcuts-content {
   min-height: 80px;
@@ -4437,19 +4561,9 @@ a.cp-modules:hover {
   }
 }
 .portal-helpdesk-widget-container {
-  border: 1px solid var(--border-light-color);
-  border-radius: 10px;
   margin-bottom: 10px;
-  /* width: 285px !important; */
 }
-.portal-helpdesk-widget-header {
-  background: var(--light-color-4);
-  color: var(--text-dark-color);
-  min-height: 20px;
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 10px 10px 0px 0px;
-}
+
 .portal-fields-container {
   margin: 15px;
 }
@@ -4486,7 +4600,7 @@ a.cp-modules:hover {
 .portal-fieldName-wrapper {
   padding-top: 5px;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -4586,7 +4700,7 @@ a.cp-modules:hover {
   text-align: center;
   margin-top: 5px;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -4616,7 +4730,7 @@ a.cp-modules:hover {
   color: var(--text-dark-color);
   cursor: pointer;
   font-size: 13px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -4670,7 +4784,7 @@ a.cp-modules:hover {
 .potentialsFieldMappingListPageDiv thead tr th,
 .potentialsFieldMappingEditPageDiv thead tr th {
   color: var(--white-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -4798,7 +4912,7 @@ a.cp-modules:hover {
   padding-bottom: 10px;
 }
 .termcondition-textarea {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -5041,11 +5155,15 @@ a.cp-modules:hover {
 }
 .ModulemanagerSettings {
   width: 12px;
-  background: var(--white-color);
+  background: var(--light-color-2);
 }
 .ModulemanagerSettings:hover .actions {
   opacity: 1;
   /* background:@ModulemanagerSettingshover; */
+}
+.management-module-name{
+  font-size: 16px;
+  line-height: 30px;
 }
 #OutgoingMoretable td,
 th {
@@ -5402,14 +5520,14 @@ textarea.span1,
 #TemplateIFrame {
   border: 1px solid var(--border-light-color);
   border-radius: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 iframe {
   border-radius: 10px;
   border: 1px solid var(--border-light-color);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
@@ -5982,8 +6100,6 @@ a.btnReport:hover {
 
 .highlight-card .highlight-value {
   margin: 0;
-  font-family: "Urbanist", sans-serif;
-  font-weight: 700;
   font-size: 27px;
 }
 .highlight-card .status {
@@ -5994,7 +6110,7 @@ a.btnReport:hover {
 
 .highlight-card .status span {
   color: var(--primary-color);
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 700;
   font-size: 18px;
 }
@@ -6262,6 +6378,10 @@ a.btnReport:hover {
 }
 .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: var(--primary-color);
+  cursor: grab;
+}
+.select2_search_div .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: var(--white-color);
 }
 
 /* .create-new-list .fa-close {
@@ -6321,4 +6441,106 @@ a.btnReport:hover {
   background: var(--white-color);
   border-color: var(--white-color);
   border-radius: 10px;
+}
+
+.site-select .select2{
+  width: 100%;
+}
+
+
+.editTagContainer .editTagContents {
+  padding: 8px;
+}
+.editTagContainer .editTagContents .checkbox label{
+  white-space: nowrap;
+}
+.editTagContainer .editTagContents input[type="text"] {
+  width: 100%;
+  border: 1px solid var(--border-light-color);
+}
+#tagCloud .tag {
+  padding: 0px;
+  background-color: var(--white-color);
+  border-color: var(--border-light-color);
+  border-radius: 0px;
+  color: var(--text-dark-color);
+  margin: 3px;
+}
+#tagCloud .tag[data-type="public"] {
+  color: var(--btn-secondary-hover-text);
+}
+#tagCloud .tag .tagName {
+  margin: 3px;
+  max-width: 80px;
+  vertical-align: bottom;
+}
+#convertLeadContainer .inputElement,
+#editCurrency .inputElement {
+  width: 100%;
+}
+.alert-mini {
+  padding: 3px 5px;
+  font-size: 10px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.blockHeader h4 {
+  margin: 10px 0;
+}
+.blockHeader .btn-group {
+  margin-top: 4px;
+}
+
+
+#dependencyGraph .tableHeading {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#dependencyGraph .depandencyTable .blockHeader {
+  background: var(--white-color);
+}
+#dependencyGraph .dependencyMapping {
+  text-align: center;
+   background: var(--white-color);
+}
+#dependencyGraph .dependencyMapping .mCSB_container {
+  margin-bottom: 16px !important;
+}
+#dependencyGraph .dependencyMapping .pickListDependencyTable {
+  border: 0;
+}
+#dependencyGraph .dependencyMapping .pickListDependencyTable .blockHeader th {
+   background: var(--white-color);
+}
+#dependencyGraph .dependencyMapping .pickListDependencyTable .selectedCell {
+ background: var(--white-color);
+}
+
+.multiLevelTagList .tag {
+  margin-bottom: 5px;
+}
+.detailViewContainer .tag,
+#listViewTagContainer .tag {
+  cursor: pointer;
+}
+#addTagContainer .dropdown-menu {
+  padding: 5px 0px 0px 0px;
+}
+#addTagContainer .modal-footer {
+  padding: 5px;
+}
+#addTagContainer .createTagContainer ul.list-group {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+#addTagContainer .createTagContainer hr {
+  margin: 10px 0px;
+}
+#addTagContainer .createTagContainer li.tag-item {
+  margin-bottom: 5px;
+}
+.detailShowAllModal .selectTagContainerborder {
+  border-left: 3px solid var(--primary-color);
 }

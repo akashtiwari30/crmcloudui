@@ -32,14 +32,16 @@
             </div>
             <div class="row form-group">
                 <div class="col-lg-2"><label>{vtranslate('LBL_ADD_FIELDS',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-lg-10">
+                <div class="col-lg-6 site-select">
                     <select class="select2 task-fields" style="min-width: 150px;" data-placeholder="{vtranslate('LBL_SELECT_FIELDS', $QUALIFIED_MODULE)}">
 						<option></option>
                         {$ALL_FIELD_OPTIONS}
                     </select>	
                 </div>
-                <div class="col-lg-2"> &nbsp; </div>
-                <div class="col-lg-10"> &nbsp; </div>
+               
+            </div>
+            <div class="row form-group">
+                
                 <div class="col-lg-2"><label>{vtranslate('LBL_SMS_TEXT',$QUALIFIED_MODULE)}</label></div>
                 <div class="col-lg-6">
                     <textarea name="content" class="inputElement fields" style="height: inherit;">{$TASK_OBJECT->content}</textarea>

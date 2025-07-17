@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-04-29 07:26:12
+/* Smarty version 4.5.4, created on 2025-07-16 06:27:58
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\LayoutEditor\Index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68107f1494dae3_03258673',
+  'unifunc' => 'content_6877466e1455f6_55748552',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aa2447e899bc10a8d04f1984379a2598395c2b03' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\LayoutEditor\\Index.tpl',
-      1 => 1744629583,
+      1 => 1752647277,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68107f1494dae3_03258673 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6877466e1455f6_55748552 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="container-fluid main-scroll paddingTop15" id="layoutEditorContainer"><input id="selectedModuleName" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['SELECTED_MODULE_NAME']->value;?>
 " /><input class="selectedTab" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['SELECTED_TAB']->value;?>
 "><input class="selectedMode" type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['MODE']->value;?>
 "><input type="hidden" id="selectedModuleLabel" value="<?php echo vtranslate($_smarty_tpl->tpl_vars['SELECTED_MODULE_NAME']->value,$_smarty_tpl->tpl_vars['SELECTED_MODULE_NAME']->value);?>
 " /><div class="widget_header row"><label class="col-sm-2 textAlignCenter" style="padding-top: 7px;"><?php echo vtranslate('SELECT_MODULE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</label><div class="col-sm-6"><select class="select2 col-sm-6" name="layoutEditorModules"><option value=''><?php echo vtranslate('LBL_SELECT_OPTION',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+</label><div class="col-sm-6"><select class="select2 col-sm-10" name="layoutEditorModules"><option value=''><?php echo vtranslate('LBL_SELECT_OPTION',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </option><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SUPPORTED_MODULES']->value, 'MODULE_NAME', false, 'TRANSLATED_MODULE_NAME');
 $_smarty_tpl->tpl_vars['MODULE_NAME']->do_else = true;

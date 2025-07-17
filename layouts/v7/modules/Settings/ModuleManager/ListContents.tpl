@@ -52,7 +52,7 @@
 												<img class="alignMiddle" src="{vimage_path('DefaultModule.png')}" alt="{$MODULE_LABEL}" title="{$MODULE_LABEL}"/>
 											{/if}	
 										</span>
-										<span class="col-lg-7 moduleName {if !$MODULE_ACTIVE} dull {/if}"><h6 style="line-height: 0.5;">{$MODULE_LABEL}</h6></span>
+										<span class="col-lg-7 moduleName management-module-name {if !$MODULE_ACTIVE} dull {/if}">{$MODULE_LABEL}</span>
 											{assign var=SETTINGS_LINKS value=$MODULE_MODEL->getSettingLinks()}
 											{if !in_array($MODULE_NAME, $RESTRICTED_MODULES_LIST) && (php7_count($SETTINGS_LINKS) > 0)}
 											<span class="col-lg-3 moduleblock">

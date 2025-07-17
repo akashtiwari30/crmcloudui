@@ -12,33 +12,24 @@
   --black-color-2: #000;
   --black-color-3: #212529;
   --light-color: #595959;
-  /* --light-color: #e7f706; */
   --light-color-2: #edeff1;
   --light-color-3: #414141;
-  --light-color-6: #848891;
-  
   --light-color-4: #cccccc;
   --light-color-5: #f8f7fa;
-
+  --light-color-6: #848891;
   --text-dark-color: #425040;
   --text-light-color: #848891;
-
-  /* --text-dark-color: #00ffea;
-  --text-light-color: #eed707a2; */
-
   --border-light-color:#cccccc;
   --border-light-color-2:#edeff1;
-
   --muted-color: #6b7280;
   --pink-color: #e83874;
-  /* Primary  */
+
+  /* Primary  Color*/
   --primary-color: #7367f0;
-  /* secondary  */
+  /* secondary  Color*/
   --secondary-color: #4c97ff;
 
   /* Primary Button */
-  /* --btn-primary-bg: #487fff; */
-  /* --btn-primary-bg: #7367f0; */
   --btn-primary-bg: #006bff;
   --btn-primary-text: #fff;
   --btn-primary-border: #7367f0;
@@ -59,12 +50,11 @@
   --btn-secondary-disabled-text: #595959;
 
   /* Sidebar */
-  --sidebar-bg-color: #fff;
+  --sidebar-bg-color: #ffffff;
   --sidebar-text-color: #444050;
   --sidebar-hover-text: #f0f0f0;
   --sidebar-hover-bg: #487fff;
-  /* --color-sidebar-active: #2563eb; */
-  --color-subsidebar-bg-hover: #e4f1ff;
+  --color-subsidebar-bg-hover: #b5d2f1;
   --color-subsidebar-text-hover: #444050;
 
   /* Success, Warning, Error */
@@ -72,8 +62,7 @@
   --bg-success-hover: #12cf90ee;
   --text-success: #000000;
   --warning-color: #f59e0b;
-
-    --alert-bg-color: #7f76e259;
+  --alert-bg-color: #7f76e259;
   --alert-text-color: #006bffc4;
   --red-color: #ff0000;
   --bg-error: #e61414cb;
@@ -88,6 +77,10 @@
   --chart-color-5: #f79533c2;
   --chart-color-6: #ef6e4d;
   --chart-color-7: #ffa9a5;
+
+  /* Font Family */
+  --font-primary: "Urbanist", sans-serif;
+  --font-secondary: "Inter", sans-serif;
 }
 
 .dark-mode {
@@ -155,15 +148,6 @@
   --bg-error: #e61414cb;
   --error-color: #e61414cb;
   --error-color-2: #ef4444;
-
-  /* Chart Colors  */
-  /* --chart-color-1:#7367f0;
-  --chart-color-2:#79a8ce;
-  --chart-color-3:#00E396;
-  --chart-color-4:#E83874;
-  --chart-color-5:#f79533c2;
-  --chart-color-6:#ef6e4d;
-  --chart-color-7:#ffa9a5; */
 }
 
 .primary-text-color{
@@ -263,7 +247,7 @@
 
 body {
   background-color: var(--body-bg-color) !important;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   color: var(--text-dark-color);
 }
 
@@ -278,7 +262,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 700;
 }
 
@@ -308,18 +292,18 @@ h6 {
 
 p {
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 span {
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 label {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
@@ -328,22 +312,22 @@ label {
 .checkbox label,
 .radio label {
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   color: var(--text-dark-color);
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 a,
 button {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
   cursor: pointer;
   text-decoration: none;
 }
 strong, b {
-   font-family: "Inter", sans-serif;
+   font-family: var(--font-secondary);
 }
 /* .bg-blue-btn {
   background-color: var(--primary-color);
@@ -380,109 +364,109 @@ strong, b {
 /* primary font  */
 
 .urbanist-thin {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 100;
   font-style: normal;
 }
 
 .urbanist-extralight {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 200;
   font-style: normal;
 }
 
 .urbanist-light {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 300;
   font-style: normal;
 }
 
 .urbanist-regular {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
   font-style: normal;
 }
 
 .urbanist-medium {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 500;
   font-style: normal;
 }
 
 .urbanist-semibold {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 600;
   font-style: normal;
 }
 
 .urbanist-bold {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 700;
   font-style: normal;
 }
 
 .urbanist-extrabold {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 800;
   font-style: normal;
 }
 
 .urbanist-black {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 900;
   font-style: normal;
 }
 
 .urbanist-thin-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 100;
   font-style: italic;
 }
 
 .urbanist-extralight-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 200;
   font-style: italic;
 }
 
 .urbanist-light-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 300;
   font-style: italic;
 }
 
 .urbanist-regular-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
   font-style: italic;
 }
 
 .urbanist-medium-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 500;
   font-style: italic;
 }
 
 .urbanist-semibold-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 600;
   font-style: italic;
 }
 
 .urbanist-bold-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 700;
   font-style: italic;
 }
 
 .urbanist-extrabold-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 800;
   font-style: italic;
 }
 
 .urbanist-black-italic {
-  font-family: "Urbanist", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 900;
   font-style: italic;
 }
@@ -490,109 +474,109 @@ strong, b {
 /* secondary font  */
 
 .inter-thin {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 100;
   font-style: normal;
 }
 
 .inter-extralight {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 200;
   font-style: normal;
 }
 
 .inter-light {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 300;
   font-style: normal;
 }
 
 .inter-regular {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 400;
   font-style: normal;
 }
 
 .inter-medium {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: normal;
 }
 
 .inter-semibold {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 600;
   font-style: normal;
 }
 
 .inter-bold {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-style: normal;
 }
 
 .inter-extrabold {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 800;
   font-style: normal;
 }
 
 .inter-black {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 900;
   font-style: normal;
 }
 
 .inter-thin-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 100;
   font-style: italic;
 }
 
 .inter-extralight-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 200;
   font-style: italic;
 }
 
 .inter-light-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 300;
   font-style: italic;
 }
 
 .inter-regular-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 400;
   font-style: italic;
 }
 
 .inter-medium-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
   font-style: italic;
 }
 
 .inter-semibold-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 600;
   font-style: italic;
 }
 
 .inter-bold-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-style: italic;
 }
 
 .inter-extrabold-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 800;
   font-style: italic;
 }
 
 .inter-black-italic {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 900;
   font-style: italic;
 }

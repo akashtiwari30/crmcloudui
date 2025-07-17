@@ -20,7 +20,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-5 col-xs-5">
+					<div class="col-sm-5 col-xs-5 site-select">
 						<select id="fromEmailOption" style="min-width: 250px" class="select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 							<option></option>
 							{$FROM_EMAIL_FIELD_OPTION}
@@ -37,7 +37,7 @@
 							</div>
 						</div>
 					</div>
-					<span class="col-sm-5 col-xs-5">
+					<span class="col-sm-5 col-xs-5 site-select">
 						<select style="min-width: 250px" class="task-fields select2 overwriteSelection" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 							<option></option>
 							{$EMAIL_FIELD_OPTION}
@@ -53,7 +53,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-5 col-xs-5">
+					<div class="col-sm-5 col-xs-5 site-select">
 						<select style="min-width: 250px" class="task-fields select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 							<option></option>
 							{$EMAIL_FIELD_OPTION}
@@ -69,7 +69,7 @@
 							</div>
 						</div>
 					</div>
-					<span class="col-sm-5 col-xs-5">
+					<span class="col-sm-5 col-xs-5 site-select">
 						<select class="task-fields select2" data-placeholder='{vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}' style="min-width: 250px">
 							<option></option>
 							{$EMAIL_FIELD_OPTION}
@@ -85,7 +85,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-5 col-xs-5">
+					<div class="col-sm-5 col-xs-5 site-select">
 						<select class="task-fields select2" data-placeholder='{vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}' style="min-width: 250px">
 							<option></option>
 							{$EMAIL_FIELD_OPTION}
@@ -95,10 +95,9 @@
 				<div class="row form-group {if (!empty($TASK_OBJECT->emailcc)) and (!empty($TASK_OBJECT->emailbcc))} hide {/if}">
 					<div class="col-sm-8 col-xs-8">
 						<div class="row">
-							<div class="col-sm-3 col-xs-3">&nbsp;</div>
 							<div class="col-sm-9 col-xs-9">
-								<a class="cursorPointer {if (!empty($TASK_OBJECT->emailcc))}hide{/if}" id="ccLink">{vtranslate('LBL_ADD_CC',$QUALIFIED_MODULE)}</a>&nbsp;&nbsp;
-								<a class="cursorPointer {if (!empty($TASK_OBJECT->emailbcc))}hide{/if}" id="bccLink">{vtranslate('LBL_ADD_BCC',$QUALIFIED_MODULE)}</a>
+								<a class="cursorPointer marginRight10px btn {if (!empty($TASK_OBJECT->emailcc))}hide{/if}" id="ccLink">{vtranslate('LBL_ADD_CC',$QUALIFIED_MODULE)}</a>
+								<a class="cursorPointer btn {if (!empty($TASK_OBJECT->emailbcc))}hide{/if}" id="bccLink">{vtranslate('LBL_ADD_BCC',$QUALIFIED_MODULE)}</a>
 							</div>
 						</div>
 					</div>
@@ -112,7 +111,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-5 col-xs-5">
+					<div class="col-sm-5 col-xs-5 site-select">
 						<select style="min-width: 250px" class="task-fields select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 							<option></option>
 							{$ALL_FIELD_OPTIONS}
@@ -122,8 +121,8 @@
 				<div class="row form-group">
 					<div class="col-sm-6 col-xs-6">
 						<div class="row">
-							<div style="margin-top: 7px" class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_ADD_FIELD',$QUALIFIED_MODULE)}</label></div>&nbsp;&nbsp;
-							<div class="col-sm-8 col-xs-8">
+							<div style="margin-top: 7px" class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_ADD_FIELD',$QUALIFIED_MODULE)}</label></div>
+							<div class="col-sm-9 col-xs-9 site-select">
 								<select style="min-width: 250px" id="task-fieldnames" class="select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 									<option></option>
 									{$ALL_FIELD_OPTIONS}
@@ -131,11 +130,11 @@
 							</div>	
 						</div>
 					</div>
-					<div class="col-sm-5 col-xs-5">
+					<div class="col-sm-5 col-xs-5 site-select">
 						<div class="row">
-							<div style="margin-top: 7px" class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_GENERAL_FIELDS',$QUALIFIED_MODULE)}</label></div>&nbsp;&nbsp;
-							<div class="col-sm-8 col-xs-8">
-								<select style="width: 205px" id="task_timefields" class="select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
+							<div style="margin-top: 7px" class="col-sm-4 col-xs-4"><label>{vtranslate('LBL_GENERAL_FIELDS',$QUALIFIED_MODULE)}</label></div>
+							<div class="col-sm-8 col-xs- site-select">
+								<select id="task_timefields" class="select2" data-placeholder={vtranslate('LBL_SELECT_OPTIONS',$QUALIFIED_MODULE)}>
 									<option></option>
 									{foreach from=$META_VARIABLES item=META_VARIABLE_KEY key=META_VARIABLE_VALUE}
 										<option value="{if strpos(strtolower($META_VARIABLE_VALUE), 'url') === false}${/if}{$META_VARIABLE_KEY}">{vtranslate($META_VARIABLE_VALUE,$QUALIFIED_MODULE)}</option>

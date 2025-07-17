@@ -467,7 +467,7 @@ var tests = [
       // TODO checking if data urls are loaded asynchronously
 
       var usageElement = document.createElement('div');
-      usageElement.setAttribute('style', 'font-family: plus-loaded; visibility: hidden;');
+      usageElement.setAttribute('style', 'visibility: hidden;');
       usageElement.textContent = '`';
       document.body.appendChild(usageElement);
 

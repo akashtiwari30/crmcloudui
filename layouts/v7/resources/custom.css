@@ -1,5 +1,5 @@
 
-@font-face {
+/* @font-face {
     font-family: 'Oswald-bold';
     font-style: normal;
     font-weight: normal;
@@ -20,7 +20,7 @@
     font-weight: normal;
     src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
     text-rendering: optimizeLegibility;
-}
+} */
 
 
 /**********************************/
@@ -184,10 +184,8 @@
 
 /* .active-app-title{
     white-space: nowrap;
-    font-family: Oswald-bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .module-action-bar .module-title{
-    font-family: Oswald-bold,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #596875;
     margin: 8px 15px;
 }
@@ -625,7 +623,6 @@
 **********Button Styles**********
 ***********************************/
 .btn{
-    /* font-family: open-sans; */
     border-radius: 5px;
 }
 .module-buttons{

@@ -19,7 +19,7 @@
 				{vtranslate('SELECT_MODULE', $QUALIFIED_MODULE)}
 			</label>
 			<div class="col-sm-6">
-				<select class="select2 col-sm-6" name="layoutEditorModules">
+				<select class="select2 col-sm-10" name="layoutEditorModules">
 					<option value=''>{vtranslate('LBL_SELECT_OPTION', $QUALIFIED_MODULE)}</option>
 					{foreach item=MODULE_NAME key=TRANSLATED_MODULE_NAME from=$SUPPORTED_MODULES}
 						<option value="{$MODULE_NAME}" {if $MODULE_NAME eq $SELECTED_MODULE_NAME} selected {/if}>

@@ -1,50 +1,54 @@
-@font-face {
+/* @font-face {
   font-family: 'Oswald';
   src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.svg#Oswald') format('svg');
-  /* Legacy iOS */
+  src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff') format('woff'), 
+    url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.svg#Oswald') format('svg');
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizeLegibility;
-}
+} */
 *:focus,
 *:active,
 a:focus,
 a:active {
   outline: none;
 }
-@font-face {
+/* @font-face {
   font-family: 'OpenSans-Regular';
   src: url('../fonts/OpenSans/Regular/OpenSans-Regular.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/OpenSans/Regular/OpenSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/OpenSans/Regular/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/OpenSans/Regular/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/OpenSans/Regular/OpenSans-Regular.svg#svgFontName') format('svg');
-  /* Legacy iOS */
+  src: url('../fonts/OpenSans/Regular/OpenSans-Regular.ttf') format('truetype'),
+   url('../fonts/OpenSans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/OpenSans/Regular/OpenSans-Regular.woff2') format('woff2'), 
+    url('../fonts/OpenSans/Regular/OpenSans-Regular.woff') format('woff'), 
+     url('../fonts/OpenSans/Regular/OpenSans-Regular.svg#svgFontName') format('svg');
 }
 @font-face {
   font-family: 'OpenSans-Semibold';
   src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/OpenSans/Semibold/OpenSans-Semibold.svg#svgFontName') format('svg');
-  /* Legacy iOS */
+  src: url('../fonts/OpenSans/Semibold/OpenSans-Semibold.ttf') format('truetype'), 
+   url('../fonts/OpenSans/Semibold/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff2') format('woff2'), 
+     url('../fonts/OpenSans/Semibold/OpenSans-Semibold.woff') format('woff'), 
+      url('../fonts/OpenSans/Semibold/OpenSans-Semibold.svg#svgFontName') format('svg');
 }
 @font-face {
   font-family: 'ProximaNova-Regular';
-  src: url('../fonts/ProximanovaWebfont/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximanovaWebfont/ProximaNova-Regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/ProximanovaWebfont/ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
-  /* IE6-IE8 */
-  /* Safari, Android, iOS */
+  src: url('../fonts/ProximanovaWebfont/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximanovaWebfont/ProximaNova-Regular.woff') format('woff'),
+   url('../fonts/ProximanovaWebfont/ProximaNova-Regular.eot?#iefix') format('embedded-opentype');
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
 @font-face {
   font-family: 'ProximaNova-Semibold';
-  src: url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype');
-  /* IE6-IE8 */
+  src: url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.ttf') format('truetype'), 
+  url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.woff') format('woff'), 
+   url('../fonts/ProximanovaWebfont/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype');
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
-}
+} */
 /**********************************/
 /************ Layout **************/
 /**********************************/
@@ -57,7 +61,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* font-family: 'OpenSans-Regular', sans-serif; */
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -72,7 +75,6 @@ body > .mCSB_inside > .mCSB_container {
   height: inherit;
 }
 /* .select2-container .select2-choice {
-  font-family: 'OpenSans-Regular', sans-serif;
 } */
 /* .app-fixed-navbar {
   background: #fff;
@@ -343,10 +345,8 @@ body > .mCSB_inside > .mCSB_container {
 /** App Nav Styles */
 /* .active-app-title {
   white-space: nowrap;
-  font-family: Oswald, "OpenSans-Semibold", "Helvetica Neue", Helvetica, sans-serif;
 }
 .module-action-bar .module-title {
-  font-family: Oswald, "OpenSans-Semibold", "Helvetica Neue", Helvetica, sans-serif;
   color: #596875;
   margin: 12px 0;
   white-space: nowrap;
@@ -908,10 +908,10 @@ input[type="password"].inputElement {
   vertical-align: middle;
   white-space: nowrap;
 } */
-#convertLeadContainer .inputElement,
+/* #convertLeadContainer .inputElement,
 #editCurrency .inputElement {
   width: 70%;
-}
+} */
 /* .confirm-box-ok {
   margin-right: 5px;
 }
@@ -1758,7 +1758,6 @@ input[type=checkbox]:checked {
 strong,
 b,
 th {
-  /* font-family: 'OpenSans-Semibold', 'ProximaNova-Semibold', sans-serif; */
   font-weight: normal;
   font-size: 1.1em;
 }
@@ -2842,7 +2841,6 @@ th {
   margin: 0;
   padding: 0 20px 0 0;
   display: inline-block;
-  font-family: sans-serif;
   position: relative;
   width: 100%;
 }
@@ -3731,7 +3729,6 @@ th {
   margin-top: 15px;
 }
 /* .updates_timeline > li .update_info h5 {
-  font-family: 'OpenSans-Semibold', sans-serif;
 }
 .updates_timeline > li .update_info h5 .field-name {
   color: #2b879e;
@@ -3753,7 +3750,6 @@ th {
   color: #2b879e;
 }
 .updates_timeline > li .update_info > .updateInfoContainer .update-name {
-  font-family: 'OpenSans-Semibold', sans-serif;
   margin-bottom: 2px;
 }
 .updates_timeline > li .update_info > .updateInfoContainer em {
@@ -4561,7 +4557,7 @@ form[name="notification_settings"] .select2-choice {
   max-height: 100px;
   overflow: hidden;
 } */
-.editTagContainer .editTagContents {
+/* .editTagContainer .editTagContents {
   padding: 8px;
 }
 .editTagContainer .editTagContents input[type="text"] {
@@ -4583,7 +4579,7 @@ form[name="notification_settings"] .select2-choice {
   margin: 3px;
   max-width: 80px;
   vertical-align: bottom;
-}
+} */
 /******************************************* 
 ********** Groups view styles ********
 ********************************************/
@@ -4684,7 +4680,7 @@ form[name="notification_settings"] .select2-choice {
 /******************************************* 
 ************* Dashboard Styles *************
 ********************************************/
-li.dashboardWidget {
+/* li.dashboardWidget {
   overflow: hidden;
 }
 .dashboardWidgetHeader .title {
@@ -4706,7 +4702,7 @@ li.dashboardWidget {
 }
 .dashBoardContainer .tabContainer .tab-content {
   margin-top: 10px;
-}
+} */
 /* .dashBoardContainer .dashBoardTabContents ul li {
   border: 3px solid #E2E2E4;
   box-shadow: 1px;
@@ -4714,7 +4710,7 @@ li.dashboardWidget {
   padding: 15px;
   position: absolute;
 } */
-.dashboardWidgetContent .entryIcon {
+/* .dashboardWidgetContent .entryIcon {
   position: relative;
   top: 5px;
   padding-right: 10px;
@@ -4746,7 +4742,7 @@ li.dashboardWidget {
 .dashBoardWidgetFooter .filterContainer .radio-group input {
   vertical-align: middle;
   margin-top: -1px;
-}
+} */
 /* .importview-content,
 .customview-content {
   overflow-x: hidden;
@@ -4819,7 +4815,7 @@ li.dashboardWidget {
 /******************************************* 
 ********** Picklist DependencyGraph ********
 ********************************************/
-#dependencyGraph .tableHeading {
+/* #dependencyGraph .tableHeading {
   text-align: center;
   padding-top: 30px;
   font-size: 1.2em;
@@ -4843,7 +4839,7 @@ li.dashboardWidget {
 }
 #dependencyGraph .dependencyMapping .pickListDependencyTable .selectedCell {
   background: #a9cbf5;
-}
+} */
 /******************************************* 
 ********** Rewriting select2 for consistency********
 ********************************************/
@@ -4894,7 +4890,7 @@ li.dashboardWidget {
 hr {
   margin: 10px 0;
 }
-.alert-mini {
+/* .alert-mini {
   padding: 3px 5px;
   font-size: 10px;
   display: inline-block;
@@ -4905,7 +4901,7 @@ hr {
 }
 .blockHeader .btn-group {
   margin-top: 4px;
-}
+} */
 /* .input-info-addon {
   display: inline-block;
   margin: 1px 10px;
@@ -7449,7 +7445,7 @@ input:focus:-ms-input-placeholder {
     max-width: 550px;
   }
 }
-.duplicateHandlingContainer .tooltip-inner {
+/* .duplicateHandlingContainer .tooltip-inner {
   text-align: left !important;
 }
 .duplicateHandlingContainer .syncMessage {
@@ -7464,8 +7460,8 @@ input:focus:-ms-input-placeholder {
 }
 .duplicationMessageContainer .duplicationMessageHeader {
   margin-bottom: 8px;
-}
-.listViewRecordActions .quickView,
+} */
+/* .listViewRecordActions .quickView,
 .listViewRecordActions .markStar,
 .listViewRecordActions .markAsHeld,
 .listViewRecordActions .holdFollowupOn {
@@ -7475,11 +7471,10 @@ input:focus:-ms-input-placeholder {
   font-size: 14px;
   border-radius: 4px;
   color: var(--black-color-2);
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   padding: 4px 10px 4px 5px !important;
 }
 .menu-item .custom-module {
-  font-family: 'OpenSans-Regular', sans-serif;
   font-size: 12px;
   border-radius: 4px;
   padding: 2px;
@@ -7504,14 +7499,14 @@ input:focus:-ms-input-placeholder {
   padding: 3px 5px;
   color: #FFFFFF;
   background-color: #777;
-}
+} */
 /* .menuEditorItem .custom-module {
   border-radius: 4px;
   padding: 3px 5px;
   color: var(--black-color-2);
   background-color: #FFFFFF;
 } */
-.task-details .custom-module {
+/* .task-details .custom-module {
   border-radius: 4px;
   padding: 1px 4px;
   color: #FFFFFF;
@@ -7530,7 +7525,7 @@ input:focus:-ms-input-placeholder {
 }
 .moduleIcon .custom-module {
   font-weight: bold;
-}
+} */
 /* .navbar-fixed-top {
   z-index: 1095 !important;
 } */

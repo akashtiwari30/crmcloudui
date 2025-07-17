@@ -60,7 +60,6 @@ HTTP_Session2::start('SessionID', uniqid('MyID'));
 <head>
 <style>
 body, td {
-    font-family: Verdana, Arial, sans-serif;
     font-size: 11px;
 }
 A:link { color:#003399; text-decoration: none; }

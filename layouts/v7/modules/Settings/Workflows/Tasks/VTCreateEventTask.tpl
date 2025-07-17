@@ -15,21 +15,21 @@
         <div class="col-sm-9 col-xs-9">
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_EVENT_NAME',$QUALIFIED_MODULE)}</label><span class="redColor">*</span></div>
-                <div class="col-sm-9 col-xs-9">
+                <div class="col-sm-6 col-xs-6">
                     <input data-rule-required="true" class="inputElement" name="eventName" type="text" value="{$TASK_OBJECT->eventName}" />
                     {$SHOWN_FIELDS_LIST['subject'] = 'subject'}
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_DESCRIPTION',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-9 col-xs-9">
+                <div class="col-sm-6 col-xs-6">
                     <textarea class="inputElement" style="height: inherit;" name="description">{$TASK_OBJECT->description}</textarea>
                     {$SHOWN_FIELDS_LIST['description'] = 'description'}
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_STATUS',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-5 col-xs-5">
+                <div class="col-sm-6 col-xs-6 site-select">
                     {assign var=STATUS_PICKLIST_VALUES value=$TASK_TYPE_MODEL->getTaskBaseModule()->getField('eventstatus')->getPickListValues()}
                     <select name="status" class="select2">
                         {foreach  from=$STATUS_PICKLIST_VALUES item=STATUS_PICKLIST_VALUE key=STATUS_PICKLIST_KEY}
@@ -41,7 +41,7 @@
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_TYPE',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-5 col-xs-5">
+                <div class="col-sm-6 col-xs-6 site-select">
                     {assign var=EVENTTYPE_PICKLIST_VALUES value=$TASK_TYPE_MODEL->getTaskBaseModule()->getField('activitytype')->getPickListValues()}
                     <select name="eventType" class="select2">
                         {foreach  from=$EVENTTYPE_PICKLIST_VALUES item=EVENTTYPE_PICKLIST_VALUE key=EVENTTYPE_PICKLIST_KEY}
@@ -53,7 +53,7 @@
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_ASSIGNED_TO',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-5 col-xs-5">
+                <div class="col-sm-6 col-xs-6 site-select">
                     <select name="assigned_user_id" class="select2">
                         <option value="">{vtranslate('LBL_SELECT_OPTION','Vtiger')}</option>
                         {foreach from=$ASSIGNED_TO key=LABEL item=ASSIGNED_USERS_LIST}
@@ -75,7 +75,7 @@
                     {assign var=START_TIME value=$TASK_OBJECT->startTime}
                 {/if}
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_START_TIME',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-3 col-xs-3" >
+                <div class="col-sm-6 col-xs-6" >
                     <div class="input-group time">
                         {if $TASK_OBJECT->time neq ''}
                             {assign var=TIME value=$TASK_OBJECT->time}
@@ -118,7 +118,7 @@
                     {assign var=END_TIME value=$TASK_OBJECT->endTime}
                 {/if}
                 <span class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_END_TIME',$QUALIFIED_MODULE)}</label></span>
-                <div class="col-sm-3 col-xs-3" >
+                <div class="col-sm-6 col-xs-6" >
                     <div class="input-group time">
                         {if $TASK_OBJECT->time neq ''}
                             {assign var=TIME value=$TASK_OBJECT->time}

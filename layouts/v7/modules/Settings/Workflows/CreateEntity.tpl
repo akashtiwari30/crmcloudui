@@ -25,7 +25,7 @@
 			{/if}
 			{assign var=SELECTED_FIELD_MODEL_FIELD_TYPE value=$SELECTED_FIELD_MODEL->getFieldDataType()}
 			<div class="row conditionRow form-group">
-				<span class="col-lg-4">
+				<span class="col-lg-3">
 					<select name="fieldname" class="select2" style="min-width: 250px" {if $SELECTED_FIELD_MODEL->isMandatory() || ($DISABLE_ROW eq 'true') } disabled="" {/if} >
 						<option value="none"></option>
 						{foreach from=$RELATED_MODULE_MODEL->getFields() item=FIELD_MODEL}
@@ -42,7 +42,7 @@
 						{if $FIELD_MAP['modulename'] eq $RELATED_MODULE_MODEL_NAME} value="{$RELATED_MODULE_MODEL_NAME}" {/if} 
 					/>
 				</span>
-				<span class="fieldUiHolder col-lg-4">
+				<span class="fieldUiHolder col-lg-3">
 					<input type="text" class="getPopupUi inputElement" {if ($DISABLE_ROW eq 'true')} disabled=""{/if} readonly="" name="fieldValue" value="{$FIELD_MAP['value']}" />
 					<input type="hidden" name="valuetype" value="{$FIELD_MAP['valuetype']}" />
 				</span>
@@ -66,7 +66,7 @@
 					{continue}
 				{/if}
 				<div class="row conditionRow form-group">
-					<span class="col-lg-4">
+					<span class="col-lg-3">
 						<select name="fieldname" class="select2" disabled="" style="min-width: 250px">
 							<option value="none"></option>
 							{foreach from=$RELATED_MODULE_MODEL->getFields() item=FIELD_MODEL}
@@ -84,7 +84,7 @@
 							<input type="hidden" name="modulename" value="{$SOURCE_MODULE}" />
 						{/if}
 					</span>
-					<span class="fieldUiHolder col-lg-4">
+					<span class="fieldUiHolder col-lg-3">
 						<input type="text" class="getPopupUi inputElement" name="fieldValue" value="" />
 						<input type="hidden" name="valuetype" value="rawtext" />
 					</span>
@@ -96,8 +96,8 @@
 </div><br>
 {if isset($RELATED_MODULE_MODEL) && $RELATED_MODULE_MODEL}
 	<div class="row form-group basicAddFieldContainer hide">
-		<span class="col-lg-4">
-			<select name="fieldname" style="min-width: 250px">
+		<span class="col-lg-3 site-select">
+			<select name="fieldname">
 				<option value="none">{vtranslate('LBL_NONE',$QUALIFIED_MODULE)}</option>
 				{foreach from=$RELATED_MODULE_MODEL->getFields() item=FIELD_MODEL}
 					{assign var=FIELD_INFO value=$FIELD_MODEL->getFieldInfo()}
@@ -112,11 +112,11 @@
 		<span>
 			<input type="hidden" name="modulename" value="{$SOURCE_MODULE}" />
 		</span>
-		<span class="fieldUiHolder col-lg-4">
+		<span class="fieldUiHolder col-lg-3">
 			<input type="text" class="inputElement" readonly="" name="fieldValue" value="" />
 			<input type="hidden" name="valuetype" value="rawtext" />
 		</span>
-		<span class="cursorPointer col-lg-1">
+		<span class="cursorPointer col-lg-1 paddingLeftZero">
 			<i class="alignMiddle deleteCondition fa fa-trash"></i>
 		</span>
 	</div>

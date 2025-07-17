@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-06-25 09:56:28
+/* Smarty version 4.5.4, created on 2025-07-16 10:41:59
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\Workflows\CreateEntity.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_685bc7ccbd8e37_98386506',
+  'unifunc' => 'content_687781f7e3a002_44996100',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5c696be2f948d03e9a878c389ff9f1bc6667088e' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\Workflows\\CreateEntity.tpl',
-      1 => 1744629586,
+      1 => 1752662508,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_685bc7ccbd8e37_98386506 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687781f7e3a002_44996100 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <input type="hidden" id="fieldValueMapping" name="field_value_mapping" value='<?php echo $_smarty_tpl->tpl_vars['TASK_OBJECT']->value->field_value_mapping;?>
 ' />
@@ -49,7 +49,7 @@ $_smarty_tpl->tpl_vars['FIELD_MAP']->do_else = false;
 			<?php }?>
 			<?php $_smarty_tpl->_assignInScope('SELECTED_FIELD_MODEL_FIELD_TYPE', $_smarty_tpl->tpl_vars['SELECTED_FIELD_MODEL']->value->getFieldDataType());?>
 			<div class="row conditionRow form-group">
-				<span class="col-lg-4">
+				<span class="col-lg-3">
 					<select name="fieldname" class="select2" style="min-width: 250px" <?php if ($_smarty_tpl->tpl_vars['SELECTED_FIELD_MODEL']->value->isMandatory() || ($_smarty_tpl->tpl_vars['DISABLE_ROW']->value == 'true')) {?> disabled="" <?php }?> >
 						<option value="none"></option>
 						<?php
@@ -82,7 +82,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " <?php }?> 
 					/>
 				</span>
-				<span class="fieldUiHolder col-lg-4">
+				<span class="fieldUiHolder col-lg-3">
 					<input type="text" class="getPopupUi inputElement" <?php if (($_smarty_tpl->tpl_vars['DISABLE_ROW']->value == 'true')) {?> disabled=""<?php }?> readonly="" name="fieldValue" value="<?php echo $_smarty_tpl->tpl_vars['FIELD_MAP']->value['value'];?>
 " />
 					<input type="hidden" name="valuetype" value="<?php echo $_smarty_tpl->tpl_vars['FIELD_MAP']->value['valuetype'];?>
@@ -117,7 +117,7 @@ $_smarty_tpl->tpl_vars['MANDATORY_FIELD_MODEL']->do_else = false;
 					<?php continue 1;?>
 				<?php }?>
 				<div class="row conditionRow form-group">
-					<span class="col-lg-4">
+					<span class="col-lg-3">
 						<select name="fieldname" class="select2" disabled="" style="min-width: 250px">
 							<option value="none"></option>
 							<?php
@@ -149,7 +149,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " />
 						<?php }?>
 					</span>
-					<span class="fieldUiHolder col-lg-4">
+					<span class="fieldUiHolder col-lg-3">
 						<input type="text" class="getPopupUi inputElement" name="fieldValue" value="" />
 						<input type="hidden" name="valuetype" value="rawtext" />
 					</span>
@@ -164,8 +164,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div><br>
 <?php if ((isset($_smarty_tpl->tpl_vars['RELATED_MODULE_MODEL']->value)) && $_smarty_tpl->tpl_vars['RELATED_MODULE_MODEL']->value) {?>
 	<div class="row form-group basicAddFieldContainer hide">
-		<span class="col-lg-4">
-			<select name="fieldname" style="min-width: 250px">
+		<span class="col-lg-3 site-select">
+			<select name="fieldname">
 				<option value="none"><?php echo vtranslate('LBL_NONE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </option>
 				<?php
@@ -194,11 +194,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<input type="hidden" name="modulename" value="<?php echo $_smarty_tpl->tpl_vars['SOURCE_MODULE']->value;?>
 " />
 		</span>
-		<span class="fieldUiHolder col-lg-4">
+		<span class="fieldUiHolder col-lg-3">
 			<input type="text" class="inputElement" readonly="" name="fieldValue" value="" />
 			<input type="hidden" name="valuetype" value="rawtext" />
 		</span>
-		<span class="cursorPointer col-lg-1">
+		<span class="cursorPointer col-lg-1 paddingLeftZero">
 			<i class="alignMiddle deleteCondition fa fa-trash"></i>
 		</span>
 	</div>

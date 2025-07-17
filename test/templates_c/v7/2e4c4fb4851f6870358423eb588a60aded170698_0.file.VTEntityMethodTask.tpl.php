@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-06-25 12:04:10
+/* Smarty version 4.5.4, created on 2025-07-16 10:05:10
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\Workflows\Tasks\VTEntityMethodTask.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_685be5bac9b453_74468811',
+  'unifunc' => 'content_68777956a945e3_75965207',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2e4c4fb4851f6870358423eb588a60aded170698' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\Workflows\\Tasks\\VTEntityMethodTask.tpl',
-      1 => 1744629586,
+      1 => 1752660282,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_685be5bac9b453_74468811 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="row form-group"><div class="col-sm-6 col-xs-6"><div class="row"><div class="col-sm-3 col-xs-3"><?php echo vtranslate('LBL_METHOD_NAME',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
- :</div><div class="col-sm-8 col-xs-8"><?php $_smarty_tpl->_assignInScope('ENTITY_METHODS', $_smarty_tpl->tpl_vars['WORKFLOW_MODEL']->value->getEntityMethods());
+function content_68777956a945e3_75965207 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="row form-group"><div class="col-sm- col-xs-9"><div class="row"><div class="col-sm-2 col-xs-2"><label><?php echo vtranslate('LBL_METHOD_NAME',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+ :</label></div><div class="col-sm-6 col-xs-6 site-select"><?php $_smarty_tpl->_assignInScope('ENTITY_METHODS', $_smarty_tpl->tpl_vars['WORKFLOW_MODEL']->value->getEntityMethods());
 if (empty($_smarty_tpl->tpl_vars['ENTITY_METHODS']->value)) {?><div class="alert alert-info"><?php echo vtranslate('LBL_NO_METHOD_IS_AVAILABLE_FOR_THIS_MODULE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </div><?php } else { ?><select name="methodName" class="select2"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['ENTITY_METHODS']->value, 'METHOD');

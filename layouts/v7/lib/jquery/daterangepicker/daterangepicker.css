@@ -6,7 +6,7 @@
   line-height: 25px;
   padding-left: 10px;
   font-size: 12px;
-  font-family: Arial;
+
   font-weight: bold;
   cursor: pointer;
   color: #303030;
@@ -24,7 +24,6 @@
   font-size: 12px;
   line-height: 20px;
   color: var(--text-dark-color);
-  font-family: Arial;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 .date-picker-wrapper.single-date {
@@ -54,7 +53,6 @@
 }
 .date-picker-wrapper .month-wrapper {
   border: 1px solid var(--border-light-color);
-  font-family: "Inter", sans-serif;
   border-radius: 5px;
   background-color: var(--white-color);
   padding: 5px;
@@ -216,7 +214,6 @@
   display: block;
   color: var(--text-dark-color);
   font-size: 15px;
-  font-family: "Inter", sans-serif;
 }
 
 .date-picker-wrapper .drp_top-bar.error .default-top {

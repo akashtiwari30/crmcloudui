@@ -12,7 +12,8 @@
 	<div class="editViewPageDiv editViewContainer" id="EditViewOutgoing" style="padding-top:0px;">
 		<div class="col-lg-12 col-md-12 col-sm-12">
 			<div>
-				<h3 style="margin-top: 0px;">{vtranslate('LBL_OUTGOING_SERVER', $QUALIFIED_MODULE)}</h3>&nbsp;{vtranslate('LBL_OUTGOING_SERVER_DESC', $QUALIFIED_MODULE)}
+				<h4 style="margin-top: 0px;">{vtranslate('LBL_OUTGOING_SERVER', $QUALIFIED_MODULE)}</h4> 
+				<p class="text-light-color" style="margin-bottom: 3px;">{vtranslate('LBL_OUTGOING_SERVER_DESC', $QUALIFIED_MODULE)}</p>
 			</div>
 			{assign var=WIDTHTYPE value=$CURRENT_USER_MODEL->get('rowheight')}
 			<form id="OutgoingServerForm" data-detail-url="{$MODEL->getDetailViewUrl()}" method="POST">
@@ -29,10 +30,10 @@
 					</div>
 					<div class="block">
 						<div>
-							<div class="btn-group pull-right">
+							<div class="btn-group pull-right mb-4">
 								<button class="btn t-btn resetButton" type="button" title="{vtranslate('LBL_RESET_TO_DEFAULT', $QUALIFIED_MODULE)}"><strong>{vtranslate('LBL_RESET_TO_DEFAULT', $QUALIFIED_MODULE)}</strong></button>
 							</div>
-							<h4>{vtranslate('LBL_MAIL_SERVER_SMTP', $QUALIFIED_MODULE)}</h4>
+							<h5>{vtranslate('LBL_MAIL_SERVER_SMTP', $QUALIFIED_MODULE)}</h5>
 						</div>
 						<hr>
 						<table class="table editview-table no-border">
@@ -40,7 +41,7 @@
 								<tr>
 									<td class="{$WIDTHTYPE} fieldLabel"><label>{vtranslate('LBL_SERVER_TYPE', $QUALIFIED_MODULE)}</label></td>
 									<td class="{$WIDTHTYPE} fieldValue">
-										<div class=" col-lg-6 col-md-6 col-sm-12">
+										<div class=" col-lg-9 col-md-6 col-sm-12">
 											<select class="select2 inputElement col-lg-12 col-md-12 col-lg-12" name="serverType">
 												<option value="">{vtranslate('LBL_SELECT_OPTION','Vtiger')}</option>
 												<option value="google-oauth2" {if {$MODEL->get('server')} eq "ssl://smtp.gmail.com:465" and {$MODEL->get('smtp_auth_type')} eq "XOAUTH2"} selected {/if}>{vtranslate('LBL_GMAIL', $QUALIFIED_MODULE)} OAuth2</option>
@@ -56,16 +57,16 @@
 								</tr>
 								<tr>
 									<td class="{$WIDTHTYPE} fieldLabel"><label>{vtranslate('LBL_SERVER_NAME', $QUALIFIED_MODULE)}</label>&nbsp;<span class="redColor">*</span></td>
-									<td class="{$WIDTHTYPE} fieldValue"><div class=" col-lg-6 col-md-6 col-sm-12"><input type="text" class="inputElement" name="server" data-rule-required="true" value="{$MODEL->get('server')}" ></div></td></tr>
+									<td class="{$WIDTHTYPE} fieldValue"><div class=" col-lg-9 col-md-6 col-sm-12"><input type="text" class="inputElement" name="server" data-rule-required="true" value="{$MODEL->get('server')}" ></div></td></tr>
 								<tr>
 									<td class="{$WIDTHTYPE} fieldLabel"><label>{vtranslate('LBL_USER_NAME', $QUALIFIED_MODULE)}</label></td>
-									<td class="{$WIDTHTYPE} fieldValue" ><div class=" col-lg-6 col-md-6 col-sm-12"><input type="text" class="inputElement" name="server_username" value="{$MODEL->get('server_username')}" ></div></td></tr>
+									<td class="{$WIDTHTYPE} fieldValue" ><div class=" col-lg-9 col-md-6 col-sm-12"><input type="text" class="inputElement" name="server_username" value="{$MODEL->get('server_username')}" ></div></td></tr>
 								<tr>
 									<td class="{$WIDTHTYPE} fieldLabel"><label>{vtranslate('LBL_PASSWORD', $QUALIFIED_MODULE)}</label></td>
-									<td class="{$WIDTHTYPE} fieldValue" ><div class=" col-lg-6 col-md-6 col-sm-12"><input type="password" class="inputElement" name="server_password" value="{$MODEL->get('server_password')}" ></div></td></tr>
+									<td class="{$WIDTHTYPE} fieldValue" ><div class=" col-lg-9 col-md-6 col-sm-12"><input type="password" class="inputElement" name="server_password" value="{$MODEL->get('server_password')}" ></div></td></tr>
 								<tr>
 									<td class="{$WIDTHTYPE} fieldLabel"><label>{vtranslate('LBL_FROM_EMAIL', $QUALIFIED_MODULE)}</label></td>
-									<td class="{$WIDTHTYPE} fieldValue" ><div class=" col-lg-6 col-md-6 col-sm-12"><input type="text" class="inputElement" name="from_email_field" data-rule-email="true" data-rule-illegal="true" value="{$MODEL->get('from_email_field')}" ></div> </td>
+									<td class="{$WIDTHTYPE} fieldValue" ><div class=" col-lg-9 col-md-6 col-sm-12"><input type="text" class="inputElement" name="from_email_field" data-rule-email="true" data-rule-illegal="true" value="{$MODEL->get('from_email_field')}" ></div> </td>
 								</tr>
 								<tr>
 									<td class="{$WIDTHTYPE} fieldLabel">&nbsp;</td>

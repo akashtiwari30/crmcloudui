@@ -52,7 +52,7 @@ class CustomerPortal_ForgotPassword extends CustomerPortal_API_Abstract {
 					$adb->pquery($sql, $params);
 				}
 
-				$portalURL = vtranslate('Please ', $moduleName).'<a href="'.$PORTAL_URL.'" style="font-family:Arial, Helvetica, sans-serif;font-size:13px;">'.vtranslate('click here', $moduleName).'</a>';
+				$portalURL = vtranslate('Please ', $moduleName).'<a href="'.$PORTAL_URL.'" style="font-size:13px;">'.vtranslate('click here', $moduleName).'</a>';
 				$contents = '<table><tr><td>
 								<strong>Dear '.$adb->query_result($res, 0, 'firstname')." ".$adb->query_result($res, 0, 'lastname').'</strong><br></td></tr><tr>
 								<td>'.vtranslate('Here is your self service portal login details:', $moduleName).'</td></tr><tr><td align="center"><br><table style="border:2px solid rgb(180,180,179);background-color:rgb(226,226,225);" cellspacing="0" cellpadding="10" border="0" width="75%"><tr>

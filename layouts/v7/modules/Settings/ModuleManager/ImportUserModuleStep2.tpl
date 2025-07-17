@@ -65,7 +65,7 @@
 											<p>{vtranslate('LBL_LICENSE', $QUALIFIED_MODULE)}</p>
 										</div>
 										<div class="col-lg-12">
-											<textarea readonly="" rows="15" style="width: 100%;font-family: monospace;">{$MODULEIMPORT_LICENSE}</textarea>
+											<textarea readonly="" rows="15" style="width: 100%;">{$MODULEIMPORT_LICENSE}</textarea>
 										</div>
 									{/if}
 									{if $need_license_agreement eq 'true'}
