@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-14 11:58:36
+/* Smarty version 4.5.4, created on 2025-07-18 11:41:55
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\ExtensionStore\CardSetupModals.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6874f0ec2b8571_04907793',
+  'unifunc' => 'content_687a33037b5883_69994307',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '66ac030f2c38b73100768a98732027ff9fc89227' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\ExtensionStore\\CardSetupModals.tpl',
-      1 => 1752494114,
+      1 => 1752837047,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6874f0ec2b8571_04907793 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a33037b5883_69994307 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!-- Setup card detals form start--> 
 <div class="modal-dialog setUpCardModal hide">
@@ -47,7 +47,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable1);?>
 
 						<span class="redColor">*</span>
 					</span>
-					<div class="controls col-sm-5 col-xs-5">
+					<div class="controls col-sm-7 col-xs-7">
 						<input class="col-sm-8 col-xs-8 inputElement" type="text" placeholder="<?php echo vtranslate('LBL_CARD_NUMBER_PLACEHOLDER',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 " name="cardNumber" value="" data-rule-required="true" data-rule-WholeNumber="true"/>
 					</div>
@@ -82,8 +82,8 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable1);?>
 			<div class="modal-footer">
 				<div class="row">
 					<div class="col-sm-3 col-xs-3">
-						<span class="pull-left"><button class="btn btn-danger" type="button" name="resetButton"><strong><?php echo vtranslate('LBL_RESET',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</strong></button></span>
+						<span class="pull-left"><button class="btn btn-danger" type="button" name="resetButton"><?php echo vtranslate('LBL_RESET',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+</button></span>
 					</div>
 					<div class="col-sm-9 col-xs-9">
 						<div class="pull-right">
@@ -91,8 +91,8 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable1);?>
 								<a class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </a>
 							</div>
-							<button class="btn btn-submit saveButton" type="submit" name="saveButton" style="padding: 5px 12px;"><strong><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</strong></button>
+							<button class="btn btn-submit saveButton" type="submit" name="saveButton" style="padding: 5px 12px;"><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</button>
 						</div>
 					</div>
 				</div>
@@ -174,7 +174,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable3);?>
 						<?php echo vtranslate('LBL_EMAIL_ADDRESS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<input class="inputElement" type="text" name="emailAddress" data-rule-required="true" data-rule-email="true"/>
 					</div>
 				</div>
@@ -183,7 +183,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable3);?>
 						<?php echo vtranslate('LBL_FIRST_NAME',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<input class="inputElement" type="text" name="firstName" data-rule-required="true" />
 					</div>
 				</div>
@@ -192,7 +192,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable3);?>
 						<?php echo vtranslate('LBL_LAST_NAME',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<input class="inputElement" type="text" name="lastName" data-rule-required="true" />
 					</div>
 				</div>
@@ -201,7 +201,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable3);?>
 						<?php echo vtranslate('LBL_COMPANY_NAME',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<input class="inputElement" type="text" name="companyName" data-rule-required="true" />
 					</div>
 				</div>
@@ -210,7 +210,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable3);?>
 						<?php echo vtranslate('LBL_PASSWORD',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<input class="inputElement" type="password" name="password" data-rule-required="true" />
 					</div>
 				</div>
@@ -219,7 +219,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable3);?>
 						<?php echo vtranslate('LBL_CONFIRM_PASSWORD',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<input class="inputElement" type="password" name="confirmPassword" data-rule-required="true"/>
 					</div>
 				</div>
@@ -234,8 +234,8 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable3);?>
 								<a class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </a>
 							</div>
-							<button class="btn btn-submit" name="saveButton"><strong><?php echo vtranslate('LBL_REGISTER',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</strong></button>
+							<button class="btn btn-submit" name="saveButton"><?php echo vtranslate('LBL_REGISTER',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+</button>
 						</div>
 					</span>
 				</div>
@@ -267,7 +267,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable4);?>
 
 						<span class="redColor">*</span>
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<?php if ($_smarty_tpl->tpl_vars['REGISTRATION_STATUS']->value) {?>
 							<input class="inputElement" type="hidden" name="emailAddress" value="<?php echo $_smarty_tpl->tpl_vars['USER_NAME']->value;?>
 " />
@@ -284,7 +284,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable4);?>
 
 						<span class="redColor">*</span>
 					</span>
-					<div class="controls col-sm-5">
+					<div class="controls col-sm-7">
 						<input class="inputElement" type="password" name="password" data-rule-required="true" />
 						<br>
 						<br>
@@ -299,21 +299,21 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable4);?>
 			</div>
 			<div class="modal-footer">
 				<div class="row-fluid">
-					<span class="col-sm-8">
+					<span class="col-sm-6">
 						<?php if (!$_smarty_tpl->tpl_vars['REGISTRATION_STATUS']->value) {?>
 							<a class="pull-left create-new-acc" href="#" name="signUp"><?php echo vtranslate('LBL_CREATE_AN_ACCOUNT',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </a>
 						<?php } else { ?>&nbsp;
 						<?php }?>
 					</span>
-					<span class="col-sm-4">
+					<span class="col-sm-6">
 						<div class="pull-right">
 							<div class="pull-right cancelLinkContainer">
 								<a class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </a>
 							</div>
-							<button class="btn btn-submit" name="saveButton" type="submit"><strong><?php echo vtranslate('LBL_LOGIN',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-</strong></button>
+							<button class="btn btn-submit" name="saveButton" type="submit"><?php echo vtranslate('LBL_LOGIN',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+</button>
 						</div>
 					</span>
 				</div>
@@ -339,7 +339,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable5);?>
 			<input type="hidden" name="mode" value="forgotPassword" />
 			<div class="modal-body col-md-offset-1">
 				<div class="form-group">
-					<span class="control-label col-sm-5">
+					<span class="control-label col-sm-6">
 						<?php echo vtranslate('LBL_ENTER_REGISTERED_EMAIL',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 
 						<span class="redColor">*</span>
@@ -355,7 +355,7 @@ $_smarty_tpl->_assignInScope('HEADER_TITLE', $_prefixVariable5);?>
 							<a class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </a>
 						</div>
-						<button class="btn btn-submit okBtn" type="submit" style="padding: 5px 12px;"><?php echo vtranslate('LBL_OK',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+						<button class="btn btn-submit okBtn" type="submit"><?php echo vtranslate('LBL_OK',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </button>
 					</div>
 				</div>

@@ -143,7 +143,7 @@
 			</div>
 		</div>
 		<div style="margin-top: 15px; margin-left: 15px;">
-			<div>
+			<div class="footer-btns">
 				<button id="saveSettings" type="submit" class="btn btn-submit saveButton">{vtranslate('LBL_SAVE_SETTINGS', $MODULENAME)}</button>
 				{if $PARENT neq 'Settings'}
 					<a type="reset" data-url="{$MODULE_MODEL->getBaseExtensionUrl($SOURCEMODULE)}" class="cancelLink navigationLink">{vtranslate('LBL_CANCEL', $MODULENAME)}</a>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-11 12:25:16
+/* Smarty version 4.5.4, created on 2025-07-18 10:24:01
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\OverlayEditView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687102ac055184_49036066',
+  'unifunc' => 'content_687a20c18589f0_73793879',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b236b41a3ca2bc44aa1a3dce204af7fb10fda93' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\OverlayEditView.tpl',
-      1 => 1752064015,
+      1 => 1752817879,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687102ac055184_49036066 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a20c18589f0_73793879 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SCRIPTS']->value, 'jsModel', false, 'index');
 $_smarty_tpl->tpl_vars['jsModel']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['jsModel']->value) {
@@ -123,12 +123,10 @@ $_smarty_tpl->_assignInScope('QUALIFIED_MODULE_NAME', $_prefixVariable3);?>
             </div>
         </div>
         <div class='modal-footer overlayFooter'>
-            <center>
-                <footer>
-                    <button class="btn btn-submit saveButton" type="submit">Save</button>
-                    <a class="cancelLink" data-dismiss="modal" type="reset">Cancel</a>
-                </footer>
-            </center>
+            <div class='footer-btns'>
+                <button class="btn btn-submit saveButton" type="submit">Save</button>
+                <a class="cancelLink" data-dismiss="modal" type="reset">Cancel</a>
+            </div>
         </div>
     </form>
 </div><?php }

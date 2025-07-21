@@ -104,8 +104,8 @@
 																</div>
 															</div>
 															<div class="col-sm-1 deleteButton" style="padding-right: 0px;" data-relation="1">
-																<div class="pull-right">
-																	<button class="close" data-dismiss="modal" title="{vtranslate('LBL_CLOSE')}">x</button>
+																<div class="pull-right relation-close-btn">
+																	<button class="fa fa-close close" data-dismiss="modal" title="{vtranslate('LBL_CLOSE')}"></button>
 																</div>
 															</div>
 														</div>
@@ -182,8 +182,8 @@
 								</div>
 							</div>
 							<div class="col-sm-1 deleteButton" style="padding-right: 0px;" data-relation="1">
-								<div class="pull-right">
-									<button class="close" data-dismiss="modal" title="{vtranslate('LBL_CLOSE')}">x</button>
+								<div class="pull-right relation-close-btn">
+									<button class="fa fa-close close" data-dismiss="modal" title="{vtranslate('LBL_CLOSE')}"></button>
 								</div>
 							</div>
 						</div>

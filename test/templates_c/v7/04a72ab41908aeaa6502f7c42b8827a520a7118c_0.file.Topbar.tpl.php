@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-14 06:17:01
+/* Smarty version 4.5.4, created on 2025-07-17 05:57:47
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\partials\Topbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6874a0dde8d1d6_24191835',
+  'unifunc' => 'content_687890db919c39_44392912',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '04a72ab41908aeaa6502f7c42b8827a520a7118c' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\partials\\Topbar.tpl',
-      1 => 1752473819,
+      1 => 1752731857,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/Vtiger/Header.tpl' => 1,
   ),
 ),false)) {
-function content_6874a0dde8d1d6_24191835 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687890db919c39_44392912 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:modules/Vtiger/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_assignInScope('APP_IMAGE_MAP', Vtiger_MenuStructure_Model::getAppIcons());?><nav class="navbar navbar-inverse navbar-fixed-top app-fixed-navbar"><div class="container-fluid global-nav search-cont"><div class="row"><div id="toggle-container" class="col-sm-1 col-xs-1 cursorPointer"><div class="row btn-pin-toggle hamburger is-sm is-active"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></div></div><div class="navbar-header paddingTop5"><button type="button" class="navbar-toggle collapsed border0" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><i class="fa fa-th"></i></button><button type="button" class="navbar-toggle collapsed border0" data-toggle="collapse" data-target="#search-links-container" aria-expanded="false"><i class="fa fa-search"></i></button></div><div class="topbar-right"><div class="col-sm-4"><div id="search-links-container" class="search-links-container collapse navbar-collapse"><div class="search-link"><span class="fa fa-search" aria-hidden="true"></span><input class="keyword-input" type="text" placeholder="<?php echo vtranslate('LBL_TYPE_SEARCH');?>
 " value="<?php echo $_smarty_tpl->tpl_vars['GLOBAL_SEARCH_VALUE']->value;?>

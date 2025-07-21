@@ -32,7 +32,7 @@
                         {if ($RELATED_LINK->isPageLoadLink())}
                         {if $RELATION_FIELD} data-name="{$RELATION_FIELD->getName()}" {/if}
                     {/if}
-            {if $IS_SELECT_BUTTON neq true}name="composeEmail"{/if}>{if $IS_SELECT_BUTTON eq false}<i class="icon-plus icon-white"></i>{/if}&nbsp;<strong>{$RELATED_LINK->getLabel()}</strong></button>
+            {if $IS_SELECT_BUTTON neq true}name="composeEmail"{/if}>{if $IS_SELECT_BUTTON eq false}<i class="icon-plus icon-white"></i>{/if}&nbsp;{$RELATED_LINK->getLabel()}</button>
     </div>
 {/foreach}
 &nbsp;

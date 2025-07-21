@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-16 05:26:55
+/* Smarty version 4.5.4, created on 2025-07-18 07:16:52
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\CustomView\EditView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6877381f0c7307_89970820',
+  'unifunc' => 'content_6879f4e4cb07a1_22612167',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '29de6c1cb32db3f0e4f2c46decb50a3d31ee5676' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\CustomView\\EditView.tpl',
-      1 => 1752560449,
+      1 => 1752822978,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6877381f0c7307_89970820 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6879f4e4cb07a1_22612167 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('SELECTED_FIELDS', $_smarty_tpl->tpl_vars['CUSTOMVIEW_MODEL']->value->getSelectedFields());
 $_smarty_tpl->_assignInScope('MODULE_FIELDS', $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getFields());?><div id="filterContainer" class="create-new-list" style="height:100%"><form id="CustomView" style="height:100%"><div class="modal-content add-activity"><div class="overlayHeader"><?php if ($_smarty_tpl->tpl_vars['RECORD_ID']->value) {
 ob_start();
@@ -138,8 +138,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></optgroup><?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select><input type="hidden" name="status" id="allUsersStatusValue" value="" data-public="<?php echo $_smarty_tpl->tpl_vars['CV_PUBLIC_VALUE']->value;?>
 " data-private="<?php echo $_smarty_tpl->tpl_vars['CV_PRIVATE_VALUE']->value;?>
-"/></div></div><div class='modal-overlay-footer clearfix border1px'><div class="row clearfix"><div class=' textAlignCenter col-lg-12 col-md-12 col-sm-12 '><button type='submit' class='btn btn-submit saveButton' id="customViewSubmit"><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</button>&nbsp;&nbsp;<a class='cancelLink' href="javascript:void(0);" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a></div></div></div></div></form></div>
+"/></div></div><div class='modal-overlay-footer clearfix border1px'><div class="row clearfix"><div class=' textAlignCenter col-lg-12 col-md-12 col-sm-12'><div class='footer-btns'><button type='submit' class='btn btn-submit saveButton' id="customViewSubmit"><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</button><a class='cancelLink' href="javascript:void(0);" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</a></div></div></div></div></div></form></div>
 <?php }
 }

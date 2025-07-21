@@ -23,20 +23,20 @@
                             <div class="span6">
                                 <div class="pull-right extensionDetailActions">
                                     {if ($MODULE_ACTION eq 'Installed')}
-                                        <button class="btn btn-danger {if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)}authenticated {else} loginRequired{/if}" type="button" style="margin-right: 6px;" id="uninstallModule"><strong>{vtranslate('LBL_UNINSTALL', $QUALIFIED_MODULE)}</strong></button>
+                                        <button class="btn btn-danger {if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)}authenticated {else} loginRequired{/if}" type="button" style="margin-right: 6px;" id="uninstallModule">{vtranslate('LBL_UNINSTALL', $QUALIFIED_MODULE)}</button>
                                     {else}
                                         {if $EXTENSION_DETAIL->get('isprotected') && $IS_PRO && ($EXTENSION_DETAIL->get('price') gt 0)}
-                                            <button class="btn btn-info {if (!$CUSTOMER_PROFILE['CustomerCardId'])} setUpCard{/if}{if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)} authenticated {else} loginRequired{/if}" type="button" id="installExtension"><strong>{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION_DETAIL->get('price')}</strong></button>
+                                            <button class="btn btn-info {if (!$CUSTOMER_PROFILE['CustomerCardId'])} setUpCard{/if}{if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)} authenticated {else} loginRequired{/if}" type="button" id="installExtension">{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION_DETAIL->get('price')}</button>
                                         {elseif (!$EXTENSION_DETAIL->get('isprotected')) && ($EXTENSION_DETAIL->get('price') gt 0)}
-                                            <button class="btn btn-info {if (!$CUSTOMER_PROFILE['CustomerCardId'])} setUpCard{/if}{if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)} authenticated {else} loginRequired{/if}" type="button" id="installExtension"><strong>{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION_DETAIL->get('price')}</strong></button>
+                                            <button class="btn btn-info {if (!$CUSTOMER_PROFILE['CustomerCardId'])} setUpCard{/if}{if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)} authenticated {else} loginRequired{/if}" type="button" id="installExtension">{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION_DETAIL->get('price')}</button>
                                         {elseif !$EXTENSION_DETAIL->get('isprotected') && (($EXTENSION_DETAIL->get('price') eq 0) || ($EXTENSION_DETAIL->get('price') eq 'Free'))}
-                                            <button class="btn btn-submit {if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)}authenticated {else} loginRequired{/if}" type="button" id="installExtension"><strong>{vtranslate($MODULE_ACTION, $QUALIFIED_MODULE)}</strong></button>
+                                            <button class="btn btn-submit {if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)}authenticated {else} loginRequired{/if}" type="button" id="installExtension">{vtranslate($MODULE_ACTION, $QUALIFIED_MODULE)}</button>
                                         {elseif $EXTENSION_DETAIL->get('isprotected') && $IS_PRO && (($EXTENSION_DETAIL->get('price') eq 0) || ($EXTENSION_DETAIL->get('price') eq 'Free'))}
-                                            <button class="btn btn-submit {if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)}authenticated {else} loginRequired{/if}" type="button" id="installExtension"><strong>{vtranslate($MODULE_ACTION, $QUALIFIED_MODULE)}</strong></button>
+                                            <button class="btn btn-submit {if ($REGISTRATION_STATUS) and ($PASSWORD_STATUS)}authenticated {else} loginRequired{/if}" type="button" id="installExtension">{vtranslate($MODULE_ACTION, $QUALIFIED_MODULE)}</button>
                                         {/if}
                                     {/if}
 
-                                    <button class="btn btn-info {if $MODULE_ACTION eq 'Installed'}{if $EXTENSION_MODULE_MODEL->get('extnType') eq 'language'}hide{/if}{else}hide{/if}" type="button" id="launchExtension" onclick="location.href='index.php?module={$EXTENSION_DETAIL->get('name')}&view=List'"><strong>{vtranslate('LBL_LAUNCH', $QUALIFIED_MODULE)}</strong></button>
+                                    <button class="btn btn-info {if $MODULE_ACTION eq 'Installed'}{if $EXTENSION_MODULE_MODEL->get('extnType') eq 'language'}hide{/if}{else}hide{/if}" type="button" id="launchExtension" onclick="location.href='index.php?module={$EXTENSION_DETAIL->get('name')}&view=List'">{vtranslate('LBL_LAUNCH', $QUALIFIED_MODULE)}</button>
                                     <a class="cancelLink" type="reset" id="declineExtension">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                                 </div>
                                 <div class="clearfix"></div>
@@ -44,9 +44,9 @@
 			</div>
                         <div class="tabbable margin0px" style="padding-bottom: 20px;">
                             <ul id="extensionTab" class="nav nav-tabs" style="margin-bottom: 0px; padding-bottom: 0px;">
-                                <li class="active"><a href="#description" data-toggle="tab"><strong>{vtranslate('LBL_DESCRIPTION', $QUALIFIED_MODULE)}</strong></a></li>
-                                <li><a href="#CustomerReviews" data-toggle="tab"><strong>{vtranslate('LBL_CUSTOMER_REVIEWS', $QUALIFIED_MODULE)}</strong></a></li>
-                                <li><a href="#Author" data-toggle="tab"><strong>{vtranslate('LBL_PUBLISHER', $QUALIFIED_MODULE)}</strong></a></li>
+                                <li class="active"><a href="#description" data-toggle="tab">{vtranslate('LBL_DESCRIPTION', $QUALIFIED_MODULE)}</a></li>
+                                <li><a href="#CustomerReviews" data-toggle="tab">{vtranslate('LBL_CUSTOMER_REVIEWS', $QUALIFIED_MODULE)}</a></li>
+                                <li><a href="#Author" data-toggle="tab">{vtranslate('LBL_PUBLISHER', $QUALIFIED_MODULE)}</a></li>
                             </ul>
                             <div class="tab-content row-fluid boxSizingBorderBox" style="background-color: #fff; padding: 20px; border: 1px solid #ddd; border-top-width: 0px;">
                                 <div class="tab-pane active" id="description">
@@ -164,7 +164,7 @@
                                         <div class="pull-right cancelLinkContainer" style="margin-top:0px;">
                                                 <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                                         </div>
-                                        <button class="btn btn-submit" type="submit" name="saveButton"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                                        <button class="btn btn-submit" type="submit" name="saveButton">{vtranslate('LBL_SAVE', $MODULE)}</button>
                                     </div>
                                 </div>  
                             </div>

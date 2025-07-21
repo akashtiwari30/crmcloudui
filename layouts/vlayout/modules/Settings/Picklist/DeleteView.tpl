@@ -65,7 +65,7 @@
 		<div class=" pull-right cancelLinkContainer">
 			<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 		</div>
-		<button class="btn btn-danger" type="submit" name="saveButton"><strong>{vtranslate('LBL_DELETE', $MODULE)}</strong></button>
+		<button class="btn btn-danger" type="submit" name="saveButton">{vtranslate('LBL_DELETE', $MODULE)}</button>
 	</div>
 	</form>
 </div>

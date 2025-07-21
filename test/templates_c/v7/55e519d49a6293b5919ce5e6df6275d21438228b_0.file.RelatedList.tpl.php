@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-14 09:46:38
+/* Smarty version 4.5.4, created on 2025-07-18 11:55:55
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\LayoutEditor\RelatedList.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6874d1fe692462_21599161',
+  'unifunc' => 'content_687a364b6f0f84_05071438',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '55e519d49a6293b5919ce5e6df6275d21438228b' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\LayoutEditor\\RelatedList.tpl',
-      1 => 1752486395,
+      1 => 1752839633,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6874d1fe692462_21599161 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a364b6f0f84_05071438 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('ModulesList', array());
 $_smarty_tpl->_assignInScope('removedModuleIds', array());?><div class="relatedTabModulesList" style="padding:1% 0"><div><?php if (empty($_smarty_tpl->tpl_vars['RELATED_MODULES']->value) && empty($_smarty_tpl->tpl_vars['RELATION_FIELDS']->value)) {?><div class="emptyRelatedTabs" style="margin-top:100px;"><div class="recordDetails"><div class="textAlignCenter" style="font-size:20px;opacity:0.7"><?php echo vtranslate('LBL_NO_RELATED_INFO',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 .</div></div></div><?php } else { ?><div class="relatedListContainer" style="margin-top:20px;"><div class="row"><div class="col-sm-4" id="ONE_ONE_AND_MANY_ONE_RELATIONSHIP"><div style="padding-bottom:15px;"><h6><?php echo vtranslate('ONE_ONE_AND_MANY_ONE_RELATIONSHIP',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
@@ -67,8 +67,8 @@ $_smarty_tpl->_assignInScope('RELATION_FIELD_MODEL', $_smarty_tpl->tpl_vars['MOD
 </h6></div><p class="moduletranslatedLabel"><?php echo vtranslate($_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getRelationModuleName(),$_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getRelationModuleName());?>
 </p></div><div class="col-sm-4" style="margin-top: 4px;"><div class="pull-right"><?php if ($_smarty_tpl->tpl_vars['MODULE_MODEL']->value->get('relationtype') == '1:N' && $_smarty_tpl->tpl_vars['MODULE_MODEL']->value->getRelationModuleName() != 'Calendar') {?><img src="<?php echo vimage_path('1-N.png');?>
 " width="100" height="50" /><?php } else { ?><img src="<?php echo vimage_path('N-N.png');?>
-" width="100" height="50" /><?php }?></div></div><div class="col-sm-1 deleteButton" style="padding-right: 0px;" data-relation="1"><div class="pull-right"><button class="close" data-dismiss="modal" title="<?php echo vtranslate('LBL_CLOSE');?>
-">x</button></div></div></div></li><?php }
+" width="100" height="50" /><?php }?></div></div><div class="col-sm-1 deleteButton" style="padding-right: 0px;" data-relation="1"><div class="pull-right relation-close-btn"><button class="fa fa-close close" data-dismiss="modal" title="<?php echo vtranslate('LBL_CLOSE');?>
+"></button></div></div></div></li><?php }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></ul></div><div class="col-sm-5"><div><div class="pull-right" style="margin-bottom:20px;"><span class="col-sm-6" style="width:100%"><img src="<?php echo vimage_path('Square.png');?>
 " /><span class="marginLeft10px color-indicator"><?php echo vtranslate($_smarty_tpl->tpl_vars['SELECTED_MODULE_NAME']->value,$_smarty_tpl->tpl_vars['SELECTED_MODULE_NAME']->value);?>
@@ -99,8 +99,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select></div><
 </button>&nbsp;&nbsp;</div></div></div><li class="moduleCopy hide border1px " style="width: 300px;padding: 5px;"><div class="row"><span class="col-sm-1" style="margin-top:18px;"><img class="cursorPointerMove" src="<?php echo vimage_path('drag.png');?>
 " title="<?php echo vtranslate('LBL_DRAG',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 "/>&nbsp;&nbsp;</span><div class="col-sm-5" style="margin-top:4px;"><div class="textOverflowEllipsis"><span class="moduleLabel" style="font-size:15px;"></span></div><span class="moduletranslatedLabel"></span></div><div class="col-sm-4" style="margin-top: 4px;"><div class="pull-right"><img src="<?php echo vimage_path('N-N.png');?>
-" width="100" height="50" /></div></div><div class="col-sm-1 deleteButton" style="padding-right: 0px;" data-relation="1"><div class="pull-right"><button class="close" data-dismiss="modal" title="<?php echo vtranslate('LBL_CLOSE');?>
-">x</button></div></div></div></li></div><?php }?><input type="hidden" class="ModulesListArray" value='<?php echo ZEND_JSON::encode($_smarty_tpl->tpl_vars['ModulesList']->value);?>
+" width="100" height="50" /></div></div><div class="col-sm-1 deleteButton" style="padding-right: 0px;" data-relation="1"><div class="pull-right relation-close-btn"><button class="fa fa-close close" data-dismiss="modal" title="<?php echo vtranslate('LBL_CLOSE');?>
+"></button></div></div></div></li></div><?php }?><input type="hidden" class="ModulesListArray" value='<?php echo ZEND_JSON::encode($_smarty_tpl->tpl_vars['ModulesList']->value);?>
 ' /><input type="hidden" class="RemovedModulesListArray" value='<?php echo ZEND_JSON::encode($_smarty_tpl->tpl_vars['removedModuleIds']->value);?>
 ' /></div></div><?php }
 }

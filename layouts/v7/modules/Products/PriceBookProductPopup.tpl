@@ -40,15 +40,13 @@
                 </div>
                 <div class = "modal-footer">
                     {if $LISTVIEW_ENTRIES_COUNT neq '0'}
-                        <center>
-                            <footer>
-                                <button class="btn btn-submit addProducts" type="submit">
-                                    <i class="fa fa-plus"></i>&nbsp;&nbsp;
-                                    <strong>{vtranslate('LBL_ADD_TO_PRICEBOOKS', $MODULE)}</strong>
-                                </button>
-                                <a class="cancelLink" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-                            </footer>
-                        </center>
+                        <div class="footer-btns">
+                            <button class="btn btn-submit addProducts" type="submit">
+                                <i class="fa fa-plus"></i>&nbsp;&nbsp;
+                                {vtranslate('LBL_ADD_TO_PRICEBOOKS', $MODULE)}
+                            </button>
+                            <a class="cancelLink" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+                        </div>
                     {/if}
                 </div>
             </form>

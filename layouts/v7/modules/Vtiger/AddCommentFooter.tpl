@@ -22,7 +22,7 @@
                     <div class="pull-right cancelLinkContainer" style="margin-top:0px;">
                         <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                     </div>
-                    <button class="btn btn-submit" type="submit" name="saveButton"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                    <button class="btn btn-submit" type="submit" name="saveButton">{vtranslate('LBL_SAVE', $MODULE)}</button>
                 </div>
             </div>
         </div>

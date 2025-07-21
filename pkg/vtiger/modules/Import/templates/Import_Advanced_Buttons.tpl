@@ -10,9 +10,10 @@
  ********************************************************************************/
 -->*}
 
-<button type="submit" name="import" id="importButton" class="crmButton big edit btn btn-submit"
-		><strong>{'LBL_IMPORT_BUTTON_LABEL'|@vtranslate:$MODULE}</strong></button>
-&nbsp;&nbsp;
+<button type="submit" name="import" id="importButton" class="crmButton big edit btn btn-submit">
+	{'LBL_IMPORT_BUTTON_LABEL'|@vtranslate:$MODULE}
+</button>
+
 <a type="button" name="cancel" value="{'LBL_CANCEL'|@vtranslate:$MODULE}" class="cursorPointer cancelLink" onclick="window.history.back()">
 	{'LBL_CANCEL'|@vtranslate:$MODULE}
 </a>

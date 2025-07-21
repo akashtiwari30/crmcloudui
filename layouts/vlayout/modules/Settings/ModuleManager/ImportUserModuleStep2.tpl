@@ -30,7 +30,7 @@
                                                     {/if}
                                             </div>
                                             <input type="hidden" name="view" value="List">
-                                            <button  class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_FINISH', $QUALIFIED_MODULE)}</strong></button>
+                                            <button  class="btn btn-submit" type="submit">{vtranslate('LBL_FINISH', $QUALIFIED_MODULE)}</button>
                                         {else}
                                             <div class="row-fluid" style="margin-top: 2%">
                                                 <div>
@@ -110,7 +110,7 @@
                                                                                 <a class="cancelLink" type="reset" data-dismiss="modal" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                                                                         </div>
                                                                         <button  class="btn btn-submit importModule" name="saveButton"
-                                                                        {if $need_license_agreement eq 'true'} disabled {/if}><strong>{vtranslate('LBL_IMPORT_NOW', $QUALIFIED_MODULE)}</strong></button>
+                                                                        {if $need_license_agreement eq 'true'} disabled {/if}>{vtranslate('LBL_IMPORT_NOW', $QUALIFIED_MODULE)}</button>
 
                                                                 </span>
                                                         {/if}
@@ -134,7 +134,7 @@
                 <div class="modal-footer">
                     <div class="row-fluid">
                         <div class="pull-right">
-                            <button class="btn btn-submit" type="submit" name="saveButton"><strong>{vtranslate('LBL_OK', $QUALIFIED_MODULE)}</strong></button>
+                            <button class="btn btn-submit" type="submit" name="saveButton">{vtranslate('LBL_OK', $QUALIFIED_MODULE)}</button>
                         </div>
                     </div>
                 </div>

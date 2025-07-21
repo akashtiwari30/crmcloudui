@@ -20,17 +20,17 @@
             <div class="row-fluid">
                 <div class="btn-toolbar span10">
                     <div class="btn-group">
-                        <button class="btn pull-left" onclick="MailManager.mail_close();" href='javascript:void(0);'><strong>&#171; {$FOLDER->name()}</strong></button>
+                        <button class="btn pull-left" onclick="MailManager.mail_close();" href='javascript:void(0);'>&#171; {$FOLDER->name()}</button>
                     </div>
                     <div class="btn-group">
-                        <button class="btn" onclick="MailManager.mail_reply(true);"><strong>{vtranslate('LBL_Reply_All',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_reply(false);"><strong>{vtranslate('LBL_Reply',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_forward({$MAIL->msgno()});"><strong>{vtranslate('LBL_Forward',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_mark_unread('{$FOLDER->name()}', {$MAIL->msgno()});"><strong>{vtranslate('LBL_Mark_As_Unread',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_print();"><strong>{vtranslate('LBL_Print',$MODULE)}</strong></button>
+                        <button class="btn" onclick="MailManager.mail_reply(true);">{vtranslate('LBL_Reply_All',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_reply(false);">{vtranslate('LBL_Reply',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_forward({$MAIL->msgno()});">{vtranslate('LBL_Forward',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_mark_unread('{$FOLDER->name()}', {$MAIL->msgno()});">{vtranslate('LBL_Mark_As_Unread',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_print();">{vtranslate('LBL_Print',$MODULE)}</button>
                     </div>
                     <div class="btn-group">
-                        <button class="btn btn-danger" id = 'mail_delete_dtlview' onclick="MailManager.maildelete('{$FOLDER->name()}',{$MAIL->msgno()},true);"><strong>{vtranslate('LBL_Delete',$MODULE)}</strong></button>
+                        <button class="btn btn-danger" id = 'mail_delete_dtlview' onclick="MailManager.maildelete('{$FOLDER->name()}',{$MAIL->msgno()},true);">{vtranslate('LBL_Delete',$MODULE)}</button>
                     </div>
                 </div>
 				<div class="span2">

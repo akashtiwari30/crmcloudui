@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-11 12:16:51
+/* Smarty version 4.5.4, created on 2025-07-17 07:18:13
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\PopupContents.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687100b3d7ce48_32365032',
+  'unifunc' => 'content_6878a3b59cf017_09168164',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0d07097d42af116bdef47ee9e2a9be252ff49e7b' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\PopupContents.tpl',
-      1 => 1752064015,
+      1 => 1752736573,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687100b3d7ce48_32365032 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6878a3b59cf017_09168164 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "PicklistColorMap.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?><div class="row"><?php $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( 'PopupNavigation.tpl',$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?></div><div class="row"><div class="col-md-12"><input type='hidden' id='pageNumber' value="<?php echo $_smarty_tpl->tpl_vars['PAGE_NUMBER']->value;?>
@@ -39,7 +39,7 @@ if ((isset($_smarty_tpl->tpl_vars['SEARCH_DETAILS']->value))) {?><input type="hi
 " id="sortOrder"><?php if ($_smarty_tpl->tpl_vars['SOURCE_MODULE']->value == "Emails") {
 if ($_smarty_tpl->tpl_vars['MODULE']->value != 'Documents') {?><input type="hidden" value="Vtiger_EmailsRelatedModule_Popup_Js" id="popUpClassName"/><?php }
 }
-$_smarty_tpl->_assignInScope('WIDTHTYPE', $_smarty_tpl->tpl_vars['CURRENT_USER_MODEL']->value->get('rowheight'));?><div class="popupEntriesTableContainer <?php if ($_smarty_tpl->tpl_vars['MODULE']->value == 'EmailTemplates') {?> emailTemplatesPopupTableContainer<?php }?>"><table class="listview-table table-bordered listViewEntriesTable"><thead><tr class="listViewHeaders"><?php if ((isset($_smarty_tpl->tpl_vars['MULTI_SELECT']->value))) {?><th class="<?php echo $_smarty_tpl->tpl_vars['WIDTHTYPE']->value;?>
+$_smarty_tpl->_assignInScope('WIDTHTYPE', $_smarty_tpl->tpl_vars['CURRENT_USER_MODEL']->value->get('rowheight'));?><div class="popupEntriesTableContainer <?php if ($_smarty_tpl->tpl_vars['MODULE']->value == 'EmailTemplates') {?> emailTemplatesPopupTableContainer<?php }?>"><table class="listview-table listViewEntriesTable"><thead><tr class="listViewHeaders"><?php if ((isset($_smarty_tpl->tpl_vars['MULTI_SELECT']->value))) {?><th class="<?php echo $_smarty_tpl->tpl_vars['WIDTHTYPE']->value;?>
 "><input type="checkbox" class="selectAllInCurrentPage" /></th><?php } elseif ($_smarty_tpl->tpl_vars['MODULE']->value != 'EmailTemplates') {?><th class="<?php echo $_smarty_tpl->tpl_vars['WIDTHTYPE']->value;?>
 ">&nbsp;</th><?php }
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['LISTVIEW_HEADERS']->value, 'LISTVIEW_HEADER');

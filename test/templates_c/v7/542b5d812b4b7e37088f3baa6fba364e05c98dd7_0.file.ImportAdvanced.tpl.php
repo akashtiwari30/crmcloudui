@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 05:05:55
+/* Smarty version 4.5.4, created on 2025-07-18 09:00:11
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Import\ImportAdvanced.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686f4a335dd435_99349097',
+  'unifunc' => 'content_687a0d1bed0318_99852150',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '542b5d812b4b7e37088f3baa6fba364e05c98dd7' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Import\\ImportAdvanced.tpl',
-      1 => 1752064015,
+      1 => 1752816113,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686f4a335dd435_99349097 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a0d1bed0318_99852150 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <div class='fc-overlay-modal modal-content import-third-modal'>
@@ -120,11 +120,14 @@ $_smarty_tpl->_assignInScope('LABELS', $_tmp_array);?>
             <div class='modal-overlay-footer clearfix'>
                 <div class="row clearfix">
                         <div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
-                        <button type="submit" name="import" id="importButton" class="btn btn-submit btn-lg" onclick="return Vtiger_Import_Js.sanitizeAndSubmit()"
-                                ><?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtranslate' ][ 0 ], array( 'LBL_IMPORT_BUTTON_LABEL',$_smarty_tpl->tpl_vars['MODULE']->value ));?>
+                            <div class='footer-btns'>
+                                <button type="submit" name="import" id="importButton" class="btn btn-submit btn-lg" onclick="return Vtiger_Import_Js.sanitizeAndSubmit()"
+                                        ><?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtranslate' ][ 0 ], array( 'LBL_IMPORT_BUTTON_LABEL',$_smarty_tpl->tpl_vars['MODULE']->value ));?>
 </button>
-                        &nbsp;&nbsp;&nbsp;<a class='cancelLink' data-dismiss="modal" href="#"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a></div>
+                                <a class='cancelLink' data-dismiss="modal" href="#"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </form>

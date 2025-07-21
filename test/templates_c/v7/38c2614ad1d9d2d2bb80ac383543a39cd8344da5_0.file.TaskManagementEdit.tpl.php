@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 04:40:23
+/* Smarty version 4.5.4, created on 2025-07-18 11:30:44
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Calendar\TaskManagementEdit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686f44371907b5_79824182',
+  'unifunc' => 'content_687a306429cf64_20689468',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '38c2614ad1d9d2d2bb80ac383543a39cd8344da5' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Calendar\\TaskManagementEdit.tpl',
-      1 => 1752064015,
+      1 => 1752829040,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686f44371907b5_79824182 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a306429cf64_20689468 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form id="editTask" name="editTask" method="post" action="index.php" onsubmit="return false;"><input type="hidden" id="sourceModule" name="module" value="<?php echo $_smarty_tpl->tpl_vars['MODULE']->value;?>
 "><div class="popover-body container-fluid"><div class='fields' style='padding-top:10px;'><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['EDITABLE_FIELDS']->value, 'FIELD_MODEL', false, 'FIELD_NAME');
@@ -52,7 +52,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select></div><
 &nbsp;<?php if ($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->isMandatory() == true) {?> <span class="redColor">*</span> <?php }?> </label><?php }?></div><div class='fieldValue col-lg-7'><?php $_smarty_tpl->_subTemplateRender(vtemplate_path($_smarty_tpl->tpl_vars['FIELD_MODEL']->value->getUITypeModel()->getTemplateName(),$_smarty_tpl->tpl_vars['MODULE']->value), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
 ?></div></div><br><?php
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></div></div><div class="popover-footer"><center><button class="btn btn-submit popoverSave" type="submit" name="saveButton"><strong><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</strong></button><a href="#" class="cancelLink popoverClose" type="reset"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a></center></div></form><?php }
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></div></div><div class="popover-footer"><div class="footer-btns"><button class="btn btn-submit popoverSave" type="submit" name="saveButton"><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</button><a href="#" class="cancelLink popoverClose" type="reset"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</a></div></div></form><?php }
 }

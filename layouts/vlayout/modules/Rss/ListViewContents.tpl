@@ -22,10 +22,10 @@
             <div class="row-fluid">
                 <span class="btn-toolbar pull-right">
                     <span class="btn-group">
-                        <button id="deleteButton" class="btn">&nbsp;<strong>{vtranslate('LBL_DELETE', $MODULE)}</strong></button>
+                        <button id="deleteButton" class="btn">&nbsp;{vtranslate('LBL_DELETE', $MODULE)}</button>
                     </span>
                     <span class="btn-group">
-                        <button id="makeDefaultButton" class="btn">&nbsp;<strong>{vtranslate('LBL_SET_AS_DEFAULT', $MODULE)}</strong></button>
+                        <button id="makeDefaultButton" class="btn">&nbsp;{vtranslate('LBL_SET_AS_DEFAULT', $MODULE)}</button>
                     </span>
                 </span>
                 <span class="row-fluid" id="rssFeedHeading">

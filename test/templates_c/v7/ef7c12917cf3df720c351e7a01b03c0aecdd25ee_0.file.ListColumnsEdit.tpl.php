@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-11 07:06:25
+/* Smarty version 4.5.4, created on 2025-07-18 12:12:22
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\ListColumnsEdit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6870b7f1570492_64012013',
+  'unifunc' => 'content_687a3a26ee9067_69699247',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef7c12917cf3df720c351e7a01b03c0aecdd25ee' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\ListColumnsEdit.tpl',
-      1 => 1752064015,
+      1 => 1752830044,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6870b7f1570492_64012013 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a3a26ee9067_69699247 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="modal-dialog modal-lg configColumnsContainer"><div class="modal-content"><?php ob_start();
 echo vtranslate('LBL_CONFIG_COLUMNS',$_smarty_tpl->tpl_vars['MODULE']->value);
@@ -80,7 +80,7 @@ continue 1;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></div></div></div><?php
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?><div class="instafilta-target item-dummy hide"><span class="fieldLabel"></span></div></div></div></div></div></div></div></div><div class="modal-footer "><button class="btn btn-submit" type="submit" name="saveButton"><strong><?php echo vtranslate('LBL_UPDATE_LIST');?>
-</strong></button><a href="#" class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?><div class="instafilta-target item-dummy hide"><span class="fieldLabel"></span></div></div></div></div></div></div></div></div><div class="modal-footer "><button class="btn btn-submit" type="submit" name="saveButton"><?php echo vtranslate('LBL_UPDATE_LIST');?>
+</button><a href="#" class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </a></div></form></div></div><?php }
 }

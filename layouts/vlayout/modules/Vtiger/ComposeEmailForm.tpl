@@ -152,10 +152,10 @@
 			<div class="span8">
 				<div class="btn-toolbar">
 					<span class="btn-group span5 marginLeftZero">
-						<button class="btn btn-submit" id="sendEmail" type="submit" title="{vtranslate('LBL_SEND',$MODULE)}"><strong>{vtranslate('LBL_SEND',$MODULE)}</strong></button>&nbsp;&nbsp;
-						<button type="submit" class="btn" style="" id="saveDraft" title="{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}"><strong>{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}</strong></button>
+						<button class="btn btn-submit" id="sendEmail" type="submit" title="{vtranslate('LBL_SEND',$MODULE)}">{vtranslate('LBL_SEND',$MODULE)}</button>
+						<button type="submit" class="btn" style="" id="saveDraft" title="{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}">{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}</button>
 						{if !empty($PARENT_EMAIL_ID)}
-							<button type="button" class="btn" id="gotoPreview" title="{vtranslate('LBL_GO_TO_PREVIEW',$MODULE)}" style="margin-left: 5px;"><strong>{vtranslate('LBL_GO_TO_PREVIEW',$MODULE)}</strong></button>
+							<button type="button" class="btn" id="gotoPreview" title="{vtranslate('LBL_GO_TO_PREVIEW',$MODULE)}" style="margin-left: 5px;">{vtranslate('LBL_GO_TO_PREVIEW',$MODULE)}</button>
 						{/if}
 					</span>
 					<span name="progressIndicator" style="height:30px;">&nbsp;</span>
@@ -164,7 +164,7 @@
 			{if $MODULE_IS_ACTIVE}
 				<div class="span4">
 					<span class="btn-toolbar pull-right">
-						<button type="button" class="btn" id="selectEmailTemplate" data-url="{$EMAIL_TEMPLATE_URL}" title="{vtranslate('LBL_SELECT_EMAIL_TEMPLATE',$MODULE)}"><strong>{vtranslate('LBL_SELECT_EMAIL_TEMPLATE',$MODULE)}</strong></button>
+						<button type="button" class="btn" id="selectEmailTemplate" data-url="{$EMAIL_TEMPLATE_URL}" title="{vtranslate('LBL_SELECT_EMAIL_TEMPLATE',$MODULE)}">{vtranslate('LBL_SELECT_EMAIL_TEMPLATE',$MODULE)}</button>
 					</span>
 				</div>
 			{/if}

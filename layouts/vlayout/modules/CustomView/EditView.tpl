@@ -95,7 +95,7 @@
         </div>
         <div class="filterActions">
             <a class="cancelLink pull-right" type="reset" onClick="window.location.reload()">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-            <button class="btn btn-submit pull-right" id="customViewSubmit" type="submit"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+            <button class="btn btn-submit pull-right" id="customViewSubmit" type="submit">{vtranslate('LBL_SAVE', $MODULE)}</button>
         </div>
     </form>
 </div>

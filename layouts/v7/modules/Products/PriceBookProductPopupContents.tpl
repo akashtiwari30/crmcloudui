@@ -40,7 +40,7 @@
                 <input type="hidden" value="{Vtiger_Util_Helper::toSafeHTML(Zend_JSON::encode($SEARCH_DETAILS))}" id="currentSearchParams" />
                 {assign var=WIDTHTYPE value=$USER_MODEL->get('rowheight')}
                 <div class="bottomscroll-div">
-                    <table class="listview-table table-bordered listViewEntriesTable">
+                    <table class="listview-table listViewEntriesTable">
                         <thead>
                             <tr class="listViewHeaders">
                                 <th class="{$WIDTHTYPE}">

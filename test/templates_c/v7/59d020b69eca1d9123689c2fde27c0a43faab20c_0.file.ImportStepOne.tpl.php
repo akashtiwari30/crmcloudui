@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 04:40:17
+/* Smarty version 4.5.4, created on 2025-07-17 08:09:46
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Import\ImportStepOne.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686f443151de71_90509056',
+  'unifunc' => 'content_6878afcaf2b8c0_59685039',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '59d020b69eca1d9123689c2fde27c0a43faab20c' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Import\\ImportStepOne.tpl',
-      1 => 1751958713,
+      1 => 1752736301,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686f443151de71_90509056 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6878afcaf2b8c0_59685039 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class ="importBlockContainer show" id = "uploadFileContainer">
     <table class = "table table-borderless bg-light-color-2" cellpadding = "30" >
@@ -80,7 +80,7 @@ echo $_smarty_tpl->tpl_vars['FORMAT']->value;
 				<td><p><?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtranslate' ][ 0 ], array( 'LBL_CHARACTER_ENCODING',$_smarty_tpl->tpl_vars['MODULE']->value ));?>
 </p></td>
 				<td>
-					<select name="file_encoding" id="file_encoding" class="select2">
+					<select name="file_encoding" id="file_encoding" class="select2" style="width:35%">
 						<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SUPPORTED_FILE_ENCODING']->value, '_FILE_ENCODING_LABEL', false, '_FILE_ENCODING');
 $_smarty_tpl->tpl_vars['_FILE_ENCODING_LABEL']->do_else = true;

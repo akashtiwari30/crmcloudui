@@ -26,7 +26,7 @@
         {if !$MODAL}
             <div class="col-sm-6 col-xs-6">
                 {if $IS_SYNC_READY}
-                    <button class="btn addButton btn-submit syncNow" type="button" id="Contacts_basicAction_LBL_Sync_Settings"><span aria-hidden="true" class="fa fa-refresh"></span><strong>&nbsp; {vtranslate('LBL_SYNC_NOW', $MODULE)} </strong></button>
+                    <button class="btn addButton btn-submit syncNow" type="button" id="Contacts_basicAction_LBL_Sync_Settings"><span aria-hidden="true" class="fa fa-refresh"></span>&nbsp; {vtranslate('LBL_SYNC_NOW', $MODULE)} </button>
                         {/if}
             </div>
         {/if}

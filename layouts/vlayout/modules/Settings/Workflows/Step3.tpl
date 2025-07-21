@@ -27,8 +27,8 @@
         </div>
         <br>
         <div class="pull-right">
-            <button class="btn btn-danger backStep" type="button"><strong>{vtranslate('LBL_BACK', $QUALIFIED_MODULE)}</strong></button>&nbsp;&nbsp;
-            <button class="btn btn-submit" type="button" onclick="javascript:window.history.back();"><strong>{vtranslate('LBL_FINISH', $QUALIFIED_MODULE)}</strong></button>
+            <button class="btn btn-danger backStep" type="button">{vtranslate('LBL_BACK', $QUALIFIED_MODULE)}</button>&nbsp;&nbsp;
+            <button class="btn btn-submit" type="button" onclick="javascript:window.history.back();">{vtranslate('LBL_FINISH', $QUALIFIED_MODULE)}</button>
         </div>
         <div class="clearfix"></div>
     </form>

@@ -132,8 +132,10 @@
         <div class="modal-overlay-footer clearfix">
             <div class="row clearfix">
                 <div class="textAlignCenter col-lg-12 col-md-12 col-lg-12 ">
-                    <button class="btn btn-submit nextStep" type="submit">{vtranslate('LBL_NEXT',$MODULE)}</button>&nbsp;&nbsp;
-                    <a type="reset" onclick='window.history.back();' class="cancelLink cursorPointer">{vtranslate('LBL_CANCEL',$MODULE)}</a>
+                    <div class="footer-btns">
+                        <button class="btn btn-submit nextStep" type="submit">{vtranslate('LBL_NEXT',$MODULE)}</button>
+                        <a type="reset" onclick='window.history.back();' class="cancelLink cursorPointer">{vtranslate('LBL_CANCEL',$MODULE)}</a>
+                    </div>
                 </div>
             </div>
         </div>

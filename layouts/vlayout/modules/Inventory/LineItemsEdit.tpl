@@ -183,7 +183,7 @@
                         <div class=" pull-right cancelLinkContainer">
                             <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                         </div>
-                        <button class="btn btn-submit finalDiscountSave" type="button" name="lineItemActionSave"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                        <button class="btn btn-submit finalDiscountSave" type="button" name="lineItemActionSave">{vtranslate('LBL_SAVE', $MODULE)}</button>
                     </div>
                 </div>
                 <!-- End Popup Div -->
@@ -237,7 +237,7 @@
                         <div class=" pull-right cancelLinkContainer">
                             <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                         </div>
-                        <button class="btn btn-submit" type="button" name="lineItemActionSave"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                        <button class="btn btn-submit" type="button" name="lineItemActionSave">{vtranslate('LBL_SAVE', $MODULE)}</button>
                     </div>
                 </div>
                 <!-- End Popup Div Group Tax -->
@@ -279,7 +279,7 @@
                         <div class=" pull-right cancelLinkContainer">
                             <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                         </div>
-                        <button class="btn btn-submit finalTaxSave" type="button" name="lineItemActionSave"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                        <button class="btn btn-submit finalTaxSave" type="button" name="lineItemActionSave">{vtranslate('LBL_SAVE', $MODULE)}</button>
                     </div>
                 </div>
                 <!-- End Popup Div for Shipping and Handling TAX -->

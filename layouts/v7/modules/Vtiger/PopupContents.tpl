@@ -38,7 +38,7 @@
             {/if}
             {assign var=WIDTHTYPE value=$CURRENT_USER_MODEL->get('rowheight')}
             <div class="popupEntriesTableContainer {if $MODULE eq 'EmailTemplates'} emailTemplatesPopupTableContainer{/if}">
-                <table class="listview-table table-bordered listViewEntriesTable">
+                <table class="listview-table listViewEntriesTable">
                 <thead>
                     <tr class="listViewHeaders">
                         {if isset($MULTI_SELECT)}

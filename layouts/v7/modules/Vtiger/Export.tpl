@@ -100,8 +100,9 @@
 			<div class="modal-overlay-footer clearfix">
 				<div class="row clearfix">
 					<div class=" textAlignCenter col-lg-12 col-md-12 col-sm-12 ">
-						<div><button type="submit" class="btn btn-submit btn-lg">{vtranslate('LBL_EXPORT', 'Vtiger')}&nbsp;{vtranslate($SOURCE_MODULE, $SOURCE_MODULE)}</button>
-							&nbsp;&nbsp;&nbsp;<a class="cancelLink" data-dismiss="modal" href="#">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+						<div class='footer-btns'>
+							<button type="submit" class="btn btn-submit btn-lg">{vtranslate('LBL_EXPORT', 'Vtiger')}&nbsp;{vtranslate($SOURCE_MODULE, $SOURCE_MODULE)}</button>
+							<a class="cancelLink" data-dismiss="modal" href="#">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 						</div>
 					</div>
 				</div>

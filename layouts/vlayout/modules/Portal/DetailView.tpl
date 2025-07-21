@@ -13,7 +13,7 @@
     <div class="listViewPageDiv">
         <span class="btn-toolbar span4">
             <span class="btn-group">
-                <button id="addBookmark" class="btn addButton"><i class="icon-plus"></i>&nbsp;<strong>{vtranslate('LBL_ADD_BOOKMARK', $MODULE)}</strong></button>
+                <button id="addBookmark" class="btn addButton"><i class="icon-plus"></i>&nbsp;{vtranslate('LBL_ADD_BOOKMARK', $MODULE)}</button>
             </span>
         </span>
         <span class="span2">&nbsp;</span>

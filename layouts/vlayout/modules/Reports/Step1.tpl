@@ -235,7 +235,7 @@
                 </div>
 		</div>
 		<div class="pull-right">
-			<button type="submit" class="btn btn-submit nextStep"><strong>{vtranslate('LBL_NEXT',$MODULE)}</strong></button>&nbsp;&nbsp;
+			<button type="submit" class="btn btn-submit nextStep">{vtranslate('LBL_NEXT',$MODULE)}</button>
 			<a onclick='window.history.back()' class="cancelLink cursorPointer">{vtranslate('LBL_CANCEL',$MODULE)}</a>
 		</div>
 	</form>

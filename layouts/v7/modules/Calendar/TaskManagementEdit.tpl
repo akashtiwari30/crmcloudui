@@ -48,10 +48,10 @@
 			</div>
 		</div>
 		<div class="popover-footer">
-			<center>
-				<button class="btn btn-submit popoverSave" type="submit" name="saveButton"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+			<div class="footer-btns">
+				<button class="btn btn-submit popoverSave" type="submit" name="saveButton">{vtranslate('LBL_SAVE', $MODULE)}</button>
 				<a href="#" class="cancelLink popoverClose" type="reset">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-			</center>
+			</div>
 		</div>
 	</form>
 {/strip}

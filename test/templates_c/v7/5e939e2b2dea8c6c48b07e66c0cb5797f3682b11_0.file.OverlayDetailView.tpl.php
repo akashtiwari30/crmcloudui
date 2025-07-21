@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-11 12:25:52
+/* Smarty version 4.5.4, created on 2025-07-17 13:09:37
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\OverlayDetailView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687102d07195f9_57147364',
+  'unifunc' => 'content_6878f611584730_73799510',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5e939e2b2dea8c6c48b07e66c0cb5797f3682b11' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\OverlayDetailView.tpl',
-      1 => 1744629586,
+      1 => 1752757761,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687102d07195f9_57147364 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6878f611584730_73799510 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['SCRIPTS']->value, 'jsModel', false, 'index');
 $_smarty_tpl->tpl_vars['jsModel']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['jsModel']->value) {
@@ -72,7 +72,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 >
 <?php }?>
 
-<div class='fc-overlay-modal overlayDetail'>
+<div class='fc-overlay-modal overlayDetail detail-view-modal'>
     <div class = "modal-content">
         <div class="overlayDetailHeader col-lg-12 col-md-12 col-sm-12" style="z-index:1;">
             <div class="col-lg-10 col-md-10 col-sm-10" style = "padding-left:0px;">

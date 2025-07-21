@@ -13,7 +13,7 @@
     {include file="PicklistColorMap.tpl"|vtemplate_path:$MODULE}
     <div class="row">
         <div class="col-md-2">
-            {if !empty($LISTVIEW_ENTRIES)}<button class="select btn btn-default"><strong>{vtranslate('LBL_SELECT', $MODULE)}</strong></button>{/if}
+            {if !empty($LISTVIEW_ENTRIES)}<button class="select btn btn-default">{vtranslate('LBL_SELECT', $MODULE)}</button>{/if}
         </div>
     </div>
     <div class="row">
@@ -41,7 +41,7 @@
                 <input type="hidden" value="{Vtiger_Util_Helper::toSafeHTML(Zend_JSON::encode($SEARCH_DETAILS))}" id="currentSearchParams" />
                 {assign var=WIDTHTYPE value=$USER_MODEL->get('rowheight')}
                 <div class="popupEntriesTableContainer">
-                    <table class="listview-table table-bordered listViewEntriesTable">
+                    <table class="listview-table listViewEntriesTable">
                         <thead>
                             <tr class="listViewHeaders">
                                 <th class="{$WIDTHTYPE}">

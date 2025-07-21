@@ -151,9 +151,11 @@
 				</div>
 				<div class='modal-overlay-footer clearfix border1px'>
 					<div class="row clearfix">
-						<div class=' textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
-							<button type='submit' class='btn btn-submit saveButton' id="customViewSubmit">{vtranslate('LBL_SAVE', $MODULE)}</button>&nbsp;&nbsp;
-							<a class='cancelLink' href="javascript:void(0);" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+						<div class=' textAlignCenter col-lg-12 col-md-12 col-sm-12'>
+							<div class='footer-btns'>
+								<button type='submit' class='btn btn-submit saveButton' id="customViewSubmit">{vtranslate('LBL_SAVE', $MODULE)}</button>
+								<a class='cancelLink' href="javascript:void(0);" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+							</div>
 						</div>
 					</div>
 				</div>

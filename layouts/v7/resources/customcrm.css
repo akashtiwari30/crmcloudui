@@ -150,11 +150,11 @@ a {
   width: 19px;
   border-radius: 50%;
 }
-.search-container-top.scrolled {
+.search-cont.scrolled {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease;
 }
 .well {
   background-color: var(--light-color-2);
@@ -296,18 +296,18 @@ a {
   align-items: center;
 }
 i.glyphicon.glyphicon-trash {
-  color: var(--error-color);
+  color: var(--red-text-color);
   font-size: 15px;
 }
 .deleteMapping,
 .fa-trash {
-  color: var(--error-color);
+  color: var(--red-text-color);
   font-size: 16px;
   cursor: pointer;
 }
 
 .glyphicon-trash {
-  color: var(--error-color);
+  color: var(--red-text-color);
   font-size: 16px;
 }
 .btn .deleteMapping,
@@ -485,7 +485,7 @@ ul .mCSB_container a span {
 }
 .app-menu .active-app-item .fa-chevron-right,
 .app-menu .app-item:hover .fa-chevron-right {
-  color: var(--white-color);
+  color: var(--sidebar-hover-text);
 }
 .dropdown-menu.app-modules-dropdown li.active {
   background-color: var(--color-subsidebar-bg-hover);
@@ -592,10 +592,10 @@ ul .mCSB_container a span {
   }
 }
 .cancel-btn {
-  background-color: var(--error-color);
+  background-color: var(--red-bg-color);
   color: var(--white-color);
   &:hover {
-    background-color: var(--red-color);
+    background-color: var(--red-bg-color);
   }
 }
 .plus-btn {
@@ -614,6 +614,8 @@ ul .mCSB_container a span {
   text-shadow: none;
   opacity: 1;
   border: 1px solid var(--btn-primary-border);
+  padding: 7px 15px;
+  margin-right: 10px;
 }
 
 .btn.focus,
@@ -689,12 +691,12 @@ ul .mCSB_container a span {
 }
 
 .btn-danger {
-  border: 1px solid var(--red-color);
-  background: var(--bg-error);
+  border: 1px solid var(--red-bg-color);
+  background: var(--red-light-bg-color);
   color: var(--white-color);
 }
 .btn-danger .fa-close {
-  -webkit-text-stroke: 1px var(--bg-error);
+  -webkit-text-stroke: 1px var(--red-light-bg-color);
   text-shadow: none;
 }
 .btn-submit .fa-check {
@@ -703,15 +705,15 @@ ul .mCSB_container a span {
   text-shadow: none;
 }
 .btn-danger:hover {
-  background: var(--error-color-2);
-  border: 1px solid var(--red-color);
+  background: var(--red-light-bg-color);
+  border: 1px solid var(--red-color-2);
 }
 .btn-danger.focus:not(:active):not(.active):not(.btn-default),
 .btn-danger:focus:not(:active):not(.active):not(.btn-default),
 .btn-flat-danger.focus:not(:active):not(.active):not(.btn-default),
 .btn-flat-danger:focus:not(:active):not(.active):not(.btn-default) {
-  background: var(--error-color-2);
-  border: 1px solid var(--red-color);
+  background: var(--red-light-bg-color);
+  border: 1px solid var(--red-color-2);
   box-shadow: none;
 }
 .module-buttons.btn {
@@ -776,7 +778,10 @@ ul .mCSB_container a span {
   border: 1px solid var(--btn-primary-border);
   color: var(--btn-primary-text);
   background: var(--btn-primary-bg);
-  padding: 7px;
+  /* padding: 7px 15px; */
+}
+.addButton .fa-plus {
+    -webkit-text-stroke: 1px var(--primary-color);
 }
 .layoutContent .addButton:hover,
 .layoutContent .addButton:focus,
@@ -1061,20 +1066,21 @@ fieldset[disabled] .btn-flat-default:hover {
   background: var(--btn-primary-hover-bg);
   color: var(--btn-primary-hover-text);
 }
-.modal-overlay-footer a:hover {
+/* .modal-overlay-footer a:hover {
   color: var(--black-color);
-}
+} */
 .cancelLink,
 .popoverCancel {
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 10px;
   color: var(--white-color);
-  background-color: var(--error-color);
-  padding: 6px 12px;
+  background-color: var(--red-bg-color);
+  padding: 7px 19px;
   border-radius: 5px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   display: inline-block;
   &:hover {
+      background-color: var(--red-light-bg-color);
     color: var(--white-color);
   }
 }
@@ -1105,3 +1111,116 @@ fieldset[disabled] .btn-flat-default:hover {
   text-shadow: none !important;
 }
 /* ================================= Buttons ends here ==================================== */
+.site-select .select2{
+  width: 100%;
+}
+
+
+.bg-info {
+  background-color: var(--orange-color);
+}
+.bg-info-modcomments {
+  background-color: var(--blue-color);
+}
+.bg-info-accounts {
+  background-color: #6cc4b9;
+}
+.bg-info-calendar {
+  background-color: #ed4c57;
+}
+.bg-info-contacts {
+  background-color: var(--green-color);
+}
+.bg-info-documents {
+  background-color: var(--green-color);
+}
+.bg-info-potentials {
+  background-color: #492d61;
+}
+.bg-info-pricebooks {
+  background-color: #048091;
+}
+.bg-info-project {
+  background-color: #d1026c;
+}
+.bg-info-purchaseorder {
+  background-color: #C93756;
+}
+.bg-info-projecttask {
+  background-color: #012677;
+}
+.bg-info-quotes {
+  background-color: #d1026c;
+}
+.bg-info-salesorder {
+  background-color: #d1026c;
+}
+.bg-info-servicecontracts {
+  background-color: #d1026c;
+}
+.bg-info-services {
+  background-color: #d1026c;
+}
+.bg-info-invoice {
+  background-color: #d1026c;
+}
+.bg-info-helpdesk {
+  background-color: #d1026c;
+}
+.bg-info-products {
+  background-color: #FFB3A7;
+}
+.bg-info-emails {
+  background-color: #299AFC;
+}
+
+.bg-info-campaigns {
+  background-color: #A17917;
+}
+.bg-info-custom-mod {
+  background-color: #CCCC99;
+}
+.alert-static {
+  border-color: var(--border-light-color);
+  white-space: nowrap;
+  vertical-align: super;
+  padding-bottom: 0px;
+}
+.alert-static .icon {
+  font-size: medium;
+  color: #1B809E;
+  margin-left: 8px;
+  vertical-align: top;
+}
+.alert-static .message {
+  vertical-align: super;
+  font-size: 13px;
+}
+
+.alert-warning {
+    color: var(--warning-text-color);
+    background-color: var(--warning-bg-color);
+    border-color: var(--warning-color-2);
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+
+body .fc {
+  overflow: auto;
+}
+.margin0 {
+  margin: 0;
+}
+.border0 {
+  border: 0;
+}
+.padding0 {
+  padding: 0;
+}
+.rounded0 {
+  border-radius: 0;
+}
+.bg-white {
+  background: var(--white-color);
+}

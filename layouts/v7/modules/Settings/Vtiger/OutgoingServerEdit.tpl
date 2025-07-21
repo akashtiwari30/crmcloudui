@@ -31,7 +31,7 @@
 					<div class="block">
 						<div>
 							<div class="btn-group pull-right mb-4">
-								<button class="btn t-btn resetButton" type="button" title="{vtranslate('LBL_RESET_TO_DEFAULT', $QUALIFIED_MODULE)}"><strong>{vtranslate('LBL_RESET_TO_DEFAULT', $QUALIFIED_MODULE)}</strong></button>
+								<button class="btn t-btn resetButton" type="button" title="{vtranslate('LBL_RESET_TO_DEFAULT', $QUALIFIED_MODULE)}">{vtranslate('LBL_RESET_TO_DEFAULT', $QUALIFIED_MODULE)}</button>
 							</div>
 							<h5>{vtranslate('LBL_MAIL_SERVER_SMTP', $QUALIFIED_MODULE)}</h5>
 						</div>
@@ -83,8 +83,10 @@
 					<div class='modal-overlay-footer clearfix'>
 						<div class="row clearfix">
 							<div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
-								<button type='submit' class='btn btn-submit saveButton' >{vtranslate('LBL_SAVE', $MODULE)}</button>&nbsp;&nbsp;
-								<a class='cancelLink' data-dismiss="modal" href="#">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+								<div class='footer-btns'>
+									<button type='submit' class='btn btn-submit saveButton' >{vtranslate('LBL_SAVE', $MODULE)}</button>
+									<a class='cancelLink' data-dismiss="modal" href="#">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+								</div>
 							</div>
 						</div>
 					</div>

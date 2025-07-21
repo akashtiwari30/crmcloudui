@@ -23,7 +23,7 @@
     </div>
     <div class="row-fluid">
         <span class="btn-toolbar">
-            <button class="btn sourceValues" type="button"><strong>{vtranslate('LBL_SELECT_SOURCE_VALUES', $QUALIFIED_MODULE)}</strong></button>
+            <button class="btn sourceValues" type="button">{vtranslate('LBL_SELECT_SOURCE_VALUES', $QUALIFIED_MODULE)}</button>
         </span>
     </div>
 	<br>
@@ -125,7 +125,7 @@
 </div>
 <div class="padding1per">
     <div class="btn-toolbar  pull-right">
-        <button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+        <button class="btn btn-submit" type="submit">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
         <a type="reset" class="cancelLink cancelDependency" title="{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
     </div>
 	<br><br>

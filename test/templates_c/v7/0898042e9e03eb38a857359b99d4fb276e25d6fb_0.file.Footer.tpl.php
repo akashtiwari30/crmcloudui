@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-05-05 13:32:22
+/* Smarty version 4.5.4, created on 2025-07-17 10:14:10
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\Footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6818bde6c126a7_83606617',
+  'unifunc' => 'content_6878ccf2a56582_40341961',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0898042e9e03eb38a857359b99d4fb276e25d6fb' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\Footer.tpl',
-      1 => 1746451938,
+      1 => 1752747239,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6818bde6c126a7_83606617 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6878ccf2a56582_40341961 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 </div>
 <div id='overlayPage'>

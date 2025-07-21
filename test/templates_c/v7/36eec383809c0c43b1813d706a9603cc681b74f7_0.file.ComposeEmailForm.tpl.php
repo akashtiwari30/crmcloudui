@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 09:48:22
+/* Smarty version 4.5.4, created on 2025-07-17 12:01:16
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\ComposeEmailForm.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686f8c66d0f317_07127396',
+  'unifunc' => 'content_6878e60c3f3827_06903835',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '36eec383809c0c43b1813d706a9603cc681b74f7' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\ComposeEmailForm.tpl',
-      1 => 1752064015,
+      1 => 1752753526,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686f8c66d0f317_07127396 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6878e60c3f3827_06903835 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\wamp64\\www\\cloudcrm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 ?>
 
@@ -55,7 +55,7 @@ $_smarty_tpl->_assignInScope('TO_EMAILS', call_user_func_array($_smarty_tpl->reg
 }?><input id="emailField" style="width:100%" name="toEmail" type="text" class="autoComplete sourceField select2" data-rule-required="true" data-rule-multiEmails="true" value="<?php if (!empty($_smarty_tpl->tpl_vars['TO_EMAILS']->value)) {
 echo htmlspecialchars((string)$_smarty_tpl->tpl_vars['TO_EMAILS']->value, ENT_QUOTES, 'UTF-8', true);
 }?>" placeholder="<?php echo vtranslate('LBL_TYPE_AND_SEARCH',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-"></div><div class="col-lg-4 input-group"><select style="width: 140px;" class="select2 emailModulesList pull-right"><?php
+"></div><div class="col-lg-4 input-group site-select"><select class="select2 emailModulesList pull-right"><?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['RELATED_MODULES']->value, 'MODULE_NAME');
 $_smarty_tpl->tpl_vars['MODULE_NAME']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['MODULE_NAME']->value) {
@@ -66,14 +66,14 @@ $_smarty_tpl->tpl_vars['MODULE_NAME']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select><a href="#" class="clearReferenceSelection cursorPointer" name="clearToEmailField"> X </a><span class="input-group-addon"><span class="selectEmail cursorPointer"><i class="fa fa-search" title="<?php echo vtranslate('LBL_SELECT',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 "></i></span></span></div></div></div><div class="row <?php if (empty($_smarty_tpl->tpl_vars['CC']->value)) {?> hide <?php }?> ccContainer"><div class="col-lg-12"><div class="col-lg-2"><span class=""><?php echo vtranslate('LBL_CC',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</span></div><div class="col-lg-6"><input type="text" name="cc" data-rule-multiEmails="true" value="<?php if (!empty($_smarty_tpl->tpl_vars['CC']->value)) {
+</span></div><div class="col-lg-6"><input type="text" class="inputElement" name="cc" data-rule-multiEmails="true" value="<?php if (!empty($_smarty_tpl->tpl_vars['CC']->value)) {
 echo $_smarty_tpl->tpl_vars['CC']->value;
 }?>"/></div><div class="col-lg-4"></div></div></div><div class="row <?php if (empty($_smarty_tpl->tpl_vars['BCC']->value)) {?> hide <?php }?> bccContainer"><div class="col-lg-12"><div class="col-lg-2"><span class=""><?php echo vtranslate('LBL_BCC',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</span></div><div class="col-lg-6"><input type="text" name="bcc" data-rule-multiEmails="true" value="<?php if (!empty($_smarty_tpl->tpl_vars['BCC']->value)) {
+</span></div><div class="col-lg-6"><input type="text" class="inputElement" name="bcc" data-rule-multiEmails="true" value="<?php if (!empty($_smarty_tpl->tpl_vars['BCC']->value)) {
 echo $_smarty_tpl->tpl_vars['BCC']->value;
-}?>"/></div><div class="col-lg-4"></div></div></div><div class="row <?php if ((!empty($_smarty_tpl->tpl_vars['CC']->value)) && (!empty($_smarty_tpl->tpl_vars['BCC']->value))) {?> hide <?php }?> "><div class="col-lg-12"><div class="col-lg-2"></div><div class="col-lg-6"><a href="#" class="cursorPointer <?php if ((!empty($_smarty_tpl->tpl_vars['CC']->value))) {?>hide<?php }?>" id="ccLink"><?php echo vtranslate('LBL_ADD_CC',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a>&nbsp;&nbsp;<a href="#" class="cursorPointer <?php if ((!empty($_smarty_tpl->tpl_vars['BCC']->value))) {?>hide<?php }?>" id="bccLink"><?php echo vtranslate('LBL_ADD_BCC',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a></div><div class="col-lg-4"></div></div></div><div class="row subjectField"><div class="col-lg-12"><div class="col-lg-2"><span class=""><?php echo vtranslate('LBL_SUBJECT',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+}?>"/></div><div class="col-lg-4"></div></div></div><div class="row <?php if ((!empty($_smarty_tpl->tpl_vars['CC']->value)) && (!empty($_smarty_tpl->tpl_vars['BCC']->value))) {?> hide <?php }?> "><div class="col-lg-12"><div class="col-lg-6"><a href="#" class="cursorPointer btn marginRight10px <?php if ((!empty($_smarty_tpl->tpl_vars['CC']->value))) {?>hide<?php }?>" id="ccLink"><?php echo vtranslate('LBL_ADD_CC',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</a><a href="#" class="cursorPointer btn <?php if ((!empty($_smarty_tpl->tpl_vars['BCC']->value))) {?>hide<?php }?>" id="bccLink"><?php echo vtranslate('LBL_ADD_BCC',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</a></div></div></div><div class="row subjectField"><div class="col-lg-12"><div class="col-lg-2"><span class=""><?php echo vtranslate('LBL_SUBJECT',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 &nbsp;<span class="redColor">*</span></span></div><div class="col-lg-6"><input type="text" name="subject" value="<?php if (!empty($_smarty_tpl->tpl_vars['SUBJECT']->value)) {
 echo htmlspecialchars((string)$_smarty_tpl->tpl_vars['SUBJECT']->value, ENT_QUOTES, 'UTF-8', true);
 }?>" data-rule-required="true" id="subject" spellcheck="true" class="inputElement"/></div><div class="col-lg-4"></div></div></div><div class="row attachment"><div class="col-lg-12"><div class="col-lg-2"><span class=""><?php echo vtranslate('LBL_ATTACHMENT',$_smarty_tpl->tpl_vars['MODULE']->value);?>
@@ -99,7 +99,7 @@ $_smarty_tpl->_assignInScope('FILE_TYPE', "file");
 </span></div><?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
-}?></div></div></div></div><div class="row"><div class="col-lg-12"><div class="col-lg-2"><span class=""><?php echo vtranslate('LBL_INCLUDE_SIGNATURE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+}?></div></div></div></div><div class="row"><div class="col-lg-12"><div class="col-lg-3"><span class=""><?php echo vtranslate('LBL_INCLUDE_SIGNATURE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </span></div><div class="item col-lg-9"><input class="" type="checkbox" name="signature" value="Yes" checked="checked" id="signature"></div></div></div><div class="container-fluid hide" id='emailTemplateWarning'><div class="alert alert-warning fade in"><a href="#" class="close" data-dismiss="alert">&times;</a><p><?php echo vtranslate('LBL_EMAILTEMPLATE_WARNING_CONTENT',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </p></div></div><div class="row templateContent"><div class="col-lg-12"><textarea style="width:390px;height:200px;" id="description" name="description"><?php if (!empty($_smarty_tpl->tpl_vars['DESCRIPTION']->value)) {
 echo $_smarty_tpl->tpl_vars['DESCRIPTION']->value;

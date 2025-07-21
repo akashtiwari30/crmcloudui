@@ -258,7 +258,7 @@
 
 .date-picker-wrapper .drp_top-bar .apply-btn.disabled {
   cursor: pointer;
-  color: var(--red-color);
+  color: var(--red-text-color);
   border: solid 1px var(--border-light-color);
   background: var(--white-color);
   background: -webkit-gradient(

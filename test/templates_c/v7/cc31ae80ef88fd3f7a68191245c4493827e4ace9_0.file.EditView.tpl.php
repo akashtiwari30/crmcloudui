@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-10 04:41:23
+/* Smarty version 4.5.4, created on 2025-07-18 06:22:46
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\EditView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_686f447331f216_29617034',
+  'unifunc' => 'content_6879e8362755b3_84699395',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cc31ae80ef88fd3f7a68191245c4493827e4ace9' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\EditView.tpl',
-      1 => 1752064015,
+      1 => 1752817744,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_686f447331f216_29617034 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6879e8362755b3_84699395 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="main-container clearfix"><div class="editViewPageDiv viewContent"><div class="col-sm-12 col-xs-12 content-area <?php if ($_smarty_tpl->tpl_vars['LEFTPANELHIDE']->value == '1') {?> full-width <?php }?>"><form class="form-horizontal recordEditView" id="EditView" name="edit" method="post" action="index.php" enctype="multipart/form-data"><div class="editViewHeader"><div class='row'><div class="col-lg-12 col-md-12 col-lg-pull-0"><?php $_smarty_tpl->_assignInScope('SINGLE_MODULE_NAME', ('SINGLE_').($_smarty_tpl->tpl_vars['MODULE']->value));
 if ($_smarty_tpl->tpl_vars['RECORD_ID']->value != '') {?><h5 class="editHeader" style="margin-top:5px;" title="<?php echo vtranslate('LBL_EDITING',$_smarty_tpl->tpl_vars['MODULE']->value);?>
@@ -67,7 +67,7 @@ if ($_smarty_tpl->tpl_vars['RETURN_VIEW']->value) {?><input type="hidden" name="
 " /><input type="hidden" name="returnparent" value="<?php echo $_smarty_tpl->tpl_vars['RETURN_PARENT_MODULE']->value;?>
 " /><?php }
 $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'vtemplate_path' ][ 0 ], array( "partials/EditViewContents.tpl",$_smarty_tpl->tpl_vars['MODULE']->value )), $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, true);
-?></div></div><div class='modal-overlay-footer clearfix'><div class="row clearfix"><div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '><button type='submit' class='btn btn-submit saveButton' ><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</button>&nbsp;&nbsp;<a class='cancelLink' href="javascript:history.<?php if ($_smarty_tpl->tpl_vars['DUPLICATE_RECORDS']->value) {?>go(-2)<?php } else { ?>back()<?php }?>" type="reset"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a></div></div></div></form></div></div></div><?php }
+?></div></div><div class='modal-overlay-footer clearfix'><div class="row clearfix"><div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '><div class='footer-btns'><button type='submit' class='btn btn-submit saveButton' ><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</button><a class='cancelLink' href="javascript:history.<?php if ($_smarty_tpl->tpl_vars['DUPLICATE_RECORDS']->value) {?>go(-2)<?php } else { ?>back()<?php }?>" type="reset"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</a></div></div></div></div></form></div></div></div><?php }
 }

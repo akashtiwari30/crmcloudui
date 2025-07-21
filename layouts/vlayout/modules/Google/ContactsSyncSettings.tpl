@@ -361,7 +361,7 @@
         <div class="pull-right cancelLinkContainer" style="margin-top:0px;">
             <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
         </div>
-        <button id="save_syncsetting" class="btn btn-submit"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+        <button id="save_syncsetting" class="btn btn-submit">{vtranslate('LBL_SAVE', $MODULE)}</button>
     </div>
 </div>
 {/strip}

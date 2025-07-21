@@ -23,13 +23,13 @@
                     {if (!$PASSWORD_STATUS)}
                         <button id="logintoMarketPlace" class="btn btn-primary">{vtranslate('LBL_LOGIN_TO_MARKET_PLACE', $QUALIFIED_MODULE)}</button>
                     {elseif $IS_PRO}
-                        <button id="setUpCardDetails" class="btn btn-primary ">{if !empty($CUSTOMER_PROFILE['CustomerCardId'])}{vtranslate('LBL_UPDATE_CARD_DETAILS', $QUALIFIED_MODULE)}{else}{vtranslate('LBL_SETUP_CARD_DETAILS', $QUALIFIED_MODULE)}{/if}</button>&nbsp;
+                        <button id="setUpCardDetails" class="btn btn-primary ">{if !empty($CUSTOMER_PROFILE['CustomerCardId'])}{vtranslate('LBL_UPDATE_CARD_DETAILS', $QUALIFIED_MODULE)}{else}{vtranslate('LBL_SETUP_CARD_DETAILS', $QUALIFIED_MODULE)}{/if}</button>
 			<button id="logoutMarketPlace" class="btn btn-primary pull-right">{vtranslate('LBL_LOGOUT', $QUALIFIED_MODULE)}</button>
                     {/if}
                     {if $PASSWORD_STATUS && !$IS_PRO}
                         <span class="btn-toolbar">
                             <span class="btn-group">
-                                <button class='btn btn-danger' id="installLoader"><strong>{vtranslate('LBL_PHP_EXTENSION_LOADER_IS_NOT_AVAIABLE', $QUALIFIED_MODULE)}</strong></button>
+                                <button class='btn btn-danger' id="installLoader">{vtranslate('LBL_PHP_EXTENSION_LOADER_IS_NOT_AVAIABLE', $QUALIFIED_MODULE)}</button>
                             </span>
                         </span>
                     {/if}
@@ -90,14 +90,14 @@
                 <div class="modal-footer">
                     <div class="row-fluid">
                         <div class="span3">
-                            <span class="pull-left"><button class="btn btn-danger" type="button" name="resetButton"><strong>{vtranslate('LBL_RESET', $QUALIFIED_MODULE)}</strong></button></span>
+                            <span class="pull-left"><button class="btn btn-danger" type="button" name="resetButton">{vtranslate('LBL_RESET', $QUALIFIED_MODULE)}</button></span>
                         </div>
                         <div class="span9">
                             <div class="pull-right">
                                 <div class="pull-right cancelLinkContainer" style="margin-top:0px;">
                                     <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                                 </div>
-                                    <button class="btn btn-submit saveButton" type="submit" name="saveButton"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                                    <button class="btn btn-submit saveButton" type="submit" name="saveButton">{vtranslate('LBL_SAVE', $MODULE)}</button>
                             </div>
                         </div>  
                     </div>
@@ -180,7 +180,7 @@
                             <div class="pull-right cancelLinkContainer" style="margin-top:0px;">
                                 <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                             </div>
-                            <button class="btn btn-submit" type="submit" name="saveButton"><strong>{vtranslate('LBL_REGISTER', $QUALIFIED_MODULE)}</strong></button>
+                            <button class="btn btn-submit" type="submit" name="saveButton">{vtranslate('LBL_REGISTER', $QUALIFIED_MODULE)}</button>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                                 <div class="pull-right cancelLinkContainer" style="margin-top:0px;">
                                     <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                                 </div>
-                                <button class="btn btn-submit" type="submit" name="saveButton"><strong>{vtranslate('LBL_LOGIN', $QUALIFIED_MODULE)}</strong></button>
+                                <button class="btn btn-submit" type="submit" name="saveButton">{vtranslate('LBL_LOGIN', $QUALIFIED_MODULE)}</button>
                             </div>
                         </div>
                     </div>

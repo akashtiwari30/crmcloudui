@@ -58,11 +58,11 @@
 		<tr>
 			<td align="right" colspan="2">
 				<button name="next" class="create btn"
-				onclick="location.href='index.php?module={$MODULE}&view=List'" ><strong>{'LBL_FINISH'|@vtranslate:$MODULE}</strong></button>
+				onclick="location.href='index.php?module={$MODULE}&view=List'" >{'LBL_FINISH'|@vtranslate:$MODULE}</button>
 			</td>
 			<td align="right" colspan="2">
 				<button name="next" class="delete btn"
-					onclick="location.href='index.php?module={$MODULE}&view=Import&mode=undoImport'"><strong>{'LBL_UNDO_LAST_IMPORT'|@vtranslate:$MODULE}</strong>
+					onclick="location.href='index.php?module={$MODULE}&view=Import&mode=undoImport'">{'LBL_UNDO_LAST_IMPORT'|@vtranslate:$MODULE}
 				</button>
 			</td>
 		</tr>

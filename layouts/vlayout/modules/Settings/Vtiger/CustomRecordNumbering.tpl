@@ -80,7 +80,7 @@
         <div class="row-fluid">
             <div class="span12 pull-right">
                 <div class="pull-right">
-                    <button class="btn btn-submit saveButton" type="submit" disabled="disabled"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+                    <button class="btn btn-submit saveButton" type="submit" disabled="disabled">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
                     <a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
                 </div>
             </div>

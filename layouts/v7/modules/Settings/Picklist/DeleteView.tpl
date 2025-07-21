@@ -66,10 +66,10 @@
                     {/if}
                 </div>
                 <div class="modal-footer">
-                    <center>
-                        <button class="btn btn-danger" type="submit" name="saveButton"><strong>{vtranslate('LBL_DELETE', $MODULE)}</strong></button>
+                    <div class="footer-btns">
+                        <button class="btn btn-danger" type="submit" name="saveButton">{vtranslate('LBL_DELETE', $MODULE)}</button>
                         <a href="#" class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-                    </center>
+                    </div>
                 </div>
             </form>
         </div>

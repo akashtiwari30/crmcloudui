@@ -20,17 +20,17 @@
             <div class="row-fluid">
                 <div class="btn-toolbar span10">
                     <div class="btn-group">
-                        <button class="btn pull-left" onclick="MailManager.mail_close();" href='javascript:void(0);'><strong>&#171; {$FOLDER->name()}</strong></button>
+                        <button class="btn pull-left" onclick="MailManager.mail_close();" href='javascript:void(0);'>&#171; {$FOLDER->name()}</button>
                     </div>
                     <div class="btn-group">
-                        <button class="btn" onclick="MailManager.mail_reply(true);"><strong>{vtranslate('LBL_Reply_All',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_reply(false);"><strong>{vtranslate('LBL_Reply',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_forward({$MAIL->msgno()});"><strong>{vtranslate('LBL_Forward',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_mark_unread('{$FOLDER->name()}', {$MAIL->msgno()});"><strong>{vtranslate('LBL_Mark_As_Unread',$MODULE)}</strong></button>
-                        <button class="btn" onclick="MailManager.mail_print();"><strong>{vtranslate('LBL_Print',$MODULE)}</strong></button>
+                        <button class="btn" onclick="MailManager.mail_reply(true);">{vtranslate('LBL_Reply_All',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_reply(false);">{vtranslate('LBL_Reply',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_forward({$MAIL->msgno()});">{vtranslate('LBL_Forward',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_mark_unread('{$FOLDER->name()}', {$MAIL->msgno()});">{vtranslate('LBL_Mark_As_Unread',$MODULE)}</button>
+                        <button class="btn" onclick="MailManager.mail_print();">{vtranslate('LBL_Print',$MODULE)}</button>
                     </div>
                     <div class="btn-group">
-                        <button class="btn btn-danger" id = 'mail_delete_dtlview' onclick="MailManager.maildelete('{$FOLDER->name()}',{$MAIL->msgno()},true);"><strong>{vtranslate('LBL_Delete',$MODULE)}</strong></button>
+                        <button class="btn btn-danger" id = 'mail_delete_dtlview' onclick="MailManager.maildelete('{$FOLDER->name()}',{$MAIL->msgno()},true);">{vtranslate('LBL_Delete',$MODULE)}</button>
                     </div>
                 </div>
 				<div class="span2">
@@ -64,7 +64,7 @@
                     <div class="span6">
                         <span id="_mailopen_msgid_" style="display:none;">{$MAIL->_uniqueid|@escape:'UTF-8'}</span>
 
-                        <label class="displayInlineBlock"><strong>{vtranslate('LBL_FROM', $MODULE)} :&nbsp;</strong></label>
+                        <label class="displayInlineBlock">{vtranslate('LBL_FROM', $MODULE)} :&nbsp;</label>
                         <span id="_mailopen_from">
                             {foreach item=SENDER from=$MAIL->from()}
                                 {$SENDER}
@@ -72,7 +72,7 @@
                         </span><br>
 
                         {if $MAIL->to()}
-                            <label class="displayInlineBlock"><strong>{vtranslate('LBL_TO',$MODULE)} :&nbsp;</strong></label>
+                            <label class="displayInlineBlock">{vtranslate('LBL_TO',$MODULE)} :&nbsp;</label>
                             <span id="_mailopen_to">
                                 {foreach item=RECEPIENT from=$MAIL->to() name="TO"}
                                 {if $smarty.foreach.TO.index > 0}, {/if}{$RECEPIENT}
@@ -81,7 +81,7 @@
                     {/if}
 
                     {if $MAIL->cc()}
-                        <label class="displayInlineBlock"><strong>{vtranslate('LBL_CC',$MODULE)} :&nbsp;</strong></label>
+                        <label class="displayInlineBlock">{vtranslate('LBL_CC',$MODULE)} :&nbsp;</label>
                         <span id="_mailopen_cc">
                             {foreach item=CC from=$MAIL->cc() name="CC"}
                             {if $smarty.foreach.CC.index > 0}, {/if}{$CC}
@@ -90,7 +90,7 @@
                 {/if}
 
                 {if $MAIL->bcc()}
-                    <label class="displayInlineBlock"><strong>{vtranslate('LBL_BCC',$MODULE)} :&nbsp;</strong></label>
+                    <label class="displayInlineBlock">{vtranslate('LBL_BCC',$MODULE)} :&nbsp;</label>
                     <span id="_mailopen_cc">
                         {foreach item=BCC from=$MAIL->bcc() name="BCC"}
                         {if $smarty.foreach.BCC.index > 0}, {/if}{$BCC}
@@ -98,11 +98,11 @@
                 </span><br>
             {/if}
 
-            <label class="displayInlineBlock"><strong>{vtranslate('LBL_Date',$MODULE)} :&nbsp;</strong></label>
+            <label class="displayInlineBlock">{vtranslate('LBL_Date',$MODULE)} :&nbsp;</label>
             <span id="_mailopen_date">{$MAIL->date()}</span><br>
 
             {if $ATTACHMENTS}
-                <label class="displayInlineBlock"><strong>{vtranslate('LBL_Attachments',$MODULE)} :&nbsp;</strong></label>
+                <label class="displayInlineBlock">{vtranslate('LBL_Attachments',$MODULE)} :&nbsp;</label>
                 <span>
                     {foreach item=ATTACHVALUE key=ATTACHNAME from=$ATTACHMENTS name="attach"}
                         {if $INLINE_ATT[$ATTACHNAME] eq null}

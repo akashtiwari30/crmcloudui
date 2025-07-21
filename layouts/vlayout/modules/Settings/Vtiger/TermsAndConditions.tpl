@@ -20,7 +20,7 @@
         <textarea class="input-xxlarge TCContent textarea-autosize" rows="3" placeholder="{vtranslate('LBL_SPECIFY_TERMS_AND_CONDITIONS', $QUALIFIED_MODULE)}" style="width:100%;" >{$CONDITION_TEXT}</textarea>
         <div class="row-fluid textAlignCenter">
             <br>
-			<button class="btn btn-submit saveTC hide"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+			<button class="btn btn-submit saveTC hide">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
         </div>
     </div>
 </div>

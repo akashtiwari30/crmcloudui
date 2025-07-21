@@ -168,7 +168,7 @@
 											{if $isReferenceField neq "reference"}</label>{/if}
 									</td>
 									{if $FIELD_MODEL->get('uitype') neq '83'}
-										<td class="fieldValue col-lg-4" colspan="3" {if $FIELD_MODEL->get('uitype') eq '19'} colspan="3" {assign var=COUNTER value=$COUNTER+1} {/if}>
+										<td class="fieldValue col-lg-4 site-select" colspan="3" {if $FIELD_MODEL->get('uitype') eq '19'} colspan="3" {assign var=COUNTER value=$COUNTER+1} {/if}>
 											{include file=vtemplate_path($FIELD_MODEL->getUITypeModel()->getTemplateName(),$MODULE)}
 										</td>
 									{/if}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-11 05:07:12
+/* Smarty version 4.5.4, created on 2025-07-18 11:07:22
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Vtiger\Export.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_68709c006f4733_12374205',
+  'unifunc' => 'content_687a2aea50a8f1_78779980',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '74e68e18a2daa292bbedbdbec51d0cf9b7a30af1' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Vtiger\\Export.tpl',
-      1 => 1752064015,
+      1 => 1752817787,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_68709c006f4733_12374205 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a2aea50a8f1_78779980 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="fc-overlay-modal modal-content"><form id="exportForm" class="form-horizontal" method="post" action="index.php"><input type="hidden" name="module" value="<?php echo $_smarty_tpl->tpl_vars['SOURCE_MODULE']->value;?>
 " /><input type="hidden" name="source_module" value="<?php echo $_smarty_tpl->tpl_vars['SOURCE_MODULE']->value;?>
@@ -56,8 +56,8 @@ $_smarty_tpl->_subTemplateRender(call_user_func_array($_smarty_tpl->registered_p
 :</h6><i style="position:relative;top:4px;" class="icon-question-sign" data-toggle="tooltip" title="<?php echo vtranslate('LBL_EXPORT_CURRENCY_TOOLTIP_TEXT',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 "></i></div></div><div class="row" style="margin-left: 2px;"><input type="radio" name="selected_currency" value="UserCurrency" checked="checked"/><label class="marginLeft10px"> <?php echo vtranslate('LBL_EXPORT_USER_CURRENCY',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </label></div><div class="row" style="margin-left: 2px;"><input type="radio" name="selected_currency" value="RecordCurrency"/><label class="marginLeft10px"><?php echo vtranslate('LBL_EXPORT_RECORD_CURRENCY',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</label></div><?php }?></div></div></div></div></div><div class="modal-overlay-footer clearfix"><div class="row clearfix"><div class=" textAlignCenter col-lg-12 col-md-12 col-sm-12 "><div><button type="submit" class="btn btn-submit btn-lg"><?php echo vtranslate('LBL_EXPORT','Vtiger');?>
+</label></div><?php }?></div></div></div></div></div><div class="modal-overlay-footer clearfix"><div class="row clearfix"><div class=" textAlignCenter col-lg-12 col-md-12 col-sm-12 "><div class='footer-btns'><button type="submit" class="btn btn-submit btn-lg"><?php echo vtranslate('LBL_EXPORT','Vtiger');?>
 &nbsp;<?php echo vtranslate($_smarty_tpl->tpl_vars['SOURCE_MODULE']->value,$_smarty_tpl->tpl_vars['SOURCE_MODULE']->value);?>
-</button>&nbsp;&nbsp;&nbsp;<a class="cancelLink" data-dismiss="modal" href="#"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</button><a class="cancelLink" data-dismiss="modal" href="#"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
 </a></div></div></div></div></form></div><?php }
 }

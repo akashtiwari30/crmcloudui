@@ -1,86 +1,74 @@
-// navbar scroll starts here 
-
-window.addEventListener("scroll", function () {
-    const searchCont = document.querySelector(".search-container-top");
-    if (window.scrollY > 10) {
-      searchCont.classList.add("scrolled");
-    } else {
-      searchCont.classList.remove("scrolled");
-    }
-  });
-
-// navbar scroll ends here 
-
-
-// dropdownOverlay starts here 
-jQuery(document).ready(function () {
-  jQuery('.top-navbar .dropdown').on('show.bs.dropdown', function () {
-    jQuery('#dropdownOverlay').fadeIn(100);
-  });
-
-  jQuery('.top-navbar .dropdown').on('hide.bs.dropdown', function () {
-    jQuery('#dropdownOverlay').fadeOut(100);
-  });
-});
-// dropdownOverlay ends here 
-
-
-
-// edit , delete , details dropdown of filter table right side section in every sub pages start here
+// ************** Document Ready Starts Here **************
 $(document).ready(function () {
-  $('.more.dropdown').on('shown.bs.dropdown', function () {
-    $('.floatThead-wrapper .ps-container').addClass('ps-visible');
-  });
-
-  $('.more.dropdown').on('hidden.bs.dropdown', function () {
-    $('.floatThead-wrapper .ps-container').removeClass('ps-visible');
-  });
-
-  
-
-  setTimeout(() => {
-  const target = document.querySelector('.ready .test');
-  if (target) {
-    const observer = new MutationObserver(() => {
-      target.removeAttribute('style');
-    });
-    observer.observe(target, { attributes: true, attributeFilter: ['style'] });
-    console.log('MutationObserver attached after delay.');
-  } else {
-    console.log('Element not found after delay.');
-  }
-}, 1000);
-
-
-
-
-// for dark light mode starts here
-jQuery(document).ready(function($) {
-    // Load saved theme
-    if (localStorage.getItem('theme') === 'dark') {
-      $('html').addClass('dark-mode');
+  // ************** Navbar Scroll Effect Starts Here **************
+  $(window).on("scroll", function () {
+    const $searchCont = $(".search-cont");
+    if ($(this).scrollTop() > 10) {
+      $searchCont.addClass("scrolled");
+    } else {
+      $searchCont.removeClass("scrolled");
     }
-
-    // Toggle theme on click
-    $('#theme-toggle').on('click', function () {
-      $('html').toggleClass('dark-mode');
-
-      if ($('html').hasClass('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
-      } else {
-        localStorage.setItem('theme', 'light');
-      }
-    });
   });
-// for dark light mode ends here
+  // ************** Navbar Scroll Effect Ends Here **************
 
+  // ************** Dropdown Overlay Starts Here **************
+  $(".top-navbar .dropdown").on("show.bs.dropdown", function () {
+    $("#dropdownOverlay").fadeIn(100);
+  });
 
+  $(".top-navbar .dropdown").on("hide.bs.dropdown", function () {
+    $("#dropdownOverlay").fadeOut(100);
+  });
+  // ************** Dropdown Overlay Ends Here **************
 
+  // ************** FloatThead Scroll Fix on Dropdown Starts Here **************
+  $(".more.dropdown").on("shown.bs.dropdown", function () {
+    $(".floatThead-wrapper .ps-container").addClass("ps-visible");
+  });
+
+  $(".more.dropdown").on("hidden.bs.dropdown", function () {
+    $(".floatThead-wrapper .ps-container").removeClass("ps-visible");
+  });
+  // ************** FloatThead Scroll Fix Ends Here **************
+
+  // ************** MutationObserver for .ready .test Element Starts Here **************
+  setTimeout(() => {
+    const target = document.querySelector(".ready .test");
+    if (target) {
+      const observer = new MutationObserver(() => {
+        target.removeAttribute("style");
+      });
+      observer.observe(target, {
+        attributes: true,
+        attributeFilter: ["style"],
+      });
+      console.log("MutationObserver attached after delay.");
+    } else {
+      console.log("Element not found after delay.");
+    }
+  }, 1000);
+  // ************** MutationObserver Ends Here **************
+
+  // ************** Dark/Light Mode Toggle Starts Here **************
+  if (localStorage.getItem("theme") === "dark") {
+    $("html").addClass("dark-mode");
+  }
+
+  $("#theme-toggle").on("click", function () {
+    $("html").toggleClass("dark-mode");
+    const newTheme = $("html").hasClass("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", newTheme);
+  });
+  // ************** Dark/Light Mode Toggle Ends Here **************
+
+  // ************** Disable Body Scroll on Modal Open Starts Here **************
+  // $(document).on("shown.bs.modal", function () {
+  //   $("body").css("overflow", "hidden");
+  // });
+
+  // $(document).on("hidden.bs.modal", function () {
+  //   $("body").css("overflow", "");
+  // });
+  // ************** Disable Body Scroll on Modal Open Ends Here **************
 });
-// edit , delete , details dropdown of filter table right side section in every sub pages ends here
-
-
-
-
-
-
+// ************** Document Ready Ends Here **************

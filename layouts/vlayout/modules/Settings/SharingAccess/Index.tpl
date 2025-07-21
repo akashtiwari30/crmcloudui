@@ -22,7 +22,7 @@
 				<div class="widget_header row-fluid">
 					<div class="span8"><h3>{vtranslate('LBL_SHARING_ACCESS', $QUALIFIED_MODULE)}</h3></div>
 					<div class="span4">
-						<button class="btn btn-submit pull-right hide" type="submit" name="saveButton"><strong>{vtranslate('LBL_APPLY_NEW_SHARING_RULES', $QUALIFIED_MODULE)}</strong></button>
+						<button class="btn btn-submit pull-right hide" type="submit" name="saveButton">{vtranslate('LBL_APPLY_NEW_SHARING_RULES', $QUALIFIED_MODULE)}</button>
 					</div>
 				</div>
 				<hr>
@@ -106,7 +106,7 @@
 			</table>
 			<div>
 				<div class="pull-right">
-					<button class="btn btn-submit hide" type="submit" name="saveButton"><strong>{vtranslate('LBL_APPLY_NEW_SHARING_RULES', $QUALIFIED_MODULE)}</strong></button>
+					<button class="btn btn-submit hide" type="submit" name="saveButton">{vtranslate('LBL_APPLY_NEW_SHARING_RULES', $QUALIFIED_MODULE)}</button>
 				</div>
 			</div>
 		</form>

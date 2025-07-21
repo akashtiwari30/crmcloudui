@@ -55,7 +55,7 @@
 			<tr id="file_encoding_container">
 				<td><p>{'LBL_CHARACTER_ENCODING'|@vtranslate:$MODULE}</p></td>
 				<td>
-					<select name="file_encoding" id="file_encoding" class="select2">
+					<select name="file_encoding" id="file_encoding" class="select2" style="width:35%">
 						{foreach key=_FILE_ENCODING item=_FILE_ENCODING_LABEL from=$SUPPORTED_FILE_ENCODING}
 							<option value="{$_FILE_ENCODING}">{$_FILE_ENCODING_LABEL|@vtranslate:$MODULE}</option>
 						{/foreach}

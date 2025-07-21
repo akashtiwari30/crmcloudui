@@ -33,7 +33,7 @@
 		<tr>
 			<td align="right" colspan="2">
 				<button name="next" class="create btn"
-				onclick="location.href='index.php?module={$MODULE}&view=List'" ><strong>{'LBL_FINISH'|@vtranslate:$MODULE}</strong></button>
+				onclick="location.href='index.php?module={$MODULE}&view=List'" >{'LBL_FINISH'|@vtranslate:$MODULE}</button>
 			</td>
 		</tr>
 	</table>

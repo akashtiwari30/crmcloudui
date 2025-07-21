@@ -17,7 +17,7 @@
 				</span>
 				<span class="span4">
 					<span class="pull-right">
-						<button type="submit" class="btn btn-submit"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+						<button type="submit" class="btn btn-submit">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
 						<a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
 					</span>
 				</span>
@@ -168,12 +168,12 @@
 			<div class="row-fluid">
 				<span class="span4">
 					<button id="addMapping" class="btn addButton" type="button">
-						<i class="icon-plus"></i>&nbsp;<strong>{vtranslate('LBL_ADD_MAPPING', $QUALIFIED_MODULE)}</strong>
+						<i class="icon-plus"></i>&nbsp;{vtranslate('LBL_ADD_MAPPING', $QUALIFIED_MODULE)}
 					</button>
 				</span>
 				<span class="span8">
 					<span class="pull-right">
-						<button type="submit" class="btn btn-submit"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+						<button type="submit" class="btn btn-submit">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
 						<a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
 					</span>
 				</span>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-14 09:57:37
+/* Smarty version 4.5.4, created on 2025-07-18 12:00:51
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\LayoutEditor\DuplicateHandling.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_6874d491388d90_48547977',
+  'unifunc' => 'content_687a3773d90592_73401126',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '55688832713bf352f374baee6690bce064426f4e' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\LayoutEditor\\DuplicateHandling.tpl',
-      1 => 1752487051,
+      1 => 1752829835,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6874d491388d90_48547977 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a3773d90592_73401126 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="duplicateHandlingDiv padding20"><form class="duplicateHandlingForm"><input type="hidden" name="_source" value="<?php echo (isset($_smarty_tpl->tpl_vars['SOURCE']->value)) ? $_smarty_tpl->tpl_vars['SOURCE']->value : '';?>
 " /><input type="hidden" name="sourceModule" value="<?php echo $_smarty_tpl->tpl_vars['SOURCE_MODULE']->value;?>
@@ -60,7 +60,7 @@ $_smarty_tpl->tpl_vars['ACTION_NAME']->do_else = false;
 </option><?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?></select><span class="input-info-addon syncMessage"><a class="fa fa-info-circle" data-toggle="tooltip" data-html="true" data-placement="right" title="<?php echo vtranslate('LBL_SYNC_TOOLTIP_MESSAGE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
-"></a></span></div></div><br><br><?php }?><div class="formFooter hide"><button class="btn btn-submit" type="submit" name="saveButton"><strong><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</strong></button><a class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
-</a></div></div></form></div><?php }
+"></a></span></div></div><br><br><?php }?><div class="formFooter hide"><div class="footer-btns"><button class="btn btn-submit" type="submit" name="saveButton"><?php echo vtranslate('LBL_SAVE',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</button><a class="cancelLink" type="reset" data-dismiss="modal"><?php echo vtranslate('LBL_CANCEL',$_smarty_tpl->tpl_vars['MODULE']->value);?>
+</a></div></div></div></form></div><?php }
 }

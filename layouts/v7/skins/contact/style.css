@@ -91,6 +91,7 @@ body > .mCSB_inside > .mCSB_container {
 .app-nav {
   position: relative;
 } */
+ 
 .app-footer p {
   width: 100%;
   text-align: center;
@@ -1755,12 +1756,12 @@ input[type=checkbox]:checked {
 .detailViewModNavigator .modules-menu {
   width: 42px;
 }
-strong,
+/* strong,
 b,
 th {
   font-weight: normal;
   font-size: 1.1em;
-}
+} */
 .detailview-table {
   table-layout: fixed;
 }
@@ -2139,7 +2140,7 @@ th {
 /* .modal-overlay-footer a:hover {
   color: red;
 } */
-.cancel-x-small {
+/* .cancel-x-small {
   font-size: 12px;
 }
 .detailview-content {
@@ -2156,7 +2157,7 @@ th {
 }
 .detailview-content .commentsRelatedContainer .commentTextArea {
   padding-bottom: 10px;
-}
+} */
 /* .numberCircle {
   background: none repeat scroll 0 0 #8e44ad;
   border-radius: 2px;
@@ -2440,7 +2441,7 @@ th {
   margin-top: 0;
   color: #596875;
 } */
-.quickCreateContent .referencefield-wrapper {
+/* .quickCreateContent .referencefield-wrapper {
   width: 210px;
   height: 32px;
 }
@@ -2450,12 +2451,12 @@ th {
 }
 .quickCreateContent .input-group {
   display: table;
-}
+} */
 /* .quickCreateContent .inputElement {
   height: 30px;
   width: 200px;
 } */
-.mandatoryField {
+/* .mandatoryField {
   width: 4px;
   background: #FF4068;
   height: 30px;
@@ -2464,7 +2465,7 @@ th {
 #composeEmailContainer input[type="text"] {
   width: 100%;
   height: 30px;
-}
+} */
 /* #composeEmailContainer .row {
   padding: 5px;
 } */
@@ -3093,7 +3094,7 @@ th {
 .updates_timeline .update_icon .update_image {
   line-height: 1.5;
 } */
-.bg-info {
+/* .bg-info {
   background-color: orange;
 }
 .bg-info-modcomments {
@@ -3174,7 +3175,7 @@ th {
 .alert-static .message {
   vertical-align: super;
   font-size: 13px;
-}
+} */
 /******************************************* 
 ************* Task Management ************** 
 ********************************************/
@@ -5780,20 +5781,20 @@ hr {
   width: 40%;
 }
 /****** Mail Manager Ends ******/
-.quickCreateContent .massEditTable textarea,
+/* .quickCreateContent .massEditTable textarea,
 .addCommentBlock .commentTextArea textarea {
   resize: vertical;
   padding: 6px;
-}
+} */
 /* .table.detailview-table.no-border .ajaxEdited .input-group-addon {
   width: auto;
 } */
-.input-group .form-control,
+/* .input-group .form-control,
 .select2-container-multi .select2-choices {
   z-index: 1;
-}
+} */
 /****** Customer Portal Settings ******/
-.nav .nav-stacks .cp-nav-header-wrapper > li.disabled > a:hover {
+/* .nav .nav-stacks .cp-nav-header-wrapper > li.disabled > a:hover {
   background-color: #fff;
 }
 .cp-nav-header-wrapper > li.disabled > a:hover {
@@ -5807,7 +5808,7 @@ hr {
 }
 #portalModulesTable > li.portalModuleRow.active > a:focus {
   background-color: #fff !important;
-}
+} */
 /* .portal-dashboard {
   min-height: 600px;
 } */
@@ -7529,7 +7530,7 @@ input:focus:-ms-input-placeholder {
 /* .navbar-fixed-top {
   z-index: 1095 !important;
 } */
-body .fc {
+/* body .fc {
   overflow: auto;
 }
 .margin0 {
@@ -7554,7 +7555,7 @@ body .fc {
   border: 1px solid #ddd;
   border-width: thin;
   background: #fcfcfc;
-}
+} */
 /* .editViewHeader {
   padding-top: 20px;
 } */

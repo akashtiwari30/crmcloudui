@@ -40,7 +40,7 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<button class="btn btn-submit" type="submit" name="saveButton" onclick="app.hideModalWindow();" ><strong>{vtranslate('LBL_EXPORT', $MODULE)}</strong></button>
+			<button class="btn btn-submit" type="submit" name="saveButton" onclick="app.hideModalWindow();">{vtranslate('LBL_EXPORT', $MODULE)}</button>
 	</div>
 	</form>
 </div>

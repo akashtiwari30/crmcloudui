@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.5.4, created on 2025-07-11 04:43:33
+/* Smarty version 4.5.4, created on 2025-07-18 10:51:13
   from 'C:\wamp64\www\cloudcrm\layouts\v7\modules\Settings\ExtensionStore\ExtensionModules.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.5.4',
-  'unifunc' => 'content_687096754bd149_97384076',
+  'unifunc' => 'content_687a27216a1540_50592511',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7ee96729184d092dc4db94b4cd62a4af2b852908' => 
     array (
       0 => 'C:\\wamp64\\www\\cloudcrm\\layouts\\v7\\modules\\Settings\\ExtensionStore\\ExtensionModules.tpl',
-      1 => 1752064015,
+      1 => 1752835867,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_687096754bd149_97384076 (Smarty_Internal_Template $_smarty_tpl) {
+function content_687a27216a1540_50592511 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\wamp64\\www\\cloudcrm\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.truncate.php','function'=>'smarty_modifier_truncate',),));
 ?>
 
@@ -56,11 +56,11 @@ $_smarty_tpl->_assignInScope('SUMMARY', $_prefixVariable1);
 echo $_smarty_tpl->tpl_vars['SUMMARY']->value;?>
  </span></div></div><div class="col-sm-4 col-xs-4"><?php if ($_smarty_tpl->tpl_vars['EXTENSION']->value->get('thumbnailURL') != NULL) {
 $_smarty_tpl->_assignInScope('imageSource', $_smarty_tpl->tpl_vars['EXTENSION']->value->get('thumbnailURL'));?><img width="100%" height="100%" class="thumbnailImage" src="<?php echo $_smarty_tpl->tpl_vars['imageSource']->value;?>
-"/><?php } else { ?><i class="fa fa-picture-o" style="color:#ddd;font-size: 90px;" title="Image not available"></i><?php }?></div></div><div class="extensionInfo"><div class="row"><?php $_smarty_tpl->_assignInScope('ON_RATINGS', $_smarty_tpl->tpl_vars['EXTENSION']->value->get('avgrating'));?><div class="col-sm-5 col-xs-5"><span class="rating" data-score="<?php echo $_smarty_tpl->tpl_vars['ON_RATINGS']->value;?>
+"/><?php } else { ?><i class="fa fa-picture-o" style="color:#ddd;font-size: 90px;" title="Image not available"></i><?php }?></div></div><div class="extensionInfo"><div class=""><?php $_smarty_tpl->_assignInScope('ON_RATINGS', $_smarty_tpl->tpl_vars['EXTENSION']->value->get('avgrating'));?><div class=""><span class="rating" data-score="<?php echo $_smarty_tpl->tpl_vars['ON_RATINGS']->value;?>
 " data-readonly=true></span><span><?php if ($_smarty_tpl->tpl_vars['EXTENSION']->value->get('avgrating')) {?>&nbsp;(<?php echo $_smarty_tpl->tpl_vars['EXTENSION']->value->get('avgrating');?>
-)<?php }?></span></div><div class="col-sm-7 col-xs-7"><div class="pull-right" style="display:flex; gap:6px"><?php if ($_smarty_tpl->tpl_vars['EXTENSION']->value->isVtigerCompatible()) {?><button class="btn btn-sm btn-default installExtension addButton"><?php echo vtranslate('LBL_MORE_DETAILS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+)<?php }?></span></div><div class="extension-btn-container"><div class="pull-rightt" style="display:flex; gap:6px"><?php if ($_smarty_tpl->tpl_vars['EXTENSION']->value->isVtigerCompatible()) {?><button class="btn btn-sm btn-default installExtension addButton"><?php echo vtranslate('LBL_MORE_DETAILS',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </button><?php if ($_smarty_tpl->tpl_vars['EXTENSION']->value->isAlreadyExists()) {
-if (($_smarty_tpl->tpl_vars['EXTENSION']->value->isUpgradable())) {?><button class="oneclickInstallFree btn btn-submit btn-sm margin0px <?php if ($_smarty_tpl->tpl_vars['IS_AUTH']->value) {?>authenticated <?php } else { ?> loginRequired<?php }?>"><?php echo vtranslate('LBL_UPGRADE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+if (($_smarty_tpl->tpl_vars['EXTENSION']->value->isUpgradable())) {?><button class="btn btn-submit btn-sm margin0px oneclickInstallFree <?php if ($_smarty_tpl->tpl_vars['IS_AUTH']->value) {?>authenticated <?php } else { ?> loginRequired<?php }?>"><?php echo vtranslate('LBL_UPGRADE',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </button><?php } else {
 if ($_smarty_tpl->tpl_vars['EXTENSION_MODULE_MODEL']->value != 'false' && $_smarty_tpl->tpl_vars['EXTENSION_MODULE_MODEL']->value->get('trial')) {?><span class="alert alert-info"><?php echo vtranslate('LBL_TRIAL_INSTALLED',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </span><?php } else { ?><span class="alert alert-info" style="vertical-align:middle; padding: 3px 8px; margin-bottom:0px"><?php echo vtranslate('LBL_INSTALLED',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
@@ -70,7 +70,7 @@ $<?php echo $_smarty_tpl->tpl_vars['EXTENSION']->value->get('price');?>
 </button><?php }
 }
 } else {
-if ($_smarty_tpl->tpl_vars['EXTENSION']->value->get('price') == 'Free' || $_smarty_tpl->tpl_vars['EXTENSION']->value->get('price') == 0) {?><button class="oneclickInstallFree btn btn-submit btn-sm <?php if ($_smarty_tpl->tpl_vars['IS_AUTH']->value) {?>authenticated <?php } else { ?> loginRequired<?php }?>"><?php echo vtranslate('LBL_INSTALL',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
+if ($_smarty_tpl->tpl_vars['EXTENSION']->value->get('price') == 'Free' || $_smarty_tpl->tpl_vars['EXTENSION']->value->get('price') == 0) {?><button class=" btn btn-submit btn-sm oneclickInstallFree <?php if ($_smarty_tpl->tpl_vars['IS_AUTH']->value) {?>authenticated <?php } else { ?> loginRequired<?php }?>"><?php echo vtranslate('LBL_INSTALL',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 </button><?php } else { ?><button class="oneclickInstallPaid btn btn-info btn-sm <?php if ($_smarty_tpl->tpl_vars['IS_AUTH']->value) {?>authenticated <?php } else { ?> loginRequired<?php }?>" data-trial=false><?php echo vtranslate('LBL_BUY',$_smarty_tpl->tpl_vars['QUALIFIED_MODULE']->value);?>
 $<?php echo $_smarty_tpl->tpl_vars['EXTENSION']->value->get('price');?>
 </button><?php }

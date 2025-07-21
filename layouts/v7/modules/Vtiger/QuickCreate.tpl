@@ -56,7 +56,7 @@
                                         {assign var=COUNTER value=$COUNTER+1}
                                     {/if}
                                     <td class='fieldLabel col-lg-2'>
-                                        {if $isReferenceField neq "reference"}<label class="muted">{/if}
+                                        {if $isReferenceField neq "reference"}<label class="muted pull-right">{/if}
                                             {if $isReferenceField eq "reference"}
                                                 {if $referenceListCount > 1}
                                                     {assign var="DISPLAYID" value=$FIELD_MODEL->get('fieldvalue')}
@@ -72,7 +72,7 @@
                                                         </select>
                                                     </span>
                                                 {else}
-                                                    <label class="muted">{vtranslate($FIELD_MODEL->get('label'), $MODULE)}&nbsp;{if $FIELD_MODEL->isMandatory() eq true} <span class="redColor">*</span> {/if}</label>
+                                                    <label class="muted pull-right">{vtranslate($FIELD_MODEL->get('label'), $MODULE)}{if $FIELD_MODEL->isMandatory() eq true} <span class="redColor">*</span> {/if}</label>
                                                 {/if}
                                             {else if $FIELD_MODEL->get('uitype') eq '83'}
 												{include file=vtemplate_path($FIELD_MODEL->getUITypeModel()->getTemplateName(),$MODULE) COUNTER=$COUNTER MODULE=$MODULE PULL_RIGHT=true}
@@ -92,7 +92,7 @@
                                             {if $isReferenceField neq "reference"}</label>{/if}
                                     </td>
                                     {if $FIELD_MODEL->get('uitype') neq '83'}
-                                        <td class="fieldValue col-lg-4" {if $FIELD_MODEL->get('uitype') eq '19'} colspan="3" {assign var=COUNTER value=$COUNTER+1} {/if}>
+                                        <td class="fieldValue col-lg-3" {if $FIELD_MODEL->get('uitype') eq '19'} colspan="3" {assign var=COUNTER value=$COUNTER+1} {/if}>
                                             {include file=vtemplate_path($FIELD_MODEL->getUITypeModel()->getTemplateName(),$MODULE)}
                                         </td>
                                     {/if}
@@ -102,17 +102,17 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <center>
+                   <div class='footer-btns'>
                         {if $BUTTON_NAME neq null}
                             {assign var=BUTTON_LABEL value=$BUTTON_NAME}
                         {else}
                             {assign var=BUTTON_LABEL value={vtranslate('LBL_SAVE', $MODULE)}}
                         {/if}
                         {assign var="EDIT_VIEW_URL" value=$MODULE_MODEL->getCreateRecordUrl()}
-                        <button class="btn btn-default" id="goToFullForm" data-edit-view-url="{$EDIT_VIEW_URL}" type="button"><strong>{vtranslate('LBL_GO_TO_FULL_FORM', $MODULE)}</strong></button>
-                        <button {if $BUTTON_ID neq null} id="{$BUTTON_ID}" {/if} class="btn btn-submit" type="submit" name="saveButton"><strong>{$BUTTON_LABEL}</strong></button>
+                        <button class="btn btn-default" id="goToFullForm" data-edit-view-url="{$EDIT_VIEW_URL}" type="button">{vtranslate('LBL_GO_TO_FULL_FORM', $MODULE)}</button>
+                        <button {if $BUTTON_ID neq null} id="{$BUTTON_ID}" {/if} class="btn btn-submit" type="submit" name="saveButton">{$BUTTON_LABEL}</button>
                         <a href="#" class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-                    </center>
+                    </div>
                 </div>
             </form>
         </div>

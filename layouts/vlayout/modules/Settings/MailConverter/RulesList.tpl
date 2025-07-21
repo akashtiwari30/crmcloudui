@@ -68,7 +68,7 @@
           </div>
           <div class="btn-group">
             <button class="btn addButton" onclick="javascript:Settings_MailConverter_List_Js.checkMailBoxMaxLimit('index.php?module=MailConverter&parent=Settings&action=CheckMailBoxMaxLimit&mode=step1&create=new');">
-                <i class="icon-plus"></i>&nbsp;<strong>{vtranslate('LBL_ADD_RECORD', $QUALIFIED_MODULE_NAME)}</strong>
+                <i class="icon-plus"></i>&nbsp;{vtranslate('LBL_ADD_RECORD', $QUALIFIED_MODULE_NAME)}
             </button>
           </div>
         </div>
@@ -77,7 +77,7 @@
                 <div class="row-fluid">
                     <div class="span2" id="addRuleButton">
                         <button class="btn addButton" {if stripos($SCANNER_MODEL->getCreateRuleRecordUrl(), 'javascript:')===0} onclick='{$SCANNER_MODEL->getCreateRuleRecordUrl()|substr:strlen("javascript:")}' 
-                            {else} onclick='window.location.href="{$SCANNER_MODEL->getCreateRuleRecordUrl()}"' {/if}><i class="icon-plus"></i>&nbsp;&nbsp;<strong>{vtranslate('LBL_ADD_RULE',$QUALIFIED_MODULE)}</strong></button>	
+                            {else} onclick='window.location.href="{$SCANNER_MODEL->getCreateRuleRecordUrl()}"' {/if}><i class="icon-plus"></i>&nbsp;&nbsp;{vtranslate('LBL_ADD_RULE',$QUALIFIED_MODULE)}</button>	
                     </div> 
                     <div class="row-fluid padding-bottom1per">
                         <div class="pull-right" id="mailConverterDragIcon"><i class="icon-info-sign"></i>&nbsp;&nbsp;{vtranslate('LBL_DRAG_AND_DROP_BLOCK_TO_PRIORITISE_THE_RULE',$QUALIFIED_MODULE)}</div>

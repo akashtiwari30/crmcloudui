@@ -170,7 +170,7 @@
 				<div class=" pull-right cancelLinkContainer">
 					<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 				</div>
-				<button class="btn btn-submit discountSave" type="button" name="lineItemActionSave"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+				<button class="btn btn-submit discountSave" type="button" name="lineItemActionSave">{vtranslate('LBL_SAVE', $MODULE)}</button>
 			</div>
 		</div>
 		<div>
@@ -210,7 +210,7 @@
 				<div class=" pull-right cancelLinkContainer">
 					<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 				</div>
-				<button class="btn btn-submit taxSave" type="button" name="lineItemActionSave"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+				<button class="btn btn-submit taxSave" type="button" name="lineItemActionSave">{vtranslate('LBL_SAVE', $MODULE)}</button>
 			</div>
 			</div>
 		</span>

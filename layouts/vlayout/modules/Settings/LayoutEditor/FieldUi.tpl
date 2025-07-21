@@ -115,7 +115,7 @@
 							</span></div>
 							<div class="modal-footer" style="padding: 0px;"><span class="pull-right">
 								<button class="btn btn-submit saveFieldDetails" data-field-id="{$FIELD_MODEL->get('id')}" type="submit" style="margin: 5px;">
-									<strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+									{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
 							</span></div>
 						</form>
 					</div>

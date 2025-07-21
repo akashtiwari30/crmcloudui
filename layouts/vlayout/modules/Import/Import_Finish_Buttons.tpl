@@ -11,15 +11,15 @@
 -->*}
 
 <button name="next" class="create btn"
-	   onclick="location.href='index.php?module={$FOR_MODULE}&view=Import&return_module={$FOR_MODULE}&return_action=index'" ><strong>{'LBL_IMPORT_MORE'|@vtranslate:$MODULE}</strong></button>
+	   onclick="location.href='index.php?module={$FOR_MODULE}&view=Import&return_module={$FOR_MODULE}&return_action=index'" >{'LBL_IMPORT_MORE'|@vtranslate:$MODULE}</button>
 &nbsp;&nbsp;
 <button name="next" class="cancel btn"
-		onclick="return window.open('index.php?module={$MODULE}&for_module={$FOR_MODULE}&view=List&start=1&foruser={$OWNER_ID}','test','width=700,height=650,resizable=1,scrollbars=0,top=150,left=200');"><strong>{'LBL_VIEW_LAST_IMPORTED_RECORDS'|@vtranslate:$MODULE}</strong></button>
+		onclick="return window.open('index.php?module={$MODULE}&for_module={$FOR_MODULE}&view=List&start=1&foruser={$OWNER_ID}','test','width=700,height=650,resizable=1,scrollbars=0,top=150,left=200');">{'LBL_VIEW_LAST_IMPORTED_RECORDS'|@vtranslate:$MODULE}</button>
 &nbsp;&nbsp;
 {if $MERGE_ENABLED eq '0'}
 <button name="next" class="delete btn"
-		onclick="location.href='index.php?module={$FOR_MODULE}&view=Import&mode=undoImport&foruser={$OWNER_ID}'"><strong>{'LBL_UNDO_LAST_IMPORT'|@vtranslate:$MODULE}</strong></button>
+		onclick="location.href='index.php?module={$FOR_MODULE}&view=Import&mode=undoImport&foruser={$OWNER_ID}'">{'LBL_UNDO_LAST_IMPORT'|@vtranslate:$MODULE}</button>
 &nbsp;&nbsp;
 {/if}
 <button name="cancel" class="edit btn btn-submit"
-		onclick="location.href='index.php?module={$FOR_MODULE}&view=List'"><strong>{'LBL_FINISH_BUTTON_LABEL'|@vtranslate:$MODULE}</strong></button>
+		onclick="location.href='index.php?module={$FOR_MODULE}&view=List'">{'LBL_FINISH_BUTTON_LABEL'|@vtranslate:$MODULE}</button>

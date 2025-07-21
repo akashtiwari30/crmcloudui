@@ -33,7 +33,7 @@
             <input type="hidden" value="{$SORT_ORDER}" id="sortOrder">
             <input type="hidden" value="Products_ProductRelatedProductBundles_Js" id="popUpClassName"/>
             <div class="popupEntriesTableContainer">
-                <table class="listview-table table-bordered listViewEntriesTable">
+                <table class="listview-table listViewEntriesTable">
                     <thead>
                         <tr class="listViewHeaders">
                                 <th>

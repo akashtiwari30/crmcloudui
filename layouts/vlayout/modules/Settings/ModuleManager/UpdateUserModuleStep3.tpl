@@ -36,7 +36,7 @@
 						<input type="hidden" name="module" value="ModuleManager">
 						<input type="hidden" name="parent" value="Settings">
 						<input type="hidden" name="view" value="List">
-						<button  class="btn btn-submit" type="submit" ><strong>{vtranslate('LBL_FINISH', $QUALIFIED_MODULE)}</strong></button>
+						<button  class="btn btn-submit" type="submit" >{vtranslate('LBL_FINISH', $QUALIFIED_MODULE)}</button>
 					</div>
 				</form>
 			</div>
