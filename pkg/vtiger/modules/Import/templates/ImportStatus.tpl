@@ -89,7 +89,7 @@ jQuery(document).ready(function() {
 		<tr>
 			<td align="right">
 			<button name="cancel" class="delete btn btn-danger"
-				onclick="location.href='index.php?module={$FOR_MODULE}&view=Import&mode=cancelImport&import_id={$IMPORT_ID}'"><strong>{'LBL_CANCEL_IMPORT'|@vtranslate:$MODULE}</strong></button>
+				onclick="location.href='index.php?module={$FOR_MODULE}&view=Import&mode=cancelImport&import_id={$IMPORT_ID}'">{'LBL_CANCEL_IMPORT'|@vtranslate:$MODULE}</button>
 			</td>
 		</tr>
 	</table>

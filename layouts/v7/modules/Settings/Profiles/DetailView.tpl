@@ -63,7 +63,7 @@
 					{/if}
 					
 					<div class="row">
-						<div class="col-lg-10 col-md-10 col-sm-10 profile-view-table">
+						<div class="col-lg-12 col-md-12 col-sm-12 profile-view-table">
 							<table class="table">
 								<thead>
 									<tr class='blockHeader'>

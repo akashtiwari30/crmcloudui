@@ -75,7 +75,7 @@
 				<input type="hidden" class="RemovedModulesListArray" value='{ZEND_JSON::encode($removedModuleIds)}' />
 			</div>
 			<div class="span6">
-				<button class="btn btn-submit saveRelatedList" type="button" disabled="disabled"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+				<button class="btn btn-submit saveRelatedList" type="button" disabled="disabled">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
 				<br>
 			</div>
 		</div>

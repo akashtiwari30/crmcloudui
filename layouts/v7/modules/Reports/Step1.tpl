@@ -21,7 +21,7 @@
         <input type="hidden" name="isDuplicate" value="{if isset($IS_DUPLICATE)}{$IS_DUPLICATE}{else}false{/if}" />
         <input type="hidden" name="record" value="{$RECORD_ID}" />
         <input type=hidden id="relatedModules" data-value='{ZEND_JSON::encode($RELATED_MODULES)}' />
-        <div style="border:1px solid #ccc;padding:4%;">
+        <div class="report-content-form" style="padding:4%;">
             <div class="row">
                 <div class="form-group">
                     <label class="col-lg-3 control-label textAlignLeft">{vtranslate('LBL_REPORT_NAME',$MODULE)}<span class="redColor">*</span></label>
@@ -129,11 +129,13 @@
             </div>	
             {include file="ScheduleReport.tpl"|@vtemplate_path:$MODULE}	
         </div>
-        <div class="border1px modal-overlay-footer clearfix">
+        <div class="modal-overlay-footer clearfix">
             <div class="row clearfix">
                 <div class="textAlignCenter col-lg-12 col-md-12 col-lg-12 ">
-                    <button class="btn btn-submit nextStep" type="submit">{vtranslate('LBL_NEXT',$MODULE)}</button>&nbsp;&nbsp;
-                    <a type="reset" onclick='window.history.back();' class="cancelLink cursorPointer">{vtranslate('LBL_CANCEL',$MODULE)}</a>
+                    <div class="footer-btns">
+                        <button class="btn btn-submit nextStep" type="submit">{vtranslate('LBL_NEXT',$MODULE)}</button>
+                        <a type="reset" onclick='window.history.back();' class="cancelLink cursorPointer">{vtranslate('LBL_CANCEL',$MODULE)}</a>
+                    </div>
                 </div>
             </div>
         </div>

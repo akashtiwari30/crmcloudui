@@ -106,7 +106,7 @@
 		<div class="span6">&nbsp;</div>
 		<div class="span6">
 			<div class="pull-right">
-				<button type="button" class="btn" id="backToProducts"><strong>{vtranslate('LBL_BACK_TO_PRODUCTS', $MODULE)}</strong></button>
+				<button type="button" class="btn" id="backToProducts">{vtranslate('LBL_BACK_TO_PRODUCTS', $MODULE)}</button>
 			</div>
 		</div>
 	</div>

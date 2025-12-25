@@ -75,7 +75,7 @@
                 <tr id="lineitem_currency_container" style="height:50px">
                     <td>{vtranslate('LBL_IMPORT_LINEITEMS_CURRENCY',$MODULE)}</td>
                     <td>
-                        <select name="lineitem_currency" id="lineitem_currency" class = "select2">
+                        <select name="lineitem_currency" id="lineitem_currency" class = "select2"  style="width:35%">
                             {$i = 0}
                             {foreach key=id item=CURRENCY from=$CURRENCIES}
                                 <option value="{$CURRENCY['currency_id']}">{$CURRENCY['currencycode']}</option>

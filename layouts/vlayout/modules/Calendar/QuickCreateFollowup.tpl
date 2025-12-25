@@ -62,7 +62,7 @@
             <div class="tab-content overflowVisible">
                 <div class="modal-footer quickCreateActions">
                         <a class="cancelLink cancelLinkContainer pull-right" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-                        <button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_CREATE', $MODULE)}</strong></button>
+                        <button class="btn btn-submit" type="submit">{vtranslate('LBL_CREATE', $MODULE)}</button>
                 </div>
             </div>
         </div>

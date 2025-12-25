@@ -53,8 +53,8 @@
                                 {/if}
                                 <input id="emailField" style="width:100%" name="toEmail" type="text" class="autoComplete sourceField select2" data-rule-required="true" data-rule-multiEmails="true" value="{if !empty($TO_EMAILS)}{$TO_EMAILS|escape:html}{/if}" placeholder="{vtranslate('LBL_TYPE_AND_SEARCH',$MODULE)}">
                             </div>
-                            <div class="col-lg-4 input-group">
-                                <select style="width: 140px;" class="select2 emailModulesList pull-right">
+                            <div class="col-lg-4 input-group site-select">
+                                <select class="select2 emailModulesList pull-right">
                                     {foreach item=MODULE_NAME from=$RELATED_MODULES}
                                         <option value="{$MODULE_NAME}" {if $MODULE_NAME eq $FIELD_MODULE} selected {/if}>{vtranslate($MODULE_NAME,$MODULE_NAME)}</option>
 							 {/foreach}
@@ -76,7 +76,7 @@
                                 <span class="">{vtranslate('LBL_CC',$MODULE)}</span>
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" name="cc" data-rule-multiEmails="true" value="{if !empty($CC)}{$CC}{/if}"/>
+                                <input type="text" class="inputElement" name="cc" data-rule-multiEmails="true" value="{if !empty($CC)}{$CC}{/if}"/>
                             </div>
                             <div class="col-lg-4"></div>
                         </div>
@@ -88,7 +88,7 @@
                                 <span class="">{vtranslate('LBL_BCC',$MODULE)}</span>
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" name="bcc" data-rule-multiEmails="true" value="{if !empty($BCC)}{$BCC}{/if}"/>
+                                <input type="text" class="inputElement" name="bcc" data-rule-multiEmails="true" value="{if !empty($BCC)}{$BCC}{/if}"/>
                             </div>
                             <div class="col-lg-4"></div>
                         </div>
@@ -96,13 +96,12 @@
                     
                     <div class="row {if (!empty($CC)) and (!empty($BCC))} hide {/if} ">
                         <div class="col-lg-12">
-                            <div class="col-lg-2">
-                            </div>
+                            
                             <div class="col-lg-6">
-                                <a href="#" class="cursorPointer {if (!empty($CC))}hide{/if}" id="ccLink">{vtranslate('LBL_ADD_CC', $MODULE)}</a>&nbsp;&nbsp;
-                                <a href="#" class="cursorPointer {if (!empty($BCC))}hide{/if}" id="bccLink">{vtranslate('LBL_ADD_BCC', $MODULE)}</a>
+                                <a href="#" class="cursorPointer btn marginRight10px {if (!empty($CC))}hide{/if}" id="ccLink">{vtranslate('LBL_ADD_CC', $MODULE)}</a>
+                                <a href="#" class="cursorPointer btn {if (!empty($BCC))}hide{/if}" id="bccLink">{vtranslate('LBL_ADD_BCC', $MODULE)}</a>
                             </div>
-                            <div class="col-lg-4"></div>
+                            
                         </div>
                     </div>
                     
@@ -159,7 +158,7 @@
                                 
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="col-lg-2">
+                            <div class="col-lg-3">
                                 <span class="">{vtranslate('LBL_INCLUDE_SIGNATURE',$MODULE)}</span>
                             </div>
                             <div class="item col-lg-9">
@@ -192,8 +191,8 @@
                     <div class="pull-right cancelLinkContainer">
                         <a href="#" class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                     </div>
-                    <button id="sendEmail" name="sendemail" class="btn btn-submit" title="{vtranslate("LBL_SEND_EMAIL",$MODULE)}" type="submit"><strong>{vtranslate("LBL_SEND_EMAIL",$MODULE)}</strong></button>
-                    <button id="saveDraft" name="savedraft" class="btn btn-default" title="{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}" type="submit"><strong>{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}</strong></button>
+                    <button id="sendEmail" name="sendemail" class="btn btn-submit" title="{vtranslate("LBL_SEND_EMAIL",$MODULE)}" type="submit">{vtranslate("LBL_SEND_EMAIL",$MODULE)}</button>
+                    <button id="saveDraft" name="savedraft" class="btn btn-default" title="{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}" type="submit">{vtranslate('LBL_SAVE_AS_DRAFT',$MODULE)}</button>
                 </div>
             </form>
         </div>

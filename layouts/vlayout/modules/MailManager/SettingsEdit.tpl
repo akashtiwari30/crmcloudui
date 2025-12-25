@@ -126,7 +126,7 @@
 
 		<div class="row-fluid refresh_settings" {if $MAILBOX && $MAILBOX->exists()}{else}style="display:none;" {/if}>
 			<div class="pull-right">
-				<button class="btn btn-submit" onclick="MailManager.save_settings(this.form);"><strong>{vtranslate('LBL_SAVE_BUTTON_LABEL',$MODULE)}</strong></button>
+				<button class="btn btn-submit" onclick="MailManager.save_settings(this.form);">{vtranslate('LBL_SAVE_BUTTON_LABEL',$MODULE)}</button>
 				{if $MAILBOX && $MAILBOX->exists()}
 					<a href="javascript:;" class="cancelLink" onclick="MailManager.close_settings();">{vtranslate('LBL_CANCEL_BUTTON_LABEL',$MODULE)}</button>
 					{/if}

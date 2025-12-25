@@ -73,16 +73,16 @@ e.g. <video class="video-js my-skin-name">
 The control icons are from a custom font. Each icon corresponds to a character
 (e.g. "\e001"). Font icons allow for easy scaling and coloring of icons.
 */
-@font-face{
-  font-family: 'VideoJS';
-  src: url('font/vjs.eot');
-  src: url('font/vjs.eot?#iefix') format('embedded-opentype'),
-  url('font/vjs.woff') format('woff'),
-  url('font/vjs.ttf') format('truetype');
+// @font-face{
+//   font-family: 'VideoJS';
+//   src: url('font/vjs.eot');
+//   src: url('font/vjs.eot?#iefix') format('embedded-opentype'),
+//   url('font/vjs.woff') format('woff'),
+//   url('font/vjs.ttf') format('truetype');
 
-  font-weight: normal;
-  font-style: normal;
-}
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
 // Icon font character values
 @play-icon: "\e001";
@@ -130,7 +130,7 @@ The control icons are from a custom font. Each icon corresponds to a character
 
 .vjs-default-skin .vjs-slider-handle:before {
   content: @square-icon;
-  font-family: VideoJS;
+  // font-family: VideoJS;
   font-size: 1em;
   line-height: 1;
   text-align: center;
@@ -217,7 +217,7 @@ fonts to show/hide properly.
 
 /* FontAwsome button icons */
 .vjs-default-skin .vjs-control:before {
-  font-family: VideoJS;
+  // font-family: VideoJS;
   font-size: 1.5em;
   line-height: 2;
   position: absolute;
@@ -501,7 +501,7 @@ easily in the skin designer. http://designer.videojs.com/
 
 .vjs-default-skin .vjs-big-play-button:before {
   content: @play-icon;
-  font-family: VideoJS;
+  // font-family: VideoJS;
   /* In order to center the play icon vertically we need to set the line height
      to the same as the button height */
   line-height: @big-play-height;
@@ -539,8 +539,7 @@ easily in the skin designer. http://designer.videojs.com/
 
 .vjs-default-skin .vjs-loading-spinner:before {
   content: @spinner3-icon;
-  font-family: VideoJS;
-
+  // font-family: VideoJS;
   position: absolute;
   top: 0;
   left: 0;
@@ -684,7 +683,6 @@ control positioning and full window mode. **
   font-weight: normal;
   font-style: normal;
   /* Avoiding helvetica: issue #376 */
-  font-family: Arial, sans-serif;
 
   /* Turn off user selection (text highlighting) by default.
      The majority of player components will not be text blocks.

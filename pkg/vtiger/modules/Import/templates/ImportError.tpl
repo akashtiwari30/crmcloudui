@@ -52,10 +52,10 @@
             <td align="right">
                 {if $CUSTOM_ACTIONS neq ''}
                     {foreach key=_LABEL item=_ACTION from=$CUSTOM_ACTIONS}
-                        <button name="{$_LABEL}" onclick="{$_ACTION}" class="create btn "><strong>{$_LABEL|@vtranslate:$MODULE}</strong></button>
+                        <button name="{$_LABEL}" onclick="{$_ACTION}" class="create btn ">{$_LABEL|@vtranslate:$MODULE}</button>
                             {/foreach}
                         {/if}
-                <button name="goback" onclick="window.history.back()" class="edit btn btn-danger"><strong>{'LBL_GO_BACK'|@vtranslate:$MODULE}</strong></button>
+                <button name="goback" onclick="window.history.back()" class="edit btn btn-danger">{'LBL_GO_BACK'|@vtranslate:$MODULE}</button>
             </td>
         </tr>
     </table>

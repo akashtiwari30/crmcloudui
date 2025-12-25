@@ -47,7 +47,7 @@
 				<a class="cancelLink" type="reset" data-dismiss="modal" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 			</div>
 			<button class="btn btn-submit" type="submit" disabled="true">
-				<strong>{vtranslate('LBL_FIND_DUPLICATES', $MODULE)}</strong>
+				{vtranslate('LBL_FIND_DUPLICATES', $MODULE)}
 			</button>
 		</div>
 	</form>

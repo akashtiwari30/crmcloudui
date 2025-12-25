@@ -88,7 +88,7 @@
 {/foreach}
 </div>
 <div class="pull-right" style="margin:20px 0;">
-    <button class="btn btn-submit" type="submit" onclick="javascript:Settings_MailConverter_Edit_Js.firstStep()"><strong>{vtranslate('LBL_NEXT', $QUALIFIED_MODULE)}</strong></button>
+    <button class="btn btn-submit" type="submit" onclick="javascript:Settings_MailConverter_Edit_Js.firstStep()">{vtranslate('LBL_NEXT', $QUALIFIED_MODULE)}</button>
     <a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
 </div>
 </form>

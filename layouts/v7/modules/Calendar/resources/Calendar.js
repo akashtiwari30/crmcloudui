@@ -1826,8 +1826,8 @@ Vtiger.Class("Calendar_Calendar_Js", {
 					var part = '' +
 							'<div class="agendaListDay" data-date="' + date + '">' +
 							'<div class="agendaListViewHeader clearfix">' +
-							'<div class="day">' + day + '</div>' +
-							'<div class="weekDay">' + weekDay + '</div>' +
+							'<p class="day">' + day + '</p>' +
+							'<p class="weekDay">' + weekDay + '</p>' +
 							'</div>' +
 							'<hr>' +
 							'<div class="agendaListViewBody">' +

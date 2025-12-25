@@ -73,15 +73,15 @@
    <div class="advance-search-btns clearfix">
       <div class="">
          <button class="btn" id="advanceSearchButton" {if $SOURCE_MODULE eq 'Home' } disabled="" {/if}
-            type="submit"><strong>{vtranslate('LBL_SEARCH', $MODULE)}</strong></button>
+            type="submit">{vtranslate('LBL_SEARCH', $MODULE)}</button>
       </div>
       <div class="">
          {if $SAVE_FILTER_PERMITTED}
          <button class="btn marginLeft10px" {if $SOURCE_MODULE eq 'Home' } disabled="" {/if}
-            id="advanceIntiateSave"><strong>{vtranslate('LBL_SAVE_AS_FILTER', $MODULE)}</strong></button>
+            id="advanceIntiateSave">{vtranslate('LBL_SAVE_AS_FILTER', $MODULE)}</button>
          <input class="hide col-lg-3 marginLeft10px" type="text" value="" name="viewname" />
-         <button class="btn btn-submit hide col-lg-2 marginLeft10px" {if $SOURCE_MODULE eq 'Home' } disabled="" {/if}
-            id="advanceSave"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+         <button class="btn btn-submit hide marginLeft10px" {if $SOURCE_MODULE eq 'Home' } disabled="" {/if}
+            id="advanceSave">{vtranslate('LBL_SAVE', $MODULE)}</button>
          {/if}
       </div>
    </div>

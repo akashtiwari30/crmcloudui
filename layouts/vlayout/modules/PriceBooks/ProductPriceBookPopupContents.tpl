@@ -78,6 +78,6 @@
 </div>
 <div class="clearfix form-actions" style="border: 1px solid #DDDDDD;">
 	<a class="cancelLink pull-right">{vtranslate('LBL_CANCEL', $MODULE_NAME)}</a>
-	<button class="btn addButton select pull-right"><i class="icon-plus"></i>&nbsp;<strong>{vtranslate('LBL_ADD_TO',$MODULE_NAME)}&nbsp;{vtranslate($SOURCE_MODULE, $SOURCE_MODULE)}</strong></button>
+	<button class="btn addButton select pull-right"><i class="icon-plus"></i>&nbsp;{vtranslate('LBL_ADD_TO',$MODULE_NAME)}&nbsp;{vtranslate($SOURCE_MODULE, $SOURCE_MODULE)}</button>
 </div>
 {/strip}

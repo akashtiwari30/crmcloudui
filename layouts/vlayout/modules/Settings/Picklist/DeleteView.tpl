@@ -24,7 +24,7 @@
 		<input type="hidden" name="picklistName" value="{$FIELD_MODEL->get('name')}" />
 		<div class="modal-body tabbable">
 			<div class="control-group">
-				<div class="control-label">{vtranslate('LBL_ITEMS_TO_DELETE',$QUALIFIED_MODULE)}</div>
+				<div class="control-label"><label>{vtranslate('LBL_ITEMS_TO_DELETE',$QUALIFIED_MODULE)}</label></div>
 				<div class="controls">
 					<select class="select2" multiple="" id="deleteValue" name="delete_value[]" style="min-width: 200px">
 						{foreach from=$SELECTED_PICKLISTFIELD_EDITABLE_VALUES key=PICKLIST_VALUE_KEY item=PICKLIST_VALUE}
@@ -33,7 +33,7 @@
 					</select>	
 					<input id="pickListValuesCount" type="hidden" value="{php7_count($SELECTED_PICKLISTFIELD_EDITABLE_VALUES)}" />
 				</div><br>
-				<div class="control-label">{vtranslate('LBL_REPLACE_IT_WITH',$QUALIFIED_MODULE)}</div>
+				<div class="control-label"><label>{vtranslate('LBL_REPLACE_IT_WITH',$QUALIFIED_MODULE)}</label></div>
 				<div class="controls">
 					<select id="replaceValue" name="replace_value" class="chzn-select" data-validation-engine="validate[required]">
 						{foreach from=$SELECTED_PICKLISTFIELD_EDITABLE_VALUES key=PICKLIST_VALUE_KEY item=PICKLIST_VALUE}
@@ -50,7 +50,7 @@
 				</div>
 				{if $SELECTED_PICKLISTFIELD_NON_EDITABLE_VALUES}
 					<br>
-					<div class="control-label">{vtranslate('LBL_NON_EDITABLE_PICKLIST_VALUES',$QUALIFIED_MODULE)}</div>
+					<div class="control-label"><label>{vtranslate('LBL_NON_EDITABLE_PICKLIST_VALUES',$QUALIFIED_MODULE)}</label></div>
 					<div class="controls nonEditableValuesDiv">
 						<ul class="nonEditablePicklistValues" style="list-style-type: none;">
 						{foreach from=$SELECTED_PICKLISTFIELD_NON_EDITABLE_VALUES key=NON_EDITABLE_VALUE_KEY item=NON_EDITABLE_VALUE}
@@ -65,7 +65,7 @@
 		<div class=" pull-right cancelLinkContainer">
 			<a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 		</div>
-		<button class="btn btn-danger" type="submit" name="saveButton"><strong>{vtranslate('LBL_DELETE', $MODULE)}</strong></button>
+		<button class="btn btn-danger" type="submit" name="saveButton">{vtranslate('LBL_DELETE', $MODULE)}</button>
 	</div>
 	</form>
 </div>

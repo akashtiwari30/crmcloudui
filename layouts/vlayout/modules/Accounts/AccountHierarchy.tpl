@@ -39,7 +39,7 @@
         </div>
         <div class="modal-footer">
             <div class=" pull-right cancelLinkContainer">
-                <button class="btn btn-primary" type="reset" data-dismiss="modal"><strong>{vtranslate('LBL_CLOSE', $MODULE)}</strong></button>
+                <button class="btn btn-primary" type="reset" data-dismiss="modal">{vtranslate('LBL_CLOSE', $MODULE)}</button>
             </div>
         </div>
 	</div>

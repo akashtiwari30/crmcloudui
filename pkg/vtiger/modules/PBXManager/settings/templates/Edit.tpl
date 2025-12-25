@@ -15,10 +15,12 @@
     <form id="MyModal" class="form-horizontal" data-detail-url="{$MODULE_MODEL->getDetailViewUrl()}">
         <div class="widget_header row-fluid">
                 <div class="span8"><h3>{vtranslate('LBL_PBXMANAGER', $QUALIFIED_MODULE)}</h3></div>
-                <div class="span4 btn-toolbar"><div class="pull-right">
-                        <button class="btn btn-submit saveButton" type="submit" title="{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
-                        <a type="reset" class="cancelLink" title="{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
-                </div></div>
+                <div class="span4 btn-toolbar">
+                    <div class="pull-right">
+                            <button class="btn btn-submit saveButton" type="submit" title="{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
+                            <a type="reset" class="cancelLink" title="{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
+                    </div>
+                </div>
         </div>
         <hr>
         <div class="contents row-fluid">

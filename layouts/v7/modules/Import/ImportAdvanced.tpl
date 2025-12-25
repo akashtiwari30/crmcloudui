@@ -63,9 +63,12 @@
             <div class='modal-overlay-footer clearfix'>
                 <div class="row clearfix">
                         <div class='textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
-                        <button type="submit" name="import" id="importButton" class="btn btn-submit btn-lg" onclick="return Vtiger_Import_Js.sanitizeAndSubmit()"
-                                >{'LBL_IMPORT_BUTTON_LABEL'|@vtranslate:$MODULE}</button>
-                        &nbsp;&nbsp;&nbsp;<a class='cancelLink' data-dismiss="modal" href="#">{vtranslate('LBL_CANCEL', $MODULE)}</a></div>
+                            <div class='footer-btns'>
+                                <button type="submit" name="import" id="importButton" class="btn btn-submit btn-lg" onclick="return Vtiger_Import_Js.sanitizeAndSubmit()"
+                                        >{'LBL_IMPORT_BUTTON_LABEL'|@vtranslate:$MODULE}</button>
+                                <a class='cancelLink' data-dismiss="modal" href="#">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </form>

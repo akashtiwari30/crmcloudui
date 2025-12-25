@@ -38,7 +38,7 @@
 		{/if}
             <div class="span6">
                 <div class="pull-right">
-                    <button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                    <button class="btn btn-submit" type="submit">{vtranslate('LBL_SAVE', $MODULE)}</button>
                     <a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                 </div>
             </div>

@@ -1524,7 +1524,7 @@ function get_contactsforol($user_name)
 
 		$companyDetails = getCompanyDetails();
 
-		$portalURL = vtranslate('Please ',$moduleName).'<a href="'.$PORTAL_URL.'" style="font-family:Arial, Helvetica, sans-serif;font-size:13px;">'.  vtranslate('click here', $moduleName).'</a>';
+		$portalURL = vtranslate('Please ',$moduleName).'<a href="'.$PORTAL_URL.'" style="font-size:13px;">'.  vtranslate('click here', $moduleName).'</a>';
 
 		//here id is hardcoded with 5. it is for support start notification in vtiger_notificationscheduler
 		$query='SELECT vtiger_emailtemplates.subject,vtiger_emailtemplates.body

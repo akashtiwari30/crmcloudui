@@ -43,7 +43,7 @@
                     <h3 class="span8 textOverflowEllipsis">{vtranslate('LBL_CREATING_NEW', $MODULE)} {vtranslate($SINGLE_MODULE_NAME, $MODULE)}</h3>
                 {/if}
                 <span class="pull-right">
-                    <button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+                    <button class="btn btn-submit" type="submit">{vtranslate('LBL_SAVE', $MODULE)}</button>
                     <a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                 </span>
             </div>

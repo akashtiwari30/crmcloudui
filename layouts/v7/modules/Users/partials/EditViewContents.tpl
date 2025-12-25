@@ -49,6 +49,7 @@
                             <td>
                             
                              <div class="fieldLabel alignMiddle">
+                             <label>
                              {if $isReferenceField eq "reference"}
                                  {if $refrenceListCount > 1}
                                      <select style="width: 140px;" class="select2 referenceModulesList">
@@ -63,6 +64,7 @@
                                  {vtranslate($FIELD_MODEL->get('label'), $MODULE)}
                              {/if}
                              &nbsp; {if $FIELD_MODEL->isMandatory() eq true} <span class="redColor">*</span> {/if}
+                             </label>
                              </div>
                              <div>
                                 <div  {if in_array($FIELD_MODEL->get('uitype'),array('19')) || $FIELD_MODEL->get('label') eq 'Signature'} class="fieldValue" colspan="3" {assign var=COUNTER value=$COUNTER+1} {else} class="fieldValue" {/if}>

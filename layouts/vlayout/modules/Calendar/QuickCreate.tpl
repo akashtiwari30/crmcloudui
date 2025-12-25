@@ -106,8 +106,8 @@
 						{assign var="EDIT_VIEW_URL" value=$CALENDAR_MODULE_MODEL->getCreateEventRecordUrl()}
 					{/if}
 						<a class="cancelLink cancelLinkContainer pull-right" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-						<button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
-						<button class="btn" id="goToFullForm" type="button" data-edit-view-url="{$EDIT_VIEW_URL}"><strong>{vtranslate('LBL_GO_TO_FULL_FORM', $MODULE)}</strong></button>
+						<button class="btn btn-submit" type="submit">{vtranslate('LBL_SAVE', $MODULE)}</button>
+						<button class="btn" id="goToFullForm" type="button" data-edit-view-url="{$EDIT_VIEW_URL}">{vtranslate('LBL_GO_TO_FULL_FORM', $MODULE)}</button>
 				</div>
 			</div>
 			{/foreach}

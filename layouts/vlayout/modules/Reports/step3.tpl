@@ -66,9 +66,9 @@
 		</div>
 		<br>
 		<div class="pull-right block">
-			<button type="button" class="btn btn-danger backStep"><strong>{vtranslate('LBL_BACK',$MODULE)}</strong></button>&nbsp;&nbsp;
-			<button type="submit" class="btn btn-submit" id="generateReport"><strong>{vtranslate('LBL_GENERATE_REPORT',$MODULE)}</strong></button>&nbsp;&nbsp;
-			<a  class="cancelLink" onclick="window.history.back()">{vtranslate('LBL_CANCEL',$MODULE)}</a>&nbsp;&nbsp;
+			<button type="button" class="btn btn-danger backStep">{vtranslate('LBL_BACK',$MODULE)}</button>
+			<button type="submit" class="btn btn-submit" id="generateReport">{vtranslate('LBL_GENERATE_REPORT',$MODULE)}</button>
+			<a  class="cancelLink" onclick="window.history.back()">{vtranslate('LBL_CANCEL',$MODULE)}</a>
 		</div>
 	</form>
 {/strip}

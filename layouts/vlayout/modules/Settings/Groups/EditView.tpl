@@ -77,7 +77,7 @@
 			<div class="row-fluid">
 				<div class="span5">
 					<span class="pull-right">
-						<button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+						<button class="btn btn-submit" type="submit">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
 						<a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
 					</span>
 				</div>

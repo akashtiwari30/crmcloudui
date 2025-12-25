@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'TeamworkRegular';
     src: url('teamwork-regular-webfont.eot');
     src: url('teamwork-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -8,7 +8,7 @@
          url('teamwork-regular-webfont.svg#TeamworkRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 #savingMessage{
   background-color:#E3EDED;
@@ -41,7 +41,7 @@
 
 
 .teamworkIcon {
-  font-family: 'TeamworkRegular', arial, sans-serif;
+  /* font-family: 'TeamworkRegular', arial, sans-serif; */
   color:#617777;
   font-weight:normal;
   font-size:120%
@@ -130,7 +130,6 @@
 .button {
   display:inline-block;
   font-size:110%;
-  font-family:Arial, sans-serif;
   color:#fff;
   cursor:pointer;
   background-color:#373737;
@@ -229,7 +228,6 @@ span.separator {
   -webkit-border-radius:3px;
   -o-border-radius:3px;
   border-radius:3px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .formElementsError {

@@ -47,6 +47,7 @@
 										{assign var=COUNTER value=$COUNTER+1}
 									{/if}
 									<td class="fieldLabel alignMiddle">
+										<label>
 										{if $MASS_EDITION_MODE}
 											<input class="inputElement" id="include_in_mass_edit_{$FIELD_MODEL->getFieldName()}" data-update-field="{$FIELD_MODEL->getFieldName()}" type="checkbox">&nbsp;
 										{/if}
@@ -94,6 +95,7 @@
 											{/if}
 										{/if}
 										&nbsp;{if $FIELD_MODEL->isMandatory() eq true} <span class="redColor">*</span> {/if}
+										</label>
 									</td>
 									{if $FIELD_MODEL->get('uitype') neq '83'}
 										<td {if in_array($FIELD_MODEL->get('uitype'),array('19','69')) || $FIELD_NAME eq 'description' ||  (($FIELD_NAME eq 'recurringtype' or $FIELD_NAME eq 'reminder_time')  && in_array({$MODULE},array('Events','Calendar')))} class="fieldValue fieldValueWidth80"  colspan="3" {assign var=COUNTER value=$COUNTER+1} {elseif $FIELD_MODEL->get('uitype') eq '56'} class="fieldValue checkBoxType" {elseif $isReferenceField eq 'reference' or $isReferenceField eq 'multireference' } class="fieldValue p-t-8" {else}class="fieldValue" {/if}>

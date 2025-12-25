@@ -134,7 +134,7 @@
 					<h4 class="vt-callout-header"><span class="fa fa-info-circle"></span>&nbsp; Info </h4><br>
 					<div>
 						<p>{vtranslate('LBL_REDIRECT_URL_MESSAGE', $MODULE)}</p>
-						<p>{vtranslate('LBL_REDIRECT_URL', $MODULE)} : <span class="primary-color">{Google_Config_Connector::getRedirectUrl()}</span>
+						<p>{vtranslate('LBL_REDIRECT_URL', $MODULE)} : <span class="primary-text-color">{Google_Config_Connector::getRedirectUrl()}</span>
 						</p>
 					</div>
 					<br>
@@ -143,7 +143,7 @@
 			</div>
 		</div>
 		<div style="margin-top: 15px; margin-left: 15px;">
-			<div>
+			<div class="footer-btns">
 				<button id="saveSettings" type="submit" class="btn btn-submit saveButton">{vtranslate('LBL_SAVE_SETTINGS', $MODULENAME)}</button>
 				{if $PARENT neq 'Settings'}
 					<a type="reset" data-url="{$MODULE_MODEL->getBaseExtensionUrl($SOURCEMODULE)}" class="cancelLink navigationLink">{vtranslate('LBL_CANCEL', $MODULENAME)}</a>

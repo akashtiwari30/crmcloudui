@@ -1,5 +1,5 @@
 
-body { background: #fff; color: #333; font-family: helvetica, arial, sans-serif; margin: 30px; font-size: 15px; line-height: 145%; }
+body { background: #fff; color: #333; margin: 30px; font-size: 15px; line-height: 145%; }
 h1, h2, h3 { color: var(--black-color-2); }
 h2, h3 { margin: 30px 0 10px 0; }
 h2:first-child, h3:first-child { margin-top: 0; }
@@ -15,7 +15,7 @@ image { border: 0; }
 .example h3 { margin: 0 0 10px 0; }
 .example p { margin: 20px 0 0 0; }
 
-.code { font-family: Consolas, Monaco, "Courier New", Courier; margin: 20px 0 0 0; background: #333; }
+.code {  margin: 20px 0 0 0; background: #333; }
 
 #container { margin: 0 auto; width: 700px; }
 h1 { font-size: 3.8em; color: var(--black-color-2); margin: 0 0 35px 0; }
@@ -53,7 +53,6 @@ pre {
 }
 
 pre, code {
-    font-family: 'Monaco', courier, monospace;
 }
 
 pre .comment {

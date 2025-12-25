@@ -14,7 +14,7 @@
 			<div>
 				<input type="text" placeholder="{vtranslate('LBL_SEARCH_FOR_SETTINGS', $QUALIFIED_MODULE)}" class="search-list col-lg-8" id='settingsMenuSearch'>
 			</div>
-			<br><br>
+			
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				{foreach item=BLOCK_MENUS from=$SETTINGS_MENUS}
 					{assign var=BLOCK_NAME value=$BLOCK_MENUS->getLabel()}
@@ -54,7 +54,7 @@
 										{/if}
 										<li>
 											<a data-name="{$MENU}" href="{$MENU_URL}" class="menuItemLabel {if isset($ACTIVE_BLOCK['menu']) && $ACTIVE_BLOCK['menu'] eq $MENU} settingsgroup-menu-color {/if}">
-												<div>{vtranslate($MENU_LABEL,$QUALIFIED_MODULE)}</div>
+												<div><span>{vtranslate($MENU_LABEL,$QUALIFIED_MODULE)}</span></div>
 												<img id="{$MENUITEM->getId()}_menuItem" data-id="{$MENUITEM->getId()}" class="pinUnpinShortCut cursorPointer pull-right"
 													 data-actionurl="{$MENUITEM->getPinUnpinActionUrl()}"
 													 data-pintitle="{vtranslate('LBL_PIN',$QUALIFIED_MODULE)}"

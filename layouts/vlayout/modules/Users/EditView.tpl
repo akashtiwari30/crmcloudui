@@ -34,7 +34,7 @@
 			</span>
 			<span class="span4">
 				<span class="pull-right" style="padding-right: 15px">
-					<button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+					<button class="btn btn-submit" type="submit">{vtranslate('LBL_SAVE', $MODULE)}</button>
 					<a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 				</span>
 			</span>
@@ -101,7 +101,7 @@
 			{* tag cloud ends *}
 
 			<div class='pull-right'>
-				<button class="btn btn-submit" type="submit"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+				<button class="btn btn-submit" type="submit">{vtranslate('LBL_SAVE', $MODULE)}</button>
 				<a class="cancelLink" type="reset" onclick="javascript:window.history.back();">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 			</div>
 			<br><br><br>

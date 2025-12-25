@@ -66,8 +66,10 @@
 					<div class='modal-overlay-footer clearfix'>
 						<div class="row clearfix">
 							<div class=' textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
-								<button class="btn btn-submit saveButton" type="submit" disabled="disabled">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>&nbsp;&nbsp;
-								<a class='cancelLink' href="javascript:history.back()" type="reset">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
+								<div class='footer-btns'>
+									<button class="btn btn-submit saveButton" type="submit" disabled="disabled">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
+									<a class='cancelLink' href="javascript:history.back()" type="reset">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
+								</div>
 							</div>
 						</div>
 					</div>

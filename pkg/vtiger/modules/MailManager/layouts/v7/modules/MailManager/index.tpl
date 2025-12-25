@@ -15,7 +15,7 @@
                
                 <div><p>{vtranslate('LBL_MODULE_DESCRIPTION', $MODULE)}</p></div>
                
-                <button class="btn btn-submit mailbox_setting"><strong>{vtranslate('LBL_CONFIGURE_MAILBOX', $MODULE)}</strong></button>
+                <button class="btn btn-submit mailbox_setting">{vtranslate('LBL_CONFIGURE_MAILBOX', $MODULE)}</button>
             </center>
         </div>
     {else}

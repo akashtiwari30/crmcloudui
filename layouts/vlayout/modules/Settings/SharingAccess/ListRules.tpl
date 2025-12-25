@@ -19,7 +19,7 @@
 			</div>
 			<div class="span6">
 				<button class="btn addButton addCustomRule" type="button" data-url="{$MODULE_MODEL->getCreateRuleUrl()}">
-					<strong>{vtranslate('LBL_ADD_CUSTOM_RULE', $QUALIFIED_MODULE)}</strong></button>
+					{vtranslate('LBL_ADD_CUSTOM_RULE', $QUALIFIED_MODULE)}</button>
 			</div>
 		</div>
 		<hr>	

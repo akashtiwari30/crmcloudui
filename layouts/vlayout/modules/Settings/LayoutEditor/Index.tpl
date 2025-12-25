@@ -29,8 +29,8 @@
 
         <div class="contents tabbable">
             <ul class="nav nav-tabs layoutTabs massEditTabs">
-                <li class="active"><a data-toggle="tab" href="#detailViewLayout"><strong>{vtranslate('LBL_DETAILVIEW_LAYOUT', $QUALIFIED_MODULE)}</strong></a></li>
-                <li class="relatedListTab"><a data-toggle="tab" href="#relatedTabOrder"><strong>{vtranslate('LBL_ARRANGE_RELATED_TABS', $QUALIFIED_MODULE)}</strong></a></li>
+                <li class="active"><a data-toggle="tab" href="#detailViewLayout">{vtranslate('LBL_DETAILVIEW_LAYOUT', $QUALIFIED_MODULE)}</a></li>
+                <li class="relatedListTab"><a data-toggle="tab" href="#relatedTabOrder">{vtranslate('LBL_ARRANGE_RELATED_TABS', $QUALIFIED_MODULE)}</a></li>
             </ul>
             <div class="tab-content layoutContent padding20 themeTableColor overflowVisible">
                 <div class="tab-pane active" id="detailViewLayout">
@@ -42,11 +42,11 @@
                         <div class="btn-toolbar">
                             <button class="btn addButton addCustomBlock" type="button">
                                 <i class="icon-plus"></i>&nbsp;
-                                <strong>{vtranslate('LBL_ADD_CUSTOM_BLOCK', $QUALIFIED_MODULE)}</strong>
+                                {vtranslate('LBL_ADD_CUSTOM_BLOCK', $QUALIFIED_MODULE)}
                             </button>
                             <span class="pull-right">
                                 <button class="btn btn-submit saveFieldSequence hide" type="button">
-                                    <strong>{vtranslate('LBL_SAVE_FIELD_SEQUENCE', $QUALIFIED_MODULE)}</strong>
+                                    {vtranslate('LBL_SAVE_FIELD_SEQUENCE', $QUALIFIED_MODULE)}
                                 </button>
                             </span>
                         </div>
@@ -66,13 +66,13 @@
                                             {if $BLOCK_MODEL->isAddCustomFieldEnabled()}
                                                 <div class="btn-group">
                                                     <button class="btn addCustomField" type="button">
-                                                        <strong>{vtranslate('LBL_ADD_CUSTOM_FIELD', $QUALIFIED_MODULE)}</strong>
+                                                       {vtranslate('LBL_ADD_CUSTOM_FIELD', $QUALIFIED_MODULE)}
                                                     </button>
                                                 </div>
                                             {/if}
                                             {if $BLOCK_MODEL->isActionsAllowed()}
                                                 <div class="btn-group"><button class="btn dropdown-toggle" data-toggle="dropdown">
-                                                        <strong>{vtranslate('LBL_ACTIONS', $QUALIFIED_MODULE)}</strong>&nbsp;&nbsp;
+                                                        {vtranslate('LBL_ACTIONS', $QUALIFIED_MODULE)}
                                                         <i class="caret"></i>
                                                     </button>
                                                     <ul class="dropdown-menu pull-right">
@@ -239,7 +239,7 @@
                                             <span class="pull-right">
                                                 <div class="pull-right"><a href="javascript:void(0)" style="margin: 5px;color:#AA3434;margin-top:10px;" class='cancel'>{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a></div>
                                                 <button class="btn btn-submit saveFieldDetails" data-field-id="{$FIELD_MODEL->get('id')}" type="submit" style="margin: 5px;">
-                                                    <strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong>
+                                                    {vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}
                                                 </button>
                                             </span>
                                         </div>
@@ -400,7 +400,7 @@
             <span class="pull-right">
                 <div class="pull-right"><a href="javascript:void(0)" style="margin: 5px;color:#AA3434;margin-top:10px;" class="cancel">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a></div>
                 <button class="btn btn-submit saveFieldDetails" data-field-id="{$FIELD_MODEL->get('id')}" type="submit" style="margin: 5px;">
-                    <strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong>
+                    {vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}
                 </button>
             </span>
         </div>
@@ -435,12 +435,12 @@
             <div class="pull-right btn-toolbar blockActions" style="margin: 4px;">
                 <div class="btn-group">
                     <button class="btn addCustomField hide" type="button">
-                        <strong>{vtranslate('LBL_ADD_CUSTOM_FIELD', $QUALIFIED_MODULE)}</strong>
+                       {vtranslate('LBL_ADD_CUSTOM_FIELD', $QUALIFIED_MODULE)}
                     </button>
                 </div>
                 <div class="btn-group">
                     <button class="btn dropdown-toggle" data-toggle="dropdown">
-                        <strong>{vtranslate('LBL_ACTIONS', $QUALIFIED_MODULE)}</strong>&nbsp;&nbsp;
+                        {vtranslate('LBL_ACTIONS', $QUALIFIED_MODULE)}
                         <i class="caret"></i>
                     </button>
                     <ul class="dropdown-menu pull-right">
@@ -529,7 +529,7 @@
                                 <div class="modal-footer">
                                     <span class="pull-right">
                                         <div class="pull-right"><a href="javascript:void(0)" style="margin-top: 5px;margin-left: 10px;color:#AA3434;" class='cancel'>{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a></div>
-                                        <button class="btn btn-submit saveFieldDetails" data-field-id="" type="submit"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+                                        <button class="btn btn-submit saveFieldDetails" data-field-id="" type="submit">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
                                     </span>
                                 </div>
                             </form>
@@ -673,7 +673,7 @@
                 <a class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $QUALIFIED_MODULE)}</a>
             </div>
             <button class="btn btn-submit" type="submit" name="reactivateButton">
-                <strong>{vtranslate('LBL_REACTIVATE', $QUALIFIED_MODULE)}</strong>
+                {vtranslate('LBL_REACTIVATE', $QUALIFIED_MODULE)}
             </button>
         </div>
     </form>

@@ -1270,7 +1270,6 @@ canvas {
   right: 0;
   bottom: 0;
   color: var(--black-color-2);
-  font-family: sans-serif;
   overflow: hidden;
 }
 
@@ -1559,7 +1558,6 @@ html[dir='rtl'] #documentPropertiesContainer .row > * {
   opacity: 0.3;
 }
 #PDFBug .stats {
-  font-family: courier;
   font-size: 10px;
   white-space: pre;
 }

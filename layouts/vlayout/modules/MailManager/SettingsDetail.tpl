@@ -19,8 +19,8 @@
             {if $MAILBOX && $MAILBOX->exists()}
             <div class="span6">
                 <div class="pull-right">
-                    <button class="btn edit" onclick="MailManager.open_settings()"><strong>{vtranslate('LBL_EDIT',$MODULE)}</strong></button>&nbsp;
-                    <button class="btn btn-danger" onclick="MailManager.remove_settings(this.form);"><strong>{vtranslate('LBL_DELETE_Mailbox',$MODULE)}</strong></button>
+                    <button class="btn edit" onclick="MailManager.open_settings()">{vtranslate('LBL_EDIT',$MODULE)}</button>&nbsp;
+                    <button class="btn btn-danger" onclick="MailManager.remove_settings(this.form);">{vtranslate('LBL_DELETE_Mailbox',$MODULE)}</button>
                 </div>
             </div>
             {/if}

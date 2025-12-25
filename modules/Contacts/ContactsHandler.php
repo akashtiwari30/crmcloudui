@@ -82,7 +82,7 @@ function Contacts_sendCustomerPortalLoginDetails($entityData){
 				$contents = 'LoginDetails';
 				$contents .= "<br><br> User ID : $email";
 				$contents .= "<br> Password: ".$password;
-				$portalURL = vtranslate('Please ',$moduleName).'<a href="'.$PORTAL_URL.'" style="font-family:Arial, Helvetica, sans-serif;font-size:13px;">'. vtranslate('click here', $moduleName).'</a>';
+				$portalURL = vtranslate('Please ',$moduleName).'<a href="'.$PORTAL_URL.'" style="font-size:13px;">'. vtranslate('click here', $moduleName).'</a>';
 				$contents .= "<br>".$portalURL;
 			}
 			$subject = decode_html(getMergedDescription($subject, $entityId,'Contacts'));

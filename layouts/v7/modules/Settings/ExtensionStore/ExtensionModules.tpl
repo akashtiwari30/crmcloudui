@@ -52,19 +52,19 @@
 							</div>
 						</div>
 						<div class="extensionInfo">
-							<div class="row">
+							<div class="">
 								{assign var=ON_RATINGS value=$EXTENSION->get('avgrating')}
-								<div class="col-sm-5 col-xs-5">
+								<div class="">
 									<span class="rating" data-score="{$ON_RATINGS}" data-readonly=true></span>
 									<span>{if $EXTENSION->get('avgrating')}&nbsp;({$EXTENSION->get('avgrating')}){/if}</span>
 								</div>
-								<div class="col-sm-7 col-xs-7">
-									<div class="pull-right" style="display:flex; gap:6px">
+								<div class="extension-btn-container">
+									<div class="pull-rightt" style="display:flex; gap:6px">
 										{if $EXTENSION->isVtigerCompatible()}
 											<button class="btn btn-sm btn-default installExtension addButton">{vtranslate('LBL_MORE_DETAILS', $QUALIFIED_MODULE)}</button>
 											{if $EXTENSION->isAlreadyExists()}
 												{if ($EXTENSION->isUpgradable())}
-													<button class="oneclickInstallFree btn btn-submit btn-sm margin0px {if $IS_AUTH}authenticated {else} loginRequired{/if}">
+													<button class="btn btn-submit btn-sm margin0px oneclickInstallFree {if $IS_AUTH}authenticated {else} loginRequired{/if}">
 														{vtranslate('LBL_UPGRADE', $QUALIFIED_MODULE)}
 													</button>
 												{else}
@@ -80,7 +80,7 @@
 												{/if}
 											{else}
 												{if $EXTENSION->get('price') eq 'Free' or $EXTENSION->get('price') eq 0}
-													<button class="oneclickInstallFree btn btn-submit btn-sm {if $IS_AUTH}authenticated {else} loginRequired{/if}">{vtranslate('LBL_INSTALL', $QUALIFIED_MODULE)}</button>
+													<button class=" btn btn-submit btn-sm oneclickInstallFree {if $IS_AUTH}authenticated {else} loginRequired{/if}">{vtranslate('LBL_INSTALL', $QUALIFIED_MODULE)}</button>
 												{else}
 													<button class="oneclickInstallPaid btn btn-info btn-sm {if $IS_AUTH}authenticated {else} loginRequired{/if}" data-trial=false>{vtranslate('LBL_BUY',$QUALIFIED_MODULE)}${$EXTENSION->get('price')}</button>   
 												{/if}

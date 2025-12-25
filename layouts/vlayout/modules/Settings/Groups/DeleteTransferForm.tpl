@@ -23,9 +23,9 @@
 			<div class="modal-body tabbable">
 				<div class="control-group">
 					<span class="control-label">
-						<strong>
+						<label>
 							{vtranslate('LBL_TRANSFORM_OWNERSHIP', $QUALIFIED_MODULE)} {vtranslate('LBL_TO', $QUALIFIED_MODULE)}<span class="redColor">*</span>
-						</strong>
+						</label>
 					</span>
 					<div class="controls">
 						<select id="transfer_record" name="transfer_record" class="chzn-select">

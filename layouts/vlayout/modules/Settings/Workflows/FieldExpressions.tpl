@@ -86,7 +86,7 @@
 		<div class=" pull-right cancelLinkContainer">
 			<a class="cancelLink closeModal" type="button">{vtranslate('LBL_CANCEL', $MODULE)}</a>
 		</div>
-		<button class="btn btn-submit" type="button" name="saveButton"><strong>{vtranslate('LBL_SAVE', $MODULE)}</strong></button>
+		<button class="btn btn-submit" type="button" name="saveButton">{vtranslate('LBL_SAVE', $MODULE)}</button>
 	</div>
 </div>
 <div class="clonedPopUp"></div>

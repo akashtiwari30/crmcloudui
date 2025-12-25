@@ -115,7 +115,7 @@
 			</div>
 			<div class="row-fluid">
 				<div class="span6 padding1per">
-					<button class="btn btn-submit pull-right" type="submit" disabled="true" name="savePortalInfo"><strong>{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</strong></button>
+					<button class="btn btn-submit pull-right" type="submit" disabled="true" name="savePortalInfo">{vtranslate('LBL_SAVE', $QUALIFIED_MODULE)}</button>
 				</div>
 				<div class="span6">&nbsp;</div>
 			</div>

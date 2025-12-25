@@ -25,7 +25,7 @@
 		<input type="hidden" name="pickListValues" value='{ZEND_JSON::encode($SELECTED_PICKLISTFIELD_ALL_VALUES)}' />
 		<div class="modal-body tabbable">
 			<div class="control-group">
-				<div class="control-label"><span class="redColor">*</span>{vtranslate('LBL_ITEM_VALUE',$QUALIFIED_MODULE)}</div>
+				<div class="control-label"><label><span class="redColor">*</span>{vtranslate('LBL_ITEM_VALUE',$QUALIFIED_MODULE)}</label></div>
 				<div class="controls">
 					<select multiple class="select2" id="assignValues" style="min-width: 220px" name="assign_values[]">
 						{foreach key=PICKLIST_KEY item=PICKLIST_VALUE from=$SELECTED_PICKLISTFIELD_ALL_VALUES}
@@ -36,7 +36,7 @@
 			</div>		
 			{if $SELECTED_PICKLIST_FIELDMODEL->isRoleBased()}
 				<div class="control-group">	
-					<div class="control-label"><span class="redColor">*</span>{vtranslate('LBL_ASSIGN_TO_ROLE',$QUALIFIED_MODULE)}</div>
+					<div class="control-label"><label><span class="redColor">*</span>{vtranslate('LBL_ASSIGN_TO_ROLE',$QUALIFIED_MODULE)}</label></div>
 					<div class="controls">
 						<select class="rolesList select2" id="rolesSelected" name="rolesSelected[]" multiple style="min-width: 220px" data-placeholder="{vtranslate('LBL_CHOOSE_ROLES',$QUALIFIED_MODULE)}">
 							<option value="all" selected>{vtranslate('LBL_ALL_ROLES',$QUALIFIED_MODULE)}</option>

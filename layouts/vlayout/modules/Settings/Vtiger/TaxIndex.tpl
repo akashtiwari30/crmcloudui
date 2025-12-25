@@ -19,7 +19,7 @@
 			{assign var=CREATE_TAX_URL value=$TAX_RECORD_MODEL->getCreateTaxUrl()}
 			{assign var=WIDTHTYPE value=$CURRENT_USER_MODEL->get('rowheight')}
 			<div class="marginBottom10px">
-				<button type="button" class="btn addTax addButton" data-url="{$CREATE_TAX_URL}" data-type="0"><i class="icon-plus"></i>&nbsp;&nbsp;<strong>{vtranslate('LBL_ADD_NEW_TAX', $QUALIFIED_MODULE)}</strong></button>
+				<button type="button" class="btn addTax addButton" data-url="{$CREATE_TAX_URL}" data-type="0"><i class="icon-plus"></i>&nbsp;&nbsp;{vtranslate('LBL_ADD_NEW_TAX', $QUALIFIED_MODULE)}</button>
 			</div>
 			<table class="table table-bordered inventoryTaxTable themeTableColor">
 				<thead>
@@ -51,7 +51,7 @@
 		</div>
 		<div class="span6">
 			<div class="marginBottom10px">
-				<button type="button" class="btn addTax addButton" data-url="{$CREATE_TAX_URL}" data-type="1"><i class="icon-plus"></i>&nbsp;&nbsp;<strong>{vtranslate('LBL_ADD_NEW_TAX', $QUALIFIED_MODULE)}</strong></button>
+				<button type="button" class="btn addTax addButton" data-url="{$CREATE_TAX_URL}" data-type="1"><i class="icon-plus"></i>&nbsp;&nbsp;{vtranslate('LBL_ADD_NEW_TAX', $QUALIFIED_MODULE)}</button>
 			</div>
 			<table class="table table-bordered shippingTaxTable themeTableColor">
 				<thead>

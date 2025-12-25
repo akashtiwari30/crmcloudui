@@ -14,8 +14,8 @@
     <input type="hidden" name="mode" value="{$MODE}"/>
     <input type="hidden" name="targetModule" value="{$SOURCE_MODULE}"/>
     <div class="fieldBlockContainer-webform" style="margin-bottom: 0;">
-        <div class="fieldBlockHeader">
-            <h4>{vtranslate($SOURCE_MODULE, $SOURCE_MODULE)} {vtranslate('LBL_FIELD_INFORMATION', $MODULE)}</h4>
+        <div>
+            <h4 class="fieldBlockHeader">{vtranslate($SOURCE_MODULE, $SOURCE_MODULE)} {vtranslate('LBL_FIELD_INFORMATION', $MODULE)}</h4>
         </div>
         <hr>
         <table class="table table-bordered table-formed" width="100%" name="targetModuleFields">
@@ -128,8 +128,8 @@
     </div>
 	{if Vtiger_Functions::isDocumentsRelated($SOURCE_MODULE)}
 		<div class="fieldBlockContainer">
-			<div class="fieldBlockHeader">
-				<h4>{vtranslate('LBL_UPLOAD_DOCUMENTS', $QUALIFIED_MODULE)}</h4>
+			<div>
+				<h4 class="fieldBlockHeader">{vtranslate('LBL_UPLOAD_DOCUMENTS', $QUALIFIED_MODULE)}</h4>
 			</div>
 			<hr>
 			<div>

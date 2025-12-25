@@ -123,9 +123,9 @@
                 </div>
                 <div class="modal-footer">
                     {if $MAILBOX->exists()}
-                        <button class="btn btn-danger" id="deleteMailboxBtn"><strong>{vtranslate('LBL_DELETE_Mailbox',$MODULE)}</strong></button>
+                        <button class="btn btn-danger" id="deleteMailboxBtn">{vtranslate('LBL_DELETE_Mailbox',$MODULE)}</button>
                     {/if}
-                    <button class="btn btn-submit" id="saveMailboxBtn" type="submit" name="saveButton"><strong>{vtranslate('LBL_SAVE',$MODULE)}</strong></button>
+                    <button class="btn btn-submit" id="saveMailboxBtn" type="submit" name="saveButton">{vtranslate('LBL_SAVE',$MODULE)}</button>
                     <a href="#" class="cancelLink" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
                 </div>
             </form>

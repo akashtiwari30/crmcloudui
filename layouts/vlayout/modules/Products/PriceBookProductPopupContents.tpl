@@ -75,7 +75,7 @@
 {if $LISTVIEW_ENTRIES_COUNT neq '0'}
     <div class="clearfix form-actions" style="border: 1px solid #DDDDDD;">
 	<a class="cancelLink pull-right">{vtranslate('LBL_CANCEL', $MODULE)}</a>
-	<button class="btn addButton select pull-right"><i class="icon-plus"></i>&nbsp;<strong>{vtranslate('LBL_ADD_TO_PRICEBOOKS',$MODULE)}</strong></button>
+	<button class="btn addButton select pull-right"><i class="icon-plus"></i>&nbsp;{vtranslate('LBL_ADD_TO_PRICEBOOKS',$MODULE)}</button>
 </div>
 {/if}
 {/strip}

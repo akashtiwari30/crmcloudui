@@ -25,8 +25,8 @@
                     <div class="modal-body accordion container-fluid" id="leadAccordion">
                         {foreach item=MODULE_FIELD_MODEL key=MODULE_NAME from=$CONVERT_LEAD_FIELDS}
                             <div class="row">
-                                <div class="col-lg-1"></div>
-                                <div class="col-lg-10 moduleContent" style="border:1px solid #CCC;">
+                                
+                                <div class="col-lg-10 moduleContent">
                                     <div class="accordion-group convertLeadModules">
                                         <div class="header accordion-heading">
                                             <div data-parent="#leadAccordion" data-toggle="collapse" class="accordion-toggle moduleSelection" href="#{$MODULE_NAME}_FieldInfo">
@@ -67,14 +67,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-1"></div>
+                                    
                                 </div>
-                                <br>
+                           
                             {/foreach}
                             <div class="defaultFields">
                                 <div class="row">
-                                    <div class="col-lg-1"></div>
-                                    <div class="col-lg-10" style="border:1px solid #CCC;">
+                                    
+                                    <div class="col-lg-10 moduleContent">
                                         <div style="margin-top:20px;margin-bottom: 20px;">
                                             <div class="row">
                                                 {assign var=FIELD_MODEL value=$ASSIGN_TO}
@@ -90,12 +90,12 @@
                                             </div>
                                             <br>
                                             <div class="row">
-                                                <div class="fieldLabel col-lg-4">
+                                                <div class="fieldLabel col-lg-5">
                                                     <label class='muted pull-right'>
                                                         {vtranslate('LBL_TRANSFER_RELATED_RECORD', $MODULE)}
                                                     </label>
                                                 </div>
-                                                <div class="fieldValue col-lg-8">
+                                                <div class="fieldValue col-lg-7">
                                                     {foreach item=MODULE_FIELD_MODEL key=MODULE_NAME from=$CONVERT_LEAD_FIELDS}
                                                         {if $MODULE_NAME != 'Potentials'}
                                                             <input type="radio" id="transfer{$MODULE_NAME}" class="transferModule" name="transferModule" value="{$MODULE_NAME}"
@@ -111,9 +111,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-1"></div>
+                                    
                                 </div>
-                                <br>
+                               
                             </div>
                         </div>
                         {include file='ModalFooter.tpl'|@vtemplate_path:$MODULE}

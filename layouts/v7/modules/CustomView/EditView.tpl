@@ -12,7 +12,7 @@
 	{assign var=MODULE_FIELDS value=$MODULE_MODEL->getFields()}
 	<div id="filterContainer" class="create-new-list" style="height:100%">
 		<form id="CustomView" style="height:100%">
-			<div class="modal-content add-activity" style="height:100%">
+			<div class="modal-content add-activity">
 				<div class="overlayHeader">
 					{if $RECORD_ID}
 						{assign var="TITLE" value={vtranslate('LBL_EDIT_CUSTOM',$MODULE)}}
@@ -151,9 +151,11 @@
 				</div>
 				<div class='modal-overlay-footer clearfix border1px'>
 					<div class="row clearfix">
-						<div class=' textAlignCenter col-lg-12 col-md-12 col-sm-12 '>
-							<button type='submit' class='btn btn-submit saveButton' id="customViewSubmit">{vtranslate('LBL_SAVE', $MODULE)}</button>&nbsp;&nbsp;
-							<a class='cancelLink' href="javascript:void(0);" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+						<div class=' textAlignCenter col-lg-12 col-md-12 col-sm-12'>
+							<div class='footer-btns'>
+								<button type='submit' class='btn btn-submit saveButton' id="customViewSubmit">{vtranslate('LBL_SAVE', $MODULE)}</button>
+								<a class='cancelLink' href="javascript:void(0);" type="reset" data-dismiss="modal">{vtranslate('LBL_CANCEL', $MODULE)}</a>
+							</div>
 						</div>
 					</div>
 				</div>

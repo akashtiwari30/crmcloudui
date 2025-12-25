@@ -34,7 +34,7 @@
         <input type="hidden" value="Inventory_Popup_Js" id="popUpClassName"/>
         {assign var=WIDTHTYPE value=$CURRENT_USER_MODEL->get('rowheight')}
         <div class="bottomscroll-div">
-            <table class="listview-table table-bordered listViewEntriesTable">
+            <table class="listview-table listViewEntriesTable">
                 <thead>
                     <tr class="listViewHeaders">
                         {if $MULTI_SELECT}
@@ -136,7 +136,7 @@
     {if (!empty($SUBPRODUCTS_POPUP)) and (!empty($PARENT_PRODUCT_ID))}
         <div style="margin-top: 10px; height:50px">
             <div class="pull-right">
-                <button type="button" class="btn btn-default" id="backToProducts"><strong>{vtranslate('LBL_BACK_TO_PRODUCTS', $MODULE)}</strong></button>
+                <button type="button" class="btn btn-default" id="backToProducts">{vtranslate('LBL_BACK_TO_PRODUCTS', $MODULE)}</button>
             </div>
         </div>
     {/if}

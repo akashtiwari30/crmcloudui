@@ -2,5 +2,4 @@ vendor/*
 !vendor/.htaccess
 .vscode/*
 config.inc.php
-test/*
 logs/*

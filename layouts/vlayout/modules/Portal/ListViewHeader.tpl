@@ -15,13 +15,13 @@
 			<div class="listViewActionsDiv row-fluid">
 				<span class="btn-toolbar span4">
 					<span class="btn-group listViewMassActions">
-                        <button class="btn dropdown-toggle" data-toggle="dropdown"><strong>{vtranslate('LBL_ACTIONS', $MODULE)}</strong>&nbsp;&nbsp;<i class="caret"></i></button>
+                        <button class="btn dropdown-toggle" data-toggle="dropdown">{vtranslate('LBL_ACTIONS', $MODULE)}&nbsp;<i class="caret"></i></button>
                         <ul class="dropdown-menu">
                             <li id="massDelete"><a href="javascript:void(0);" onclick="Portal_List_Js.massDeleteRecords();">{vtranslate('LBL_DELETE', $MODULE)}</a></li>
                         </ul>
 					</span>
                     <span class="btn-group">
-                        <button class="btn addButton addBookmark"><i class="icon-plus"></i>&nbsp;<strong>{vtranslate('LBL_ADD_BOOKMARK', $MODULE)}</strong></button>
+                        <button class="btn addButton addBookmark"><i class="icon-plus"></i>&nbsp;{vtranslate('LBL_ADD_BOOKMARK', $MODULE)}</button>
                     </span>
 				</span>
                 <span class="span4">&nbsp;</span>

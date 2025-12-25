@@ -44,7 +44,7 @@
     </script>
 {/if}
 
-<div class='fc-overlay-modal overlayDetail'>
+<div class='fc-overlay-modal overlayDetail detail-view-modal'>
     <div class = "modal-content">
         <div class="overlayDetailHeader col-lg-12 col-md-12 col-sm-12" style="z-index:1;">
             <div class="col-lg-10 col-md-10 col-sm-10" style = "padding-left:0px;">

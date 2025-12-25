@@ -15,21 +15,21 @@
         <div class="col-sm-9 col-xs-9">
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_TITLE',$QUALIFIED_MODULE)}</label><span class="redColor">*</span></div>
-                <div class="col-sm-8 col-xs-8">
+                <div class="col-sm-6 col-xs-6">
                     <input data-rule-required="true" class="inputElement" name="todo" type="text" value="{$TASK_OBJECT->todo}" />
                     {$SHOWN_FIELDS_LIST['subject'] = 'subject'}
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_DESCRIPTION',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-8 col-xs-8">
+                <div class="col-sm-6 col-xs-6">
                     <textarea class="inputElement" name="description" style="height: inherit;">{$TASK_OBJECT->description}</textarea>
                     {$SHOWN_FIELDS_LIST['description'] = 'description'}
                 </div>
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_STATUS',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-5 col-xs-5">
+                <div class="col-sm-6 col-xs-6 site-select">
                     {assign var=STATUS_PICKLIST_VALUES value=$TASK_TYPE_MODEL->getTaskBaseModule()->getField('taskstatus')->getPickListValues()}
                     <select name="status" class="select2">
                         {foreach  from=$STATUS_PICKLIST_VALUES item=STATUS_PICKLIST_VALUE key=STATUS_PICKLIST_KEY}
@@ -41,7 +41,7 @@
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_PRIORITY',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-5 col-xs-5">
+                <div class="col-sm-6 col-xs-6 site-select">
                     {assign var=PRIORITY_PICKLIST_VALUES value=$TASK_TYPE_MODEL->getTaskBaseModule()->getField('taskpriority')->getPickListValues()}
                     <select name="priority" class="select2">
                         {foreach  from=$PRIORITY_PICKLIST_VALUES item=PRIORITY_PICKLIST_VALUE key=PRIORITY_PICKLIST_KEY}
@@ -53,7 +53,7 @@
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_ASSIGNED_TO',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-5 col-xs-5">
+                <div class="col-sm-6 col-xs-6 site-select">
                     <select name="assigned_user_id" class="select2">
                         <option value="">{vtranslate('LBL_SELECT_OPTION','Vtiger')}</option>
                         {foreach from=$ASSIGNED_TO key=LABEL item=ASSIGNED_USERS_LIST}
@@ -72,7 +72,7 @@
             </div>
             <div class="row form-group">
                 <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_TIME',$QUALIFIED_MODULE)}</label></div>
-                <div class="col-sm-3 col-xs-3" >
+                <div class="col-sm-6 col-xs-6" >
                     <div class="input-group time">
                         {if $TASK_OBJECT->time neq ''}
                             {assign var=TIME value=$TASK_OBJECT->time}
@@ -109,14 +109,14 @@
                                 {/foreach}
                             </select>&nbsp;
                         </div>
-                        <div class="col-sm-6 col-xs-6" style="vertical-align: super; word-wrap: break-word; padding: 0px;">({vtranslate('LBL_THE_SAME_VALUE_IS_USED_FOR_START_DATE',$QUALIFIED_MODULE)})</div>
+                        <div class="col-sm-6 col-xs-6" style="vertical-align: super; word-wrap: break-word; padding: 0px;"><label>({vtranslate('LBL_THE_SAME_VALUE_IS_USED_FOR_START_DATE',$QUALIFIED_MODULE)})</label></div>
                     </div>
                 </span>
                 {$SHOWN_FIELDS_LIST['date_start'] = 'date_start'}
                 {$SHOWN_FIELDS_LIST['due_date'] = 'due_date'}
             </div>
             <div class="row form-group">
-                <div class="col-sm-2 col-xs-2"><label>{vtranslate('LBL_SEND_NOTIFICATION',$QUALIFIED_MODULE)}</label></div>
+                <div class="col-sm-3 col-xs-3"><label>{vtranslate('LBL_SEND_NOTIFICATION',$QUALIFIED_MODULE)}</label></div>
                 <div class="col-sm-6 col-xs-6">
                     <input  type="checkbox" name="sendNotification" value="true" {if $TASK_OBJECT->sendNotification}checked{/if} />
                 </div>

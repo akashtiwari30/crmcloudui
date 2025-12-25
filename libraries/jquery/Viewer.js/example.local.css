@@ -2,7 +2,7 @@
  * to add support for your desired fonts.
  */
 
-@font-face {
+/* @font-face {
   font-family: 'Novecentowide Book';
   src: url("/Viewer.js/fonts/Novecentowide-Bold-webfont.eot");
   src: url("/Viewer.js/fonts/Novecentowide-Bold-webfont.eot?#iefix") format("embedded-opentype"), 
@@ -23,5 +23,5 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 

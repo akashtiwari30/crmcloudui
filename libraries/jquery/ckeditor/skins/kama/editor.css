@@ -24,7 +24,6 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
   color: var(--black-color-2);
   float: none;
   font-size: 12px;
-  font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
 }
 .cke_skin_kama .cke_rtl *,
 .cke_skin_kama .cke_rtl a:hover,
@@ -126,7 +125,6 @@ span.cke_skin_kama {
   outline: auto 5px -webkit-focus-ring-color;
 }
 .cke_skin_kama textarea.cke_source {
-  font-family: "Courier New", Monospace;
   font-size: small;
   background-color: #fff;
   white-space: pre;
@@ -375,7 +373,6 @@ a:active.cke_colormore {
 .cke_skin_kama .cke_hc a.cke_toolbox_collapser span {
   font-size: 10px;
   font-weight: bold;
-  font-family: Arial;
   display: inline;
 }
 .cke_skin_kama a.cke_toolbox_collapser_min,
